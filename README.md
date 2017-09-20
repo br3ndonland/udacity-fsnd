@@ -5,7 +5,7 @@ The Full-Stack Web Developer nanodegree was co-created by Udacity, Amazon, GitHu
 
 I am logging my code and progress with Jupyter notebook files.
 
-Setup: for more, see [br3ndonland_computing_setup.mdown](https://github.com/br3ndonland/general/br3ndonland_computing_setup.mdown)
+Setup: for more, see [br3ndonland_computing_setup.mdown](https://github.com/br3ndonland/general/blob/master/br3ndonland_computing_setup.mdown)
 
 * [Anaconda](https://docs.anaconda.com/anaconda/install/)
     - jupyter notebook
