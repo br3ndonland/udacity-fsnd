@@ -41,5 +41,3 @@ config.rst
 # additional ignores for br3ndonland udacity repo
 *.HTML
 files
-cs101
-cs4414

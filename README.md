@@ -1,11 +1,12 @@
 # Udacity
 
 ## Full-Stack Web Developer nanodegree (FSND)
+
 The Full-Stack Web Developer nanodegree was co-created by Udacity, Amazon, GitHub, AT&T, and Google. The program teaches skills including Python programming, JavaScript and AJAX for front-end development, back-end databases, and Linux server deployment.
 
 I am logging my code and progress with Jupyter notebook files.
 
-Setup: for more, see [br3ndonland_computing_setup.mdown](https://github.com/br3ndonland/general/blob/master/br3ndonland_computing_setup.mdown)
+Jupyter notebook setup: for more, see [br3ndonland_computing_setup.mdown](https://github.com/br3ndonland/general/blob/master/br3ndonland_computing_setup.mdown)
 
 * [Anaconda](https://docs.anaconda.com/anaconda/install/)
     - jupyter notebook

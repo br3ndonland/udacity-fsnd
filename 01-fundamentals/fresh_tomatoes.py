@@ -2,8 +2,11 @@ import webbrowser
 import os
 import re
 
+
 # Styles and scripting for the page
 main_page_head = '''
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <title>Fresh Tomatoes!</title>
@@ -37,7 +40,7 @@ main_page_head = '''
             padding-top: 20px;
         }
         .movie-tile:hover {
-            background-color: #B3B3B3;
+            background-color: #EEE;
             cursor: pointer;
         }
         .scale-media {
@@ -51,7 +54,7 @@ main_page_head = '''
             width: 100%;
             left: 0;
             top: 0;
-            background-color: #CCCCCCFF;
+            background-color: white;
         }
     </style>
     <script type="text/javascript" charset="utf-8">
@@ -101,12 +104,10 @@ main_page_content = '''
 
     <!-- Main Page Content -->
     <div class="container">
-      <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
           <div class="navbar-header">
-            <a class="navbar-brand" href="#"><b>Noir: Past, Present and Future |</b>
-                <subtitle><i>Shadows and snappy dialogue</i></subtitle>
-            </a>
+            <a class="navbar-brand" href="#">Fresh Tomatoes Movie Trailers</a>
           </div>
         </div>
       </div>
@@ -151,7 +152,7 @@ def create_movie_tiles_content(movies):
 
 def open_movies_page(movies):
     # Create or overwrite the output file
-    output_file = open('fresh_tomatoes_noir.html', 'w')
+    output_file = open('fresh_tomatoes.html', 'w')
 
     # Replace the movie tiles placeholder generated content
     rendered_content = main_page_content.format(
