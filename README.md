@@ -2,9 +2,11 @@
 
 ## Full-Stack Web Developer nanodegree (FSND)
 
-The Full-Stack Web Developer nanodegree was co-created by Udacity, Amazon, GitHub, AT&T, and Google. The program teaches skills including Python programming, JavaScript and AJAX for front-end development, back-end databases, and Linux server deployment.
+The [Full-Stack Web Developer nanodegree](https://www.udacity.com/course/full-stack-web-developer-nanodegree--nd004) was co-created by Udacity, Amazon, GitHub, AT&T, and Google. The program teaches skills including Python programming, JavaScript and AJAX for front-end development, back-end databases, and Linux server deployment.
 
-I am logging my code and progress with Jupyter notebook files.
+For the foundational Python programming work (lessons 00-11), I took notes and ran my code in Jupyter notebook files. Jupyter notebook is a nice way to bundle Markdown-formatted notes with Python code, but it lacks the speed and autocompletion features of Sublime Text. As I continued, I started writing my code in Sublime Text, keeping separate files for code and Markdown notes.
+
+---
 
 Jupyter notebook setup: for more, see [br3ndonland_computing_setup.mdown](https://github.com/br3ndonland/general/blob/master/br3ndonland_computing_setup.mdown)
 
