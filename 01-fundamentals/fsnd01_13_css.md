@@ -444,6 +444,7 @@ Brendon Smith | br3ndonland
 
 # Developer tools
 
+* open with cmd+opt+j
 * Developer tools allow you to edit webpages live. You can edit each element.
 To restore the page, just refresh.
 * I worked with developer tools for a little bit. I edited the LeanBox website.
@@ -451,6 +452,10 @@ To restore the page, just refresh.
 Editing site with developer tools
 
 * How do you add a line break to the CSS? -> right click on the style tag and select "edit as HTML"
+
+Mobile development 
+
+* Click the mobile icon in Chrome's developer tools to view a mobile version.
 
 Saving site with developer tools
 
@@ -479,3 +484,9 @@ Deleting elements with developer tools
     <link rel="stylesheet" href="//s.ytimg.com/yts/cssbin/www-core-webp-vflCayM79.css" name="www-core" class="css-httpssytimgcomytscssbinwwwcorewebpvflCayM79css">
     ```
 
+From lesson 15 positioning: You already have the developer tools skills you need to find the .relative element and move it. However, before you start, let me show you a quick trick for finding any element by its selector with Chrome developer tools.
+
+* [Open the DevTools console panel](https://developers.google.com/web/tools/chrome-devtools/debug/console/console-ui?hl=en#opening-the-console).
+* Type $('[selector]') and press enter. [selector] can be any CSS selector, so you could have $('.className') or $('#idName'). Notice that you need ' around the selector.
+* An HTML element should appear in the console (something like <div class="relative">text</div>). Right-click (or control-click on a Mac) on the element and select Reveal in Elements Panel.
+* *I find this to be far more cumbersome than just clicking on the element and selecting inspect.*

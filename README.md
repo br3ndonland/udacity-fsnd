@@ -1,12 +1,35 @@
-# Udacity
+# Udacity Full-Stack Web Developer nanodegree (FSND)
 
-## Full-Stack Web Developer nanodegree (FSND)
+## Description
 
 The [Full-Stack Web Developer nanodegree](https://www.udacity.com/course/full-stack-web-developer-nanodegree--nd004) was co-created by Udacity, Amazon, GitHub, AT&T, and Google. The program teaches skills including Python programming, JavaScript and AJAX for front-end development, back-end databases, and Linux server deployment.
 
-For the foundational Python programming work (lessons 00-11), I took notes and ran my code in Jupyter notebook files. Jupyter notebook is a nice way to bundle Markdown-formatted notes with Python code, but it lacks the speed and autocompletion features of Sublime Text. As I continued, I started writing my code in Sublime Text, keeping separate files for code and Markdown notes.
+---
+
+## Mentality and accomplishments
+
+I am an experienced laboratory manager and molecular nutrition scientist building skills in web development to create a more efficient, reproducible, and sustainable research culture.
+
+**My goal with Udacity is not to finish as quickly as possible, but to learn as much as possible, and to become the best programmer possible.** Throughout my nanodegree, I went beyond the requirements to strengthen my skills. Examples:
+
+* **Part 1, Programming Fundamentals**
+    - *fsnd01_05_functions:* 
+        + **This was my first milestone as a computer programmer.** I began my transition into web development with background info about computing history, operating systems, and programming, mostly from [Harvard cs50](https://cs50.harvard.edu/), [Udacity cs101](https://www.udacity.com/course/intro-to-computer-science--cs101), and [David Evans cs4414](http://rust-class.org/index.html). When I began learning Python syntax, progress was slow, and I wasn't able to express myself. It felt very much like the mental exhaustion of learning a spoken language. For example, while I was in Spain, although I was already fluent in Spanish, it required more mental effort to do simple things like go to a store or order food at a restaurant. The Udacity introductory materials actually recommended that I start with a beginner nanodegree first, but I knew that with my motivation and education, I could fill in the gaps in my knowledge and competency. 
+        + I launched into my Udacity nanodegree and kept at it. I got to an exercise where we had to create a break timer. The timer opens a YouTube video every two hours, to encourage people to take a break while working on the computer. I wrote the code independently, then checked the instructor's solution. **When adding a loop to the break counter, I came up with a more efficient way to program it** by using a `for` loop instead of a `while` loop, reducing the required amount of code from six lines to three (not counting the two lines required to load modules). **I realized the significance of the thought process because I had taken time to learn about computing history.** I thought about how Bill Gates and Paul Allen's major accomplishment while at Harvard was writing a BASIC interpreter for the Altair in 3.2 kilobytes of text, leaving memory free to write other programs and launching the personal computing software industry. Walter Isaacson wrote an article on this topic, "[Dawn of a revolution](http://news.harvard.edu/gazette/story/2013/09/dawn-of-a-revolution/)," *Harvard Gazette* 201309, and the corresponding book, *The Innovators*. **My performance during this exercise demonstrated that I had moved beyond the rote completion of exercises to think independently in the most efficient and Pythonic way.**
+    - *fsnd01_06_classes_turtles:*
+        + In the turtles mini-project, instead of just drawing a shape, I imported a gif for the background, and looped through a colorspace to create a psychedelic effect. 
+    - *fsnd01_08_classes_checker:*
+        + In the profanity checker mini-project, I adapted the code for Python 3.6.2 and made it as concise as possible. When I realized there was a more effective way to write the program with the `Requests` module, I learned about it and rewrote my code.
+    - *[fsnd01-p01-movies](https://github.com/br3ndonland/udacity-fsnd01-p01-movies):*
+        + For my first project, I created a movie trailer website. I personalized it with a film noir theme, and wrote a mini-review for each movie. I passed code review with only minor corrections.
 
 ---
+
+## Code formatting
+
+Python code is [PEP 8](https://www.python.org/dev/peps/pep-0008/) compliant.
+
+For the foundational Python programming work (lessons 00-11), I took notes and ran my code in Jupyter notebook files. Jupyter notebook is a nice way to bundle Markdown-formatted notes with Python code, but it lacks the speed and autocompletion features of Sublime Text. As I continued into front-end web development, I started writing my code in Sublime Text, keeping separate files for code and Markdown notes.
 
 Jupyter notebook setup: for more, see [br3ndonland_computing_setup.mdown](https://github.com/br3ndonland/general/blob/master/br3ndonland_computing_setup.mdown)
 
