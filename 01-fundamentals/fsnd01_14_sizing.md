@@ -1,11 +1,11 @@
-Udacity full-stack web developer nanodegree
-========================
+Lesson 14: Sizing
+=================
+
+**Udacity Full Stack Web Developer Nanodegree program**
 
 Part 01. Programming fundamentals and the web
-========================
 
-Lesson 14: Sizing
-========================
+Project 02. Build a portfolio site
 
 Brendon Smith | br3ndonland
 

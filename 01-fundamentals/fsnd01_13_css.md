@@ -1,17 +1,17 @@
-Udacity full-stack web developer nanodegree
-========================
+Lesson 13: CSS syntax
+=====================
+
+**Udacity Full Stack Web Developer Nanodegree program**
 
 Part 01. Programming fundamentals and the web
-========================
 
-Lesson 13: CSS syntax
-========================
+Project 02. Build a portfolio site
 
 Brendon Smith | br3ndonland
 
 ---
 
-# Lesson
+## Lesson
 
 1. Getting Started With CSS
 
@@ -442,7 +442,13 @@ Brendon Smith | br3ndonland
 
 26. Outro
 
-# Developer tools
+## other notes
+
+* [Sass](http://sass-lang.com/) (Syntactically Awesome Style Sheets) extends the functionality of CSS.
+* [CSSmatic](http://www.cssmatic.com/) generates CSS features
+
+
+## Developer tools
 
 * open with cmd+opt+j
 * Developer tools allow you to edit webpages live. You can edit each element.

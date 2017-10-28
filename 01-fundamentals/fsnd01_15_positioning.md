@@ -1,11 +1,11 @@
-Udacity full-stack web developer nanodegree
-========================
+Lesson 15: Positioning
+======================
+
+**Udacity Full Stack Web Developer Nanodegree program**
 
 Part 01. Programming fundamentals and the web
-========================
 
-Lesson 15: Positioning
-========================
+Project 02. Build a portfolio site
 
 Brendon Smith | br3ndonland
 

@@ -1,15 +1,17 @@
-Udacity full-stack web developer nanodegree
-========================
+Lesson 12: HTML syntax
+======================
+
+**Udacity Full Stack Web Developer Nanodegree program**
 
 Part 01. Programming fundamentals and the web
-========================
 
-Lesson 12: HTML syntax
-========================
+Project 02. Build a portfolio site
 
 Brendon Smith | br3ndonland
 
 ---
+
+## Lesson
 
 1. Lesson Introduction
 
@@ -455,3 +457,11 @@ Brendon Smith | br3ndonland
     </div></label></span></div></div></div></div></div><span></span></div><div class="index--instructor-notes-container--24U8Y shared--outer-container--3eppq"><div class="index--instructor-notes--39nNE layout--content--3Smmq"><div><noscript></noscript></div></div></div></div><div class="_main--resources-container--2Mxsv layout--content--3Smmq"><div><h4>Supporting Materials</h4><div class="resources--links--Dmbld"><div><a href="https://www.udacity.com/api/nodes/7231514902/supplemental_media/web-dev-blogzip/download" target="_blank" class="resources--resource-link--37SIs"><span class="ureact-glyph--icon-download-sm--1Ddlb ureact-glyph--icon--3AXgN" title=""><i></i></span><!-- react-text: 6731 --> <!-- /react-text --><!-- react-text: 6732 -->web-dev-blog.zip<!-- /react-text --></a></div></div></div></div></div>
 
 24. HTML Syntax Outro
+
+
+## other notes
+
+* HTML5: 
+    - [MDN](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5) 
+    - [HTML5 cheat sheet](https://www.wpkube.com/html5-cheat-sheet/)
+
