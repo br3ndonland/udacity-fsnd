@@ -11,7 +11,7 @@ Brendon Smith | br3ndonland
 
 ---
 
-# Lesson
+## Lesson
 
 1. Intro
 
