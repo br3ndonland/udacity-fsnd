@@ -1,0 +1,87 @@
+Last login: Sat Feb  3 11:21:53 on console
+br3ndonland ~
+$ cd /Users/br3ndonland/Dropbox/Computing/udacity-fsnd/files/03_backend/fullstack-nanodegree-vm/vagrant
+br3ndonland (master *) vagrant
+$ vagrant up
+Bringing machine 'default' up with 'virtualbox' provider...
+==> default: Checking if box 'bento/ubuntu-16.04-i386' is up to date...
+==> default: Clearing any previously set forwarded ports...
+==> default: Clearing any previously set network interfaces...
+==> default: Preparing network interfaces based on configuration...
+    default: Adapter 1: nat
+==> default: Forwarding ports...
+    default: 8000 (guest) => 8000 (host) (adapter 1)
+    default: 8080 (guest) => 8080 (host) (adapter 1)
+    default: 5000 (guest) => 5000 (host) (adapter 1)
+    default: 22 (guest) => 2222 (host) (adapter 1)
+==> default: Running 'pre-boot' VM customizations...
+==> default: Booting VM...
+==> default: Waiting for machine to boot. This may take a few minutes...
+    default: SSH address: 127.0.0.1:2222
+    default: SSH username: vagrant
+    default: SSH auth method: private key
+==> default: Machine booted and ready!
+==> default: Checking for guest additions in VM...
+    default: The guest additions on this VM do not match the installed version of
+    default: VirtualBox! In most cases this is fine, but in rare cases it can
+    default: prevent things such as shared folders from working properly. If you see
+    default: shared folder errors, please make sure the guest additions within the
+    default: virtual machine match the version of VirtualBox you have installed on
+    default: your host and reload your VM.
+    default:
+    default: Guest Additions Version: 5.1.21
+    default: VirtualBox Version: 5.2
+==> default: Mounting shared folders...
+    default: /vagrant => /Users/br3ndonland/Dropbox/Computing/udacity-fsnd/files/03_backend/fullstack-nanodegree-vm/vagrant
+==> default: Machine already provisioned. Run `vagrant provision` or use the `--provision`
+==> default: flag to force provisioning. Provisioners marked to run always will still run.
+br3ndonland (master *) vagrant
+$ cd /vagrant
+-bash: cd: /vagrant: No such file or directory
+br3ndonland (master *) vagrant
+$ vagrant ssh
+Welcome to Ubuntu 16.04.3 LTS (GNU/Linux 4.4.0-75-generic i686)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+2 packages can be updated.
+0 updates are security updates.
+
+
+The shared directory is located at /vagrant
+To access your shared files: cd /vagrant
+Last login: Fri Feb  2 14:55:57 2018 from 10.0.2.2
+vagrant@vagrant:~$ cd /vagrant
+vagrant@vagrant:/vagrant$ cd crud
+vagrant@vagrant:/vagrant/crud$ python3
+Python 3.5.2 (default, Nov 23 2017, 16:37:01)
+[GCC 5.4.0 20160609] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> from sqlalchemy import create_engine
+>>> from sqlalchemy.orm import sessionmaker
+>>> from database_setup.py import Base, Restaurant, MenuItem
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ImportError: No module named 'database_setup.py'; 'database_setup' is not a package
+>>> import database_setup.py
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ImportError: No module named 'database_setup.py'; 'database_setup' is not a package
+>>> from database_setup import Base, Restaurant, MenuItem
+>>> engine = create_engine('sqlite:///restaurantmenu.db')
+>>> Base.metadata.bind = engine
+>>> DBSession = sessionmaker(bind = engine)
+>>> session = DBSession()
+>>> myFirstRestaurant = Restaurant(name = "Potato Palace")
+>>> session.add(myFirstRestaurant)
+>>> session.commit()
+>>> session.query(Restaurant).all()
+[<database_setup.Restaurant object at 0xb61fdf4c>]
+>>> stokespurple = MenuItem(name = "Stokes Purple Sweet Potato", description = "The legendary and mysterious purple sweet potato, steamed to perfection", course = "Entree", price = "$11.99", restaurant = myFirstRestaurant)
+>>> session.add(stokespurple)
+>>> session.commit()
+>>> session.query(MenuItem).all()
+[<database_setup.MenuItem object at 0xb61fdbec>]
+>>>

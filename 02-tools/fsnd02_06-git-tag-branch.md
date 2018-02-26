@@ -58,3 +58,7 @@ $ git log --oneline --graph --all
 * 2e104e2 (tag: v1.0) Add header to blog
 * 63afe9d Initial commit
 ```
+
+## Feedback on lesson 6
+
+I was able to see the tag simply with `git log --oneline`, even though the tutorial said I shouldn't be able to. There was an addendum in the lesson: `--decorate` Flag Changes in Git 2.13. The lesson should just be updated instead.

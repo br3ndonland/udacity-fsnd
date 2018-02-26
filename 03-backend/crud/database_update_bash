@@ -1,0 +1,186 @@
+Last login: Sat Feb  3 11:23:04 on ttys000
+br3ndonland ~
+$ cd /Users/br3ndonland/Dropbox/Computing/udacity-fsnd/files/03_backend/fullstack-nanodegree-vm/vagrant
+br3ndonland (master *) vagrant
+$ vagrant ssh
+Welcome to Ubuntu 16.04.3 LTS (GNU/Linux 4.4.0-75-generic i686)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+2 packages can be updated.
+0 updates are security updates.
+
+
+The shared directory is located at /vagrant
+To access your shared files: cd /vagrant
+Last login: Sat Feb  3 16:51:05 2018 from 10.0.2.2
+vagrant@vagrant:~$ cd /vagrant/crud
+vagrant@vagrant:/vagrant/crud$ python database_setup.py
+vagrant@vagrant:/vagrant/crud$ cd ..//Full-Stack-Foundations/Lesson_1
+vagrant@vagrant:/vagrant/Full-Stack-Foundations/Lesson_1$ python3
+Python 3.5.2 (default, Nov 23 2017, 16:37:01)
+[GCC 5.4.0 20160609] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> from sqlalchemy import create_engine
+>>> from sqlalchemy.orm import sessionmaker
+>>> from database_setup.py import Base, Restaurant, MenuItem
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ImportError: No module named 'database_setup.py'; 'database_setup' is not a package
+>>> from database_setup import Base, Restaurant, MenuItem
+>>> engine = create_engine('sqlite:///restaurantmenu.db')
+>>> Base.metadata.bind = engine
+>>> DBSession = sessionmaker(bind = engine)
+>>> session = DBSession()
+>>> UrbanVeggieBurger = session.query(MenuItem).filter_by(name = 'Veggie Burger')
+>>> veggieBurgers = session.query(MenuItem).filter_by(name = 'Veggie Burger')
+>>> for veggieBurger in veggieBurgers:
+... print(veggieBurger.id)
+  File "<stdin>", line 2
+    print(veggieBurger.id)
+        ^
+IndentationError: expected an indented block
+>>> for veggieBurger in veggieBurgers:
+... print(veggieBurger.id)
+  File "<stdin>", line 2
+    print(veggieBurger.id)
+        ^
+IndentationError: expected an indented block
+>>> for veggieBurger in veggieBurgers:
+... print veggieBurger.id
+  File "<stdin>", line 2
+    print veggieBurger.id
+        ^
+IndentationError: Missing parentheses in call to 'print'
+>>> for veggieBurger in veggieBurgers:
+...     print(veggieBurger.id)
+...     print(veggieBurger.price)
+...     print(veggieBurger.restaurant.name)
+...
+>>> veggieBurgers()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: 'Query' object is not callable
+>>> veggieBurgers = session.query(MenuItem).filter_by(id = 8).one()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "/usr/local/lib/python3.5/dist-packages/sqlalchemy/orm/query.py", line 2843, in one
+    raise orm_exc.NoResultFound("No row was found for one()")
+sqlalchemy.orm.exc.NoResultFound: No row was found for one()
+>>> print(veggieBurgers)
+SELECT menu_item.name AS menu_item_name, menu_item.id AS menu_item_id, menu_item.description AS menu_item_description, menu_item.price AS menu_item_price, menu_item.course AS menu_item_course, menu_item.restaurant_id AS menu_item_restaurant_id
+FROM menu_item
+WHERE menu_item.name = ?
+>>> exit()
+vagrant@vagrant:/vagrant/Full-Stack-Foundations/Lesson_1$ python
+Python 2.7.12 (default, Dec  4 2017, 14:50:18)
+[GCC 5.4.0 20160609] on linux2
+Type "help", "copyright", "credits" or "license" for more information.
+>>> port create_engine
+  File "<stdin>", line 1
+    port create_engine
+                     ^
+SyntaxError: invalid syntax
+>>> from sqlalchemy.orm import sessionmaker
+>>> exit()
+vagrant@vagrant:/vagrant/Full-Stack-Foundations/Lesson_1$ python
+Python 2.7.12 (default, Dec  4 2017, 14:50:18)
+[GCC 5.4.0 20160609] on linux2
+Type "help", "copyright", "credits" or "license" for more information.
+>>> >>> from sqlalchemy import create_engine
+  File "<stdin>", line 1
+    >>> from sqlalchemy import create_engine
+     ^
+SyntaxError: invalid syntax
+>>> >>> from sqlalchemy.orm import sessionmaker
+  File "<stdin>", line 1
+    >>> from sqlalchemy.orm import sessionmaker
+     ^
+SyntaxError: invalid syntax
+>>> >>> from database_setup import Base, Restaurant, MenuItem
+  File "<stdin>", line 1
+    >>> from database_setup import Base, Restaurant, MenuItem
+     ^
+SyntaxError: invalid syntax
+>>> >>> engine = create_engine('sqlite:///restaurantmenu.db')
+  File "<stdin>", line 1
+    >>> engine = create_engine('sqlite:///restaurantmenu.db')
+     ^
+SyntaxError: invalid syntax
+>>> >>> Base.metadata.bind = engine
+  File "<stdin>", line 1
+    >>> Base.metadata.bind = engine
+     ^
+SyntaxError: invalid syntax
+>>> >>> DBSession = sessionmaker(bind = engine)
+  File "<stdin>", line 1
+    >>> DBSession = sessionmaker(bind = engine)
+     ^
+SyntaxError: invalid syntax
+>>> >>> session = DBSession()from sqlalchemy import create_engine
+  File "<stdin>", line 1
+    >>> session = DBSession()from sqlalchemy import create_engine
+     ^
+SyntaxError: invalid syntax
+>>> from sqlalchemy.orm import sessionmaker
+>>> from database_setup import Base, Restaurant, MenuItem
+>>> engine = create_engine('sqlite:///restaurantmenu.db')
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'create_engine' is not defined
+>>> Base.metadata.bind = engine
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'engine' is not defined
+>>> DBSession = sessionmaker(bind = engine)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'engine' is not defined
+>>> session = DBSession()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'DBSession' is not defined
+>>> exit
+Use exit() or Ctrl-D (i.e. EOF) to exit
+>>> exit()
+vagrant@vagrant:/vagrant/Full-Stack-Foundations/Lesson_1$ pyhon
+-bash: pyhon: command not found
+vagrant@vagrant:/vagrant/Full-Stack-Foundations/Lesson_1$ python
+Python 2.7.12 (default, Dec  4 2017, 14:50:18)
+[GCC 5.4.0 20160609] on linux2
+Type "help", "copyright", "credits" or "license" for more information.
+>>> from sqlalchemy import create_engine
+>>> from sqlalchemy.orm import sessionmaker
+>>> from database_setup import Base, Restaurant, MenuItem
+>>> engine = create_engine('sqlite:///restaurantmenu.db')
+>>> Base.metadata.bind = engine
+>>> DBSession = sessionmaker(bind = engine)
+>>> session = DBSession()
+>>> veggieBurgers = session.query(MenuItem).filter_by(name = 'Veggie Burger')
+>>> for veggieBurger in veggieBurgers:
+...     print veggieBurger.id
+...     print veggieBurger.price
+...     print veggieBurger.restaurant.name
+...     print "\n"
+...
+>>> print veggieBurgers
+SELECT menu_item.name AS menu_item_name, menu_item.id AS menu_item_id, menu_item.description AS menu_item_description, menu_item.price AS menu_item_price, menu_item.course AS menu_item_course, menu_item.restaurant_id AS menu_item_restaurant_id
+FROM menu_item
+WHERE menu_item.name = ?
+>>> print veggieBurger
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'veggieBurger' is not defined
+>>> UrbanVeggieBurger = session.query(MenuItem).filter_by(id = 8).one()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "/usr/local/lib/python2.7/dist-packages/sqlalchemy/orm/query.py", line 2843, in one
+    raise orm_exc.NoResultFound("No row was found for one()")
+sqlalchemy.orm.exc.NoResultFound: No row was found for one()
+>>> print UrbanVeggieBurger.price
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'UrbanVeggieBurger' is not defined
+>>>
