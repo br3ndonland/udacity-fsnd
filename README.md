@@ -1,5 +1,4 @@
-README
-========================
+# README
 
 <p align="left">
     <a href="https://www.udacity.com/">
@@ -9,17 +8,29 @@ README
 
 **Udacity Full Stack Web Developer Nanodegree program**
 
-Brendon Smith | br3ndonland
+Brendon Smith
+
+br3ndonland
 
 
-## Description
+## Repository Contents 
 
-General repository for Udacity Full Stack Nanodegree program course notes and materials. Step right up and learn about the cool things I'm doing with Udacity! Also see my Udacity portfolio website at https://br3ndonland.github.io/udacity/.
+This is a repository for Udacity Full Stack Nanodegree program course notes and materials.
 
 
-## Program
+## Program description
 
 The [Full Stack Web Developer Nanodegree program](https://www.udacity.com/course/full-stack-web-developer-nanodegree--nd004) was co-created by Udacity, Amazon, GitHub, AT&T, and Google. The program teaches skills including Python programming, HTML, CSS, JavaScript, and AJAX for front-end development, back-end databases, and Linux server deployment.
+
+
+## Projects
+
+The Full Stack Web Developer Nanodegree program is focused on projects, in which students can independently implement what they have learned in the lessons. I stored each project in its own repository.
+
+* [Project 01](https://github.com/br3ndonland/udacity-fsnd01-p01-movies): Python web server
+* [Project 02](https://br3ndonland.github.io/udacity/): Portfolio website
+* [Project 03](https://github.com/br3ndonland/udacity-fsnd03-p01-logs): SQL database analysis
+* Project 04: Item catalog app
 
 
 ## Code formatting
