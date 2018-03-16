@@ -15,7 +15,7 @@ br3ndonland
 **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
 - [Intro](#intro)
-- [Lessons](#lessons)
+- [Curriculum](#curriculum)
 - [Projects](#projects)
 - [Code](#code)
 
@@ -29,11 +29,11 @@ This is a repository for Udacity Full Stack Nanodegree program course notes and 
 The [Full Stack Web Developer Nanodegree program](https://www.udacity.com/course/full-stack-web-developer-nanodegree--nd004) was co-created by Udacity, Amazon, GitHub, AT&T, and Google. The program teaches skills including Python programming, HTML, CSS, JavaScript, and AJAX for front-end development, back-end databases, and Linux server deployment.
 
 
-## Lessons
+## Curriculum
 
 Notes and other materials from the lessons are available in this repository.
 
-The program could benefit from some reorganization. I have included my suggested program organization below.
+The program could benefit from some reorganization. I have included my suggested program organization below, and organized repository materials in this order.
 
 
 ### FSND program organization
@@ -70,6 +70,8 @@ Here is the program organization from when I entered the program in August 2017:
 
 ### Suggested program organization
 
+Here is how I would suggest progressing through the program:
+
 1. **Programming foundations**
 	- [Programming Foundations with Python](https://www.udacity.com/course/programming-foundations-with-python--ud036)
 	- [HTTP & Web Servers](https://www.udacity.com/course/http-web-servers--ud303): Python web servers
@@ -100,9 +102,7 @@ Here is the program organization from when I entered the program in August 2017:
 
 ## Projects
 
-The Full Stack Web Developer Nanodegree program is focused on projects, in which students can independently implement what they have learned in the lessons.
-
-I stored each project in its own repository.
+The Full Stack Web Developer Nanodegree program is focused on projects, in which students can independently implement what they have learned in the lessons. I stored each project in its own repository.
 
 * [Project 01](https://github.com/br3ndonland/udacity-fsnd01-p01-movies): Python web server
 * [Project 02](https://br3ndonland.github.io/udacity/): Portfolio website
