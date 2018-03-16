@@ -124,7 +124,7 @@ Adding CRUD capabilities for restaurant database
 
 It was helpful to see Lorenzo break down the objective into steps. I do this for my projects!
 
-I just followed along in the solution code, rather than writing the solutions myself, in the interest of time. It is also more effective and efficient to produce the webserver using Flask, which we'll thankfully be doing in the next lesson!
+**I just followed along in the solution code, rather than writing the solutions myself, in the interest of time. It is also more effective and efficient to produce the webserver using Flask, which we'll thankfully be doing in the next lesson!**
 
 **The code hasn't been updated for Python 3, but will run with Python 2 in vagrant. Each webserver.py directory must also have the database_setup.py file.**
 
@@ -144,21 +144,21 @@ I just followed along in the solution code, rather than writing the solutions my
 
 Instructor notes:
 
-Error in video - Replace lines 12 and 13 with:
-
-```python
-DBSession = sessionmaker(bind=engine)
-
-session = DBSession()
-```
-
-Objective 1 solution can be found here:
-
-https://github.com/udacity/Full-Stack-Foundations/blob/master/Lesson-2/Objective-1-Solution/webserver.py
-
-Note:
-
-A few times I say backslash "\" in this course, all slashes in this course should be forward slashes "/"
+> Error in video - Replace lines 12 and 13 with:
+> 
+> ```python
+> DBSession = sessionmaker(bind=engine)
+> 
+> session = DBSession()
+> ```
+> 
+> Objective 1 solution can be found here:
+> 
+> https://github.com/udacity/Full-Stack-Foundations/blob/master/Lesson-2/Objective-1-Solution/webserver.py
+> 
+> Note:
+> 
+> A few times I say backslash "\" in this course, all slashes in this course should be forward slashes "/"
 
 
 ### 7.16. Quiz: Objective 2

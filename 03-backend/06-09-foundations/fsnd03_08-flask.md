@@ -119,6 +119,43 @@ View the code for [project.py](https://github.com/udacity/Full-Stack-Foundations
 
 Importing the SQLAlchemy code for the restaurant database.
 
+<details>
+  <summary>Code from project.py</summary>
+
+```python
+from flask import Flask
+from sqlalchemy import create_engine
+from sqlalchemy.orm import sessionmaker
+from database_setup import Base, Restaurant, MenuItem
+app = Flask(__name__)
+
+
+engine = create_engine('sqlite:///restaurantmenu.db')
+Base.metadata.bind = engine
+
+DBSession = sessionmaker(bind=engine)
+session = DBSession()
+
+
+@app.route('/')
+@app.route('/hello')
+def HelloWorld():
+    restaurant = session.query(Restaurant).first()
+    items = session.query(MenuItem).filter_by(restaurant_id=restaurant.id)
+    output = ''
+    for i in items:
+        output += i.name
+        output += '</br>'
+    return output
+
+
+if __name__ == '__main__':
+    app.run(host='0.0.0.0', port=5000, debug=True)
+
+```
+
+</details>
+
 
 ### 8.06. Quiz: Adding Database to Flask Application Quiz
 

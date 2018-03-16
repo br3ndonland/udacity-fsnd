@@ -4,13 +4,26 @@
 
 Part 02. Developer Tools
 
-Lesson 11. HTTP requests and responses
+Lesson 11. HTTP requests and responses (from free course [HTTP & Web Servers](https://www.udacity.com/course/http-web-servers--ud303))
 
 Brendon Smith
 
 br3ndonland
 
 Also see cs50 Lecture 06 HTTP
+
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Intro](#intro)
+- [Your first web server](#your-first-web-server)
+- [Parts of a URI](#parts-of-a-uri)
+- [Hostnames and ports](#hostnames-and-ports)
+- [HTTP GET requests](#http-get-requests)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 
 ## Intro
 

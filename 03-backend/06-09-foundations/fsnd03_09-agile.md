@@ -35,13 +35,13 @@ br3ndonland
 
 ### 9.02. Iterative Development
 
-Some people write code by just binging as much code as possible before falling asleep, or writing code in pieces and having it be all over the place.
-
-A more effective strategy is to start simple and layer on complexity as you go, not adding a new feature until the current feature is finished. When each feature is finished, we stop, test, debug and share to make sure we always have a working application. This way, clients, project managers, and team members always know what the project status is and what's to follow. 
-
-This is called **iterative development.**
-
-**Agile** refers to the ability to easily change an application. Because there is always a working prototype, if someone asks for changes, it is easily done.
+> Some people write code by just binging as much code as possible before falling asleep, or writing code in pieces and having it be all over the place.
+> 
+> A more effective strategy is to start simple and layer on complexity as you go, not adding a new feature until the current feature is finished. When each feature is finished, we stop, test, debug and share to make sure we always have a working application. This way, clients, project managers, and team members always know what the project status is and what's to follow. 
+> 
+> This is called **iterative development.**
+> 
+> **Agile** refers to the ability to easily change an application. Because there is always a working prototype, if someone asks for changes, it is easily done.
 
 
 ### 9.03. Quiz: Tackling a Complex Project
@@ -133,3 +133,5 @@ Instructor notes
 ## Feedback on Lesson 09
 
 Really helpful to think through agile development. This will help me complete my Udacity projects, and my work projects when I get a web development job.
+
+It was confusing to work through app development again here, when we already did it in the previous lesson. It would be more helpful to discuss agile development first, then work through the whole app creation process, so the code base is cohesive.

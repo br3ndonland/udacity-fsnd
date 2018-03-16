@@ -4,7 +4,7 @@
 
 Part 02. Developer Tools
 
-Lesson 10. Staying in sync with a remote repository (from [free Git course](https://www.udacity.com/course/version-control-with-git--ud123))
+Lesson 10. Staying in sync with a remote repository (from free course [GitHub & Collaboration](https://www.udacity.com/course/github-collaboration--ud456))
 
 Brendon Smith
 

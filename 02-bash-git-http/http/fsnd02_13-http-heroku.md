@@ -4,7 +4,7 @@
 
 Part 02. Developer Tools
 
-Lesson 13. HTTP in the real world
+Lesson 13. HTTP in the real world (from free course [HTTP & Web Servers](https://www.udacity.com/course/http-web-servers--ud303))
 
 Brendon Smith
 
@@ -17,20 +17,13 @@ Also see cs50 Lecture 06 HTTP
 **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
 - [Deploying to a hosting service](#deploying-to-a-hosting-service)
-    - [1. Check your server code into a new local Git repository.](#1-check-your-server-code-into-a-new-local-git-repository)
-    - [Heroku Python tutorial](#heroku-python-tutorial)
-    - [Heroku Python tutorial from Udacity](#heroku-python-tutorial-from-udacity)
 - [Handling more requests](#handling-more-requests)
 - [What's an Apache or Nginx?](#whats-an-apache-or-nginx)
-  - [Static content and more](#static-content-and-more)
-  - [Routing and load balancing](#routing-and-load-balancing)
-  - [Concurrent users](#concurrent-users)
-  - [Caching](#caching)
 - [Cookies](#cookies)
-  - [How cookies happen](#how-cookies-happen)
-  - [Seeing cookies in your browser](#seeing-cookies-in-your-browser)
-  - [Using cookies in Python](#using-cookies-in-python)
-  - [Exercise: A server that remembers you](#exercise-a-server-that-remembers-you)
+- [HTTPS for security](#https-for-security)
+- [Beyond GET and POST](#beyond-get-and-post)
+- [New developments in HTTP](#new-developments-in-http)
+- [Keep learning!](#keep-learning)
 - [Feedback](#feedback)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
@@ -67,7 +60,7 @@ Also see cs50 Lecture 06 HTTP
 
 #### 1. Check your server code into a new local Git repository.
 
-* I created *udacity-fsnd/files/02_tools/fsnd02_12-http-python*, copied in my version and Udacity's version of the bookmark server code, along with the README.md, and checked it in with Git.
+I created *udacity-fsnd/files/02_tools/fsnd02_12-http-python*, copied in my version and Udacity's version of the bookmark server code, along with the README.md, and checked it in with Git.
 
 
 #### Heroku Python tutorial

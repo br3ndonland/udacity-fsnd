@@ -4,7 +4,7 @@
 
 Part 02. Developer Tools
 
-Lesson 09. Working on another developer's repository (from [free Git course](https://www.udacity.com/course/version-control-with-git--ud123))
+Lesson 09. Working on another developer's repository (from free course [GitHub & Collaboration](https://www.udacity.com/course/github-collaboration--ud456))
 
 Brendon Smith
 

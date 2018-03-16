@@ -4,7 +4,7 @@
 
 Part 02. Developer Tools
 
-Lesson 01. Shell Workshop
+Lesson 01. [Shell Workshop](https://www.udacity.com/course/shell-workshop--ud206)
 
 Brendon Smith
 

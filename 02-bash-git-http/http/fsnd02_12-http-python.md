@@ -4,7 +4,7 @@
 
 Part 02. Developer Tools
 
-Lesson 12. The Web from Python
+Lesson 12. The Web from Python (from free course [HTTP & Web Servers](https://www.udacity.com/course/http-web-servers--ud303))
 
 Brendon Smith
 
@@ -17,23 +17,16 @@ Also see cs50 Lecture 06 HTTP
 **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
 - [Python's `http.server`](#pythons-httpserver)
-	- [Intro](#intro)
-	- [Servers and handlers](#servers-and-handlers)
-	- [Exercise: The hello server](#exercise-the-hello-server)
 - [What about `encode()`?](#what-about-encode)
 - [The echo server](#the-echo-server)
 - [Queries and quoting](#queries-and-quoting)
-	- [Unpacking query parameters](#unpacking-query-parameters)
-	- [URL quoting](#url-quoting)
 - [HTML and forms](#html-and-forms)
 - [GET and POST](#get-and-post)
-	- [Idempotence](#idempotence)
-	- [Serve a POST request](#serve-a-post-request)
 - [A server for POST](#a-server-for-post)
-	- [POST handlers read the request body](#post-handlers-read-the-request-body)
-	- [Headers are strings (or missing)](#headers-are-strings-or-missing)
-	- [Exercise: Messageboard, part one](#exercise-messageboard-part-one)
-	- [Exercise: Messageboard, part two](#exercise-messageboard-part-two)
+- [Post-Redirect-Get](#post-redirect-get)
+- [Making Requests](#making-requests)
+- [Using a JSON API](#using-a-json-api)
+- [The Bookmark Server](#the-bookmark-server)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -251,6 +244,7 @@ The dictionary `{'texture': ['fuzzy'], 'animal': ['gray squirrel']}`
 * GET puts all form fields into the URI that is sent to the server. Good for search strings, not for more complex actions.
 * POST is better when altering or creating a resource.
 
+
 ### Idempotence
 
 > Vocabulary word of the day: idempotent. An action is idempotent if doing it twice (or more) produces the same result as doing it once. "Show me the search results for 'polar bear'" is an idempotent action, because doing it a second time just shows you the same results. "Add a polar bear to my shopping cart" is not, because if you do it twice, you end up with two polar bears.
@@ -260,6 +254,7 @@ The dictionary `{'texture': ['fuzzy'], 'animal': ['gray squirrel']}`
 > (Important note if you're ever asked about this in a job interview: idempotent is pronounced like "eye-dem-poe-tent", or rhyming with "Hide 'em, Joe Tent" — not like "id impotent".)
 > 
 > Adding zero to a number is idempotent, since you can add zero as many times as you want and the original number is unchanged. Adding five to a number is not idempotent, because if you do it twice you'll have added ten. Setting a variable to the value 5 is idempotent: doing it twice is the same as doing it once. Looking up an entry in a dictionary doesn't alter anything, so it's idempotent.
+
 
 ### Serve a POST request
 
@@ -286,6 +281,7 @@ Upgrade-Insecure-Requests: 1
 
 magic=DNA&secret=double+helix
 ```
+
 
 ## A server for POST
 

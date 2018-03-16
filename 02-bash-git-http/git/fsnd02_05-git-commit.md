@@ -4,7 +4,7 @@
 
 Part 02. Developer Tools
 
-Lesson 05. Add Commits To A Repo (from [free Git course](https://www.udacity.com/course/version-control-with-git--ud123))
+Lesson 05. Add Commits To A Repo (from free course [Version Control with Git](https://www.udacity.com/course/version-control-with-git--ud123))
 
 Brendon Smith
 
