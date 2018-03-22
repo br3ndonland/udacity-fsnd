@@ -13,8 +13,8 @@ from geocode import get_geocode_location
 # sys.stderr = codecs.getwriter('utf8')(sys.stderr)
 
 # Store Foursquare credentials
-foursquare_client_id = '5JU1MJJJ4OUU2OQO1XYMMGK5OOHBCF3FFJURKWGXIIM0AN0Q'
-foursquare_client_secret = 'BJ5QE50VMWVRFEZBNQO3O4RBFJDPFCNZ0P13GUDERTAG054Y'
+foursquare_client_id = 'PASTE_YOUR_KEY_HERE'
+foursquare_client_secret = 'PASTE_YOUR_KEY_HERE'
 
 
 def find_a_restaurant(mealType, location):

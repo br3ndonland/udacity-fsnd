@@ -154,7 +154,7 @@ Flow refers to how information is exchanged between the client, server, and OAut
 * I forked the [OAuth repo](https://github.com/udacity/OAuth2.0) and cloned it into the vagrant directory.
 * Logged into vagrant as usual.
 * Started up the Flask web server:
-	```bash
+	```
 	$ cd /vagrant/OAuth2.0
 	vagrant@vagrant:/vagrant/OAuth2.0$ python database_setup.py
 	vagrant@vagrant:/vagrant/OAuth2.0$ python lotsofmenus.py

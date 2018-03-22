@@ -61,24 +61,25 @@ Here is the program organization from when I entered the program in August 2017:
 4. **The front-end**
 	- JavaScript
 	- jQuery
-	- AJAX
+	- [Intro to AJAX](https://www.udacity.com/course/intro-to-ajax--ud110)
+	- APIs
 	- Project 05: Neighborhood map
 5. **Servers**
 	- Linux server deployment
 	- Project 06: Linux server
 
 
-### Suggested program organization
+### Suggested FSND program organization
 
 Here is how I would suggest progressing through the program:
 
 1. **Programming foundations**
-	- [Programming Foundations with Python](https://www.udacity.com/course/programming-foundations-with-python--ud036)
-	- [HTTP & Web Servers](https://www.udacity.com/course/http-web-servers--ud303): Python web servers
-	- Project 1: Python web server (movie trailer site)
 	- [Shell Workshop](https://www.udacity.com/course/shell-workshop--ud206)
 	- [Version Control with Git](https://www.udacity.com/course/version-control-with-git--ud123)
 	- [GitHub & Collaboration](https://www.udacity.com/course/github-collaboration--ud456)
+	- [Programming Foundations with Python](https://www.udacity.com/course/programming-foundations-with-python--ud036)
+	- [HTTP & Web Servers](https://www.udacity.com/course/http-web-servers--ud303): Python web servers
+	- Project 1: Python web server (movie trailer site)
 2. **The front-end**
 	- [Intro to HTML and CSS](https://www.udacity.com/course/intro-to-html-and-css--ud001)
 	- [Responsive Web Design Fundamentals by Google](https://www.udacity.com/course/responsive-web-design-fundamentals--ud893)
@@ -92,7 +93,8 @@ Here is how I would suggest progressing through the program:
 	- Project 04: Flask item catalog app
 	- JavaScript
 	- jQuery
-	- AJAX
+	- [Intro to AJAX](https://www.udacity.com/course/intro-to-ajax--ud110)
+	- APIs
 	- [Designing RESTful APIs](https://www.udacity.com/course/designing-restful-apis--ud388)
 	- Project 05: Neighborhood map
 5. **Servers**
@@ -114,8 +116,10 @@ The Full Stack Web Developer Nanodegree program is focused on projects, in which
 
 ## Code
 
-Python code is written in [Kenneth Reitz's Code Style](https://www.kennethreitz.org/essays/if-i-could-amend-pep-8), an amended [PEP 8](https://www.python.org/dev/peps/pep-0008/) format.
+Python code is formatted for Python 3 and [Kenneth Reitz's Code Style](https://www.kennethreitz.org/essays/if-i-could-amend-pep-8), an amended [PEP 8](https://www.python.org/dev/peps/pep-0008/) format.
 
 For the foundational Python programming work (part 1, lessons 00-11), I took notes and ran my code in Jupyter notebook files. Jupyter notebook was a nice way to bundle Markdown-formatted notes with Python code, but it lacked the speed and autocompletion features of my preferred text editor, Sublime Text.
 
 As I continued, I wrote code in Sublime Text, keeping separate files for code and Markdown notes.
+
+[(back to top)](#top)

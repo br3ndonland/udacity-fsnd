@@ -3,8 +3,8 @@ import requests
 
 url = 'https://api.foursquare.com/v2/venues/search'
 
-params = dict(client_id='5JU1MJJJ4OUU2OQO1XYMMGK5OOHBCF3FFJURKWGXIIM0AN0Q',
-    client_secret='BJ5QE50VMWVRFEZBNQO3O4RBFJDPFCNZ0P13GUDERTAG054Y',
+params = dict(client_id='PASTE_YOUR_KEY_HERE',
+    client_secret='PASTE_YOUR_KEY_HERE',
     v='20180309',
     ll='37.392971,-122.076044',
     query='pizza',
