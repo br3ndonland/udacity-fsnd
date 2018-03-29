@@ -18,6 +18,7 @@ br3ndonland
 - [Lesson 11. OAuth Flows and Google Sign-In](#lesson-11-oauth-flows-and-google-sign-in)
 - [Lesson 12. Local permission system](#lesson-12-local-permission-system)
 - [Lesson 13. Facebook OAuth](#lesson-13-facebook-oauth)
+- [General OAuth course feedback](#general-oauth-course-feedback)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -51,12 +52,18 @@ Four lessons again:
 3. Local permission system to protect each user's data from other users
 4. Facebook as another oauth2 provider
 
+The material extends the restaurant menu app.
+
+**The course code exists, confusingly, in two repos: [OAuth2.0](https://github.com/udacity/OAuth2.0) and [ud330](https://github.com/udacity/ud330/blob/master/Lesson2/step2/project.py). The code in ud330 is formatted a little better than the OAuth repo.**
 
 Instructor notes
 
 > Check out Udacity's awesome course on [Applied Cryptography](https://www.udacity.com/course/cs387) if you are interested in learning more about these concepts
 > 
 > [Here](http://lepture.com/en/2013/create-oauth-server) is a blog on creating a your own auth system with Flask.
+
+
+The instructor notes in Lesson 10.02 Authentication and Authorization link to [lepture's blog post about Flask-OAuthlib](http://lepture.com/en/2013/create-oauth-server). He was the creator of Flask-OAuthlib and has now replaced it with the [announcement of Authlib](https://lepture.com/en/2018/announcement-of-authlib). We don't even use Flask-OAuthlib in this course, so I felt like this link was more distracting than helpful.
 
 
 ### 10.03. Authentication
@@ -82,13 +89,13 @@ Other security features:
 
 Instructor notes
 
-Read more about:
-
-[App for Checking password security](https://howsecureismypassword.net/)
-
-[Password Storage - Hashing vs. Encrypting](http://www.darkreading.com/safely-storing-user-passwords-hashing-vs-encrypting/a/d-id/1269374)
-
-[Man-in-the-Middle Attacks](http://en.wikipedia.org/wiki/Man-in-the-middle_attack)
+> Read more about:
+> 
+> [App for Checking password security](https://howsecureismypassword.net/)
+> 
+> [Password Storage - Hashing vs. Encrypting](http://www.darkreading.com/safely-storing-user-passwords-hashing-vs-encrypting/a/d-id/1269374)
+> 
+> [Man-in-the-Middle Attacks](http://en.wikipedia.org/wiki/Man-in-the-middle_attack)
 
 
 ### 10.06. Using Third Party Auth Providers
@@ -115,8 +122,7 @@ OAuth
 
 People may be uncomfortable giving your app Google permissions because they may not want to give your app the ability to change unrelated aspects of their Google accounts. Establishing appropriate authorization permissions is key.
 
-
-**Google created an [OAuth Playground](https://developers.google.com/oauthplayground/) to allow users to test their OAuth builds.**
+**Google created an [OAuth Playground](https://developers.google.com/oauthplayground/) to allow users to test their OAuth builds.** We didn't actually learn to use the OAuth Playground.
 
 
 ### 10.11. Quiz: Follow the Flow
@@ -141,6 +147,8 @@ Flow refers to how information is exchanged between the client, server, and OAut
 * Server-side authentication can obtain an access token that allows the server to make API requests on behalf of the user.
 * Google+ uses a hybridized flow. Client-side authentication is performed, but the server can still make API calls on behalf of the client. It is difficult for unauthorized users to obtain access codes.
 
+> Check out this [blog](https://aaronparecki.com/articles/2012/07/29/1/oauth2-simplified) that explains some of the flow options using OAuth 2.0
+
 
 ### 11.03. Google+ Auth for server side apps
 
@@ -148,11 +156,13 @@ Flow refers to how information is exchanged between the client, server, and OAut
 
 <img src="img/fsnd03_11_03.png" alt="Google hybrid OAuth flow">
 
+
 ### 11.04. Step 0 Get initial app running
 
 * We used Vagrant again here.
-* I forked the [OAuth repo](https://github.com/udacity/OAuth2.0) and cloned it into the vagrant directory.
+* I forked the [OAuth repo](https://github.com/udacity/OAuth2.0) and cloned it into the vagrant directory. The material extends the restaurant menu app.
 * Logged into vagrant as usual.
+* We will be using Flask again here. Also see Lesson 08. Frameworks (from free course [Full Stack Foundations](https://www.udacity.com/course/full-stack-foundations--ud088))
 * Started up the Flask web server:
 	```
 	$ cd /vagrant/OAuth2.0
@@ -168,6 +178,8 @@ Flow refers to how information is exchanged between the client, server, and OAut
 
 
 ### 11.05. Quiz: Step 1 Create Client ID & Secret
+
+The client ID and secret allow the app to communicate with Google.
 
 The video walks through Google API project creation.
 
@@ -187,18 +199,38 @@ Instructor notes
 > 
 > You can also download the client secret as a JSON data file once you have created it.
 
+After creating the client ID and secret, set the "Authorized JavaScript Origins" to:
 
-### 11.06. Quiz: Step 2 Create anti forgery state token
+http://localhost:5000
 
-* This helps properly authenticate the user and prevent anti-forgery state attacks.
+
+### 11.06. Quiz: Step 2 Create anti-forgery state token
+
+* This helps verify the authenticated user and prevent attacks.
 * We import Flask's version of sessions, and name it `login_session`:
 	```python
 	from flask import session as login_session
 	import random, string
 	```
-* Session works like a dictionary and can store values.
-* `random` and `string` are used to, you guessed it, generate a random string. Lorenzo generates the random object with the name `state`.
-* The code for this step is in [another repo](https://github.com/udacity/ud330/blob/master/Lesson2/step2/project.py). I added it to *project.py*. Lots of formatting issues with the code as usual. In the instructor notes, I saw that there is another repo, [ud330](https://github.com/udacity/ud330), with updated code.
+	- `login_session` is a dictionary. We can store values there during the session.
+* We then create the login page app route:
+	```python
+	@app.route('/login')
+	def login():
+	    """App route function to log in and generate token."""
+	    state = ''.join(random.choice(string.ascii_uppercase + string.digits)
+	                    for x in range(32))
+	    login_session['state'] = state
+	    return 'The current session state is {}'.format(login_session['state'])
+	```
+	- Session works like a dictionary and can store values.
+	- `random` and `string` are used to generate a random string, stored in an object with the name `state` here.
+	- The `xrange` in Python 2 is replaced by `range` in Python 3.
+	- The `state` token is stored in the `login_session` object.
+	- To test this, we can just return a string in the browser with the token. Later, we will render the `login.html` template.
+
+
+The code for this step is in [another repo](https://github.com/udacity/ud330/blob/master/Lesson2/step2/project.py) with code that is formatted a little better than the OAuth repo.
 
 Got the authentication working.
 
@@ -215,7 +247,11 @@ I followed along by looking at /vagrant/ud330/Lesson2/step3/templates/login.html
 
 ### 11.08. Quiz: Step 4 Make a Callback Method
 
-Lorenzo adds JavaScript code to the login page inside script tags. He uses jQuery to make an AJAX call, which we haven't learned yet (should be in part 4 I think).
+Lorenzo adds JavaScript code to the login.html page inside script tags. He uses jQuery to make an AJAX call, which we haven't learned yet (should be in part 4 I think).
+
+* `url: '/gconnect?state={{STATE}}',` passes the state token as an argument to protect against CSRF.
+* `processData: false,` tells jQuery not to process the response into a string.
+* A successful login returns a success message to the user.
 
 
 Instructor notes:
@@ -239,6 +275,24 @@ Instructor notes:
 
 
 ### 11.09. Quiz: Step 5 GConnect
+
+* Add new imports
+	```python
+	# Import OAuth modules for user authentication
+	from oauth2client.client import flow_from_clientsecrets, FlowExchangeError
+	from flask import make_response
+	import json
+	import requests
+	```
+* Go back to the [Google API console](https://console.developers.google.com/apis/dashboard) and download Google API credentials as JSON. 
+	- **Why not just do this in the first place? Lorenzo needs to be more organized.**
+* Rename the file *client_secrets.json* and store in same directory as main application file.
+* Create a server-side helper function to store the client secret as an object
+	```python
+	CLIENT_ID = json.loads(open('client_secrets.json', 'r')
+	    .read())['web']['client_id']
+	```
+* Create GConnect app route (see code in project.py)
 
 Instructor notes
 
@@ -269,10 +323,23 @@ Instructor notes
 
 ### 11.10. Quiz: Step 6 Disconnect
 
+See code in project.py
+
 
 ### 11.11. Quiz: Step 7 Protecting Pages
 
 The quiz was about which pages should be publicly visible vs. private. Obviously any pages on which you are modifying the site should be private.
+
+Pages are made private by adding login as a condition.
+
+For example, on the new restaurant page:
+
+```python
+@app.route('/restaurant/new/', methods=['GET', 'POST'])
+def newRestaurant():
+    if 'username' not in login_session:
+        return redirect('/login')
+```
 
 
 ### 11.12. Wrap-up
@@ -285,15 +352,35 @@ For some reason there are two repos for this course, [OAuth2.0](https://github.c
 
 
 ## Lesson 12. Local permission system
+[(back to top)](#top)
 
 ### 12.01. Lesson 3 Introduction
 
-The local permission system is an additional measure to ensure authenticity.
+The local permission system is an additional measure to ensure authenticity. It stores login credentials in a `login_session` object to control the experience by user.
 
 
 ### 12.02. Implementing a Local Permission System
 
 The database should have a user table.
+
+Update *database_setup.py* to include a user table:
+
+```python
+class User(Base):
+    __tablename__ = 'user'
+
+    id = Column(Integer, primary_key=True)
+    name = Column(String(250), nullable=False)
+    email = Column(String(250), nullable=False)
+    picture = Column(String(250))
+
+```
+
+Add a foreign key to the `restaurant` and `menu_item` tables to reference the user table so that only the creators of the items can edit them:
+
+```python
+user_id = Column(Integer, ForeignKey('user.id'))
+```
 
 <img src="img/fsnd03_12_03.png" alt="Local permission system database setup">
 
@@ -301,6 +388,8 @@ The database should have a user table.
 ### 12.03. Quiz: Updating the User Model
 
 ### 12.04. Creating a New User
+
+User helper functions:
 
 The `createUser()` function will look up users in the database table based on their email addresses used for login.
 
@@ -317,6 +406,25 @@ Store in `user_id` objects.
 
 
 ### 12.06. Quiz: Protect Menu Pages
+
+Lorenzo creates separate templates for public viewers and logged-in users.
+
+He adds the local permission system to the app routes requiring login:
+
+```python
+@app.route('/restaurant/new/', methods=['GET', 'POST'])
+def newRestaurant():
+    if 'username' not in login_session:
+        return redirect('/login')
+    if request.method == 'POST':
+        newRestaurant = Restaurant(name=request.form['name'])
+        session.add(newRestaurant)
+        flash('New Restaurant %s Successfully Created' % newRestaurant.name)
+        session.commit()
+        return redirect(url_for('showRestaurants'))
+    else:
+        return render_template('newRestaurant.html')
+```
 
 Instructor notes
 
@@ -341,7 +449,11 @@ Instructor notes
 
 Brief lesson, no feedback
 
+
 ## Lesson 13. Facebook OAuth
+[(back to top)](#top)
+
+**Facebook login would probably be more effectively implemented with JavaScript. See the [Facebook login documentation](https://developers.facebook.com/docs/facebook-login).**
 
 
 ### 13.01. Adding Additional OAuth Providers
@@ -349,6 +461,8 @@ Brief lesson, no feedback
 ### 13.03. Client-Side Login with Facebook SDK
 ### 13.04. Quiz: Updating login.html
 ### 13.05. Update project.py (part I)
+
+The instructor notes warn against a change to the Facebook API URL, but the lesson code was updated.
 
 Instructor notes
 
@@ -398,3 +512,20 @@ Here is the [Offical OAuth 2.0 website](http://oauth.net/2/).
 ### Feedback on Lesson 13
 
 Another very brief lesson
+
+
+## General OAuth course feedback
+
+* I was disappointed in this course.
+* The code is outdated and poorly formatted. 
+	- Python 2 instead of 3
+	- HTTP requests use `httplib2` instead of `requests`
+	- Code is not PEP 8 compliant.
+	- Code mixes spaces and tabs.
+	- JavaScript camelCase used instead of underscores for function names.
+	- JavaScript camelCase even used for CSS classes! For example, in *login.html*, `<div id="signinButton">`. CSS classes are specified in lowercase, with hyphens in between.
+	- Doesn't even have a proper Markdown-formatted README
+	- Code exists, confusingly, in two repos: [OAuth2.0](https://github.com/udacity/OAuth2.0) and [ud330](https://github.com/udacity/ud330/blob/master/Lesson2/step2/project.py). The code in ud330 is formatted a little better than the OAuth repo.
+* **GitHub repos are not maintained. Pull requests are ignored.** The GitHub repos are an opportunity to enrich the student experience by teaching good open source practices, but Udacity is not doing this.
+* The instructor Lorenzo's method of storing many different versions of the files, and constantly going back and updating them, was confusing and time-consuming.
+* I didn't find the lessons very useful until I started the item catalog project. The code didn't mean much to me until I was implementing it in my own project. I almost felt like I could have started the project before watching the lessons.
