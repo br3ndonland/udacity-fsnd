@@ -9,7 +9,6 @@ br3ndonland
 ## Table of Contents
 
 - [Table of Contents](#table-of-contents)
-- [LinkedIn reviews](#linkedin-reviews)
 - [2018](#2018)
   - [201804](#201804)
   - [201803](#201803)
@@ -21,17 +20,6 @@ br3ndonland
   - [201710](#201710)
   - [201709](#201709)
   - [201808](#201808)
-
-## LinkedIn reviews
-
-LEAVE SHIVANG A REVIEW FIRST
-
-highlight shivang's help in planning timeline to make me efficient.
-
-You could highlight a couple of things
-
-- My dedication to the program: I put in consistent work the whole time
-- going above and beyond: for example, in the second project (Udacity portfolio site), in addition to replicating the webpage mockup, I turned the mockup into a full website. I learned the Bootstrap framework, created a website with more pages, learned Jekyll and Liquid templating, and hosted it on GitHub.
 
 ## 2018
 
@@ -54,7 +42,6 @@ Do you have any other suggestions?
 11:48 am
 
 I agree. I'll keep working on it!
-
 
 #### 20180401
 
@@ -503,9 +490,6 @@ And best of luck for your goals for the coming week
 :)
 7:36 am
 Thanks! I would be happy to share the resume with you.
-Here's the [old version](https://drive.google.com/open?id=0B1OXdS-AvIhxODZ4ZlJvV0FDUTQ).
-Here's the [new version](https://drive.google.com/open?id=0B1OXdS-AvIhxVmM1d1pfZ2lKN1k).
-And the [Google Doc version](https://goo.gl/BAwyqB) will always stay up to date.
 
 11:59 am
 OCTOBER 10, 2017
