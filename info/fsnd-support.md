@@ -20,7 +20,7 @@ br3ndonland
   - [201711](#201711)
   - [201710](#201710)
   - [201709](#201709)
-  - [201807](#201807)
+  - [201708](#201708)
 
 ## Description
 
@@ -597,7 +597,7 @@ Messaging:
 
 [(Back to TOC)](#table-of-contents)
 
-### 201807
+### 201708
 
 25 Friday: Udacity mentor check-in with Shivang Bhandari
 
