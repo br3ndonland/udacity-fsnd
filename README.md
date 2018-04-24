@@ -1,7 +1,7 @@
 # README
 
 <a href="https://www.udacity.com/">
-  <img src="https://s3-us-west-1.amazonaws.com/udacity-content/rebrand/svg/logo.min.svg" width="300">
+  <img src="https://s3-us-west-1.amazonaws.com/udacity-content/rebrand/svg/logo.min.svg" width="300" alt="Udacity logo">
 </a>
 
 Udacity Full Stack Web Developer Nanodegree program
@@ -24,6 +24,7 @@ br3ndonland
   - [Software](#software)
 - [Projects](#projects)
 - [Lessons](#lessons)
+  - [Strategies](#strategies)
   - [Course progression](#course-progression)
 
 ## Description
@@ -85,6 +86,16 @@ For my terminal application, I switched from iTerm2 to [Hyper](https://hyper.is/
 
 I used Google Chrome and Firefox Quantum as web browsers.
 
+Some of the work was done in a Vagrant Linux virtual machine with the following components:
+
+- Oracle [VirtualBox](https://www.virtualbox.org/wiki/Downloads) Version 5.2.6 r120293 (Qt5.6.3)
+  - Software that runs special containers called virtual machines, like Vagrant.
+- [Vagrant](https://www.vagrantup.com/) 2.0.1 with Ubuntu 16.04.3 LTS (GNU/Linux 4.4.0-75-generic i686)
+  - Software that provides the Linux operating system in a defined configuration, allowing it to run identically across many personal computers. Linux can then be run as a virtual machine with VirtualBox.
+- [Udacity Virtual Machine configuration](https://github.com/udacity/fullstack-nanodegree-vm)
+  - Repository from Udacity that configures Vagrant.
+  - My personal fork of the configuration is also available on [GitHub](https://github.com/br3ndonland/fullstack-nanodegree-vm) if needed.
+
 [(Back to TOC)](#table-of-contents)
 
 ## Projects
@@ -103,6 +114,14 @@ The Full Stack Web Developer Nanodegree program is focused on projects, in which
 ## Lessons
 
 Udacity provides lessons prior to each project. The lesson curriculum could benefit from some reorganization. I have included my suggested organization below, and have organized repository materials in my suggested order.
+
+### Strategies
+
+- **Limit lesson time**: Speed up videos to 1.5x or 2x, and set a timer when working through the lessons. I did Pomodoro intervals, and limited myself to 25 minutes max per lesson section.
+- **Limit quiz attempts**: The Nanodegree is awarded for projects, not lessons and quizzes. When I was getting started, I took the quizzes too seriously. I pushed myself to get answer quiz questions correctly without checking solutions. This caused me to hit sticking points, and I would sometimes take 1-2 days just to complete a quiz. As I went on, I set a limit of three quiz attempts. If I didn't get it in three attempts, I would check the solution and move on.
+- **Focus on the projects**: As you advance, you may want to just skip directly to the projects, and go back through the lessons as needed.
+
+See my [program feedback](info/fsnd-feedback.md) for more comments.
 
 ### Course progression
 
