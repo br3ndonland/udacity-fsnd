@@ -9,6 +9,7 @@ br3ndonland
 ## Table of Contents
 
 - [Table of Contents](#table-of-contents)
+- [Description](#description)
 - [2018](#2018)
   - [201804](#201804)
   - [201803](#201803)
@@ -20,6 +21,10 @@ br3ndonland
   - [201710](#201710)
   - [201709](#201709)
   - [201808](#201808)
+
+## Description
+
+This file contains correspondence from my Udacity mentors. We messaged from the Udacity in-classroom chat app. There are also a few emails from Udacity support.
 
 ## 2018
 
@@ -55,6 +60,8 @@ Hey Luiz. Things went pretty well this week. I have the item catalog app built n
 April 02, 2018
 
 That's awesooome, Brendon! :) Let me know if you have any problems, ok?
+
+[(Back to TOC)](#table-of-contents)
 
 ### 201803
 
@@ -208,6 +215,8 @@ Udacity’s research has shown that students who learn from and share knowledge 
 
 You can find the chat feature by clicking the blue button in the lower left corner of the screen when you are logged into your Full Stack Nanodegree curriculum.
 
+[(Back to TOC)](#table-of-contents)
+
 ### 201802
 
 None
@@ -358,6 +367,8 @@ I will plan to check in with you at least once a week, and maybe more if I get s
 
 Awesome. I will. Thanks so much!
 
+[(Back to TOC)](#table-of-contents)
+
 ## 2017
 
 ### 201712
@@ -430,6 +441,8 @@ December 04, 2017
 
 12:08 pm
 
+[(Back to TOC)](#table-of-contents)
+
 ### 201711
 
 NOVEMBER 12, 2017 2:08 pm
@@ -444,6 +457,8 @@ Things are well with me. I just finished the portfolio website project.
 I used the webpage design to create a full website with Jekyll, and hosted the site with GitHub Pages. The website includes a homepage, an "About" page where I introduce myself and my Udacity work, a "Methods" page explaining how I built the site in detail, a "Rubric" page providing the Udacity project documentation, and a "Review" page documenting the Udacity code review.
 It was good to learn the Bootstrap framework, but Bootstrap is complicated, so it took a long time.
 You can see the website [here](https://br3ndonland.github.io/udacity/).
+
+[(Back to TOC)](#table-of-contents)
 
 ### 201710
 
@@ -496,6 +511,8 @@ OCTOBER 10, 2017
 > Awesome
 > Quite an impressive Resume
 > :)
+
+[(Back to TOC)](#table-of-contents)
 
 ### 201709
 
@@ -577,6 +594,8 @@ Messaging:
 > Good to see you are making such awesome progress
 > Keep it up
 > :)
+
+[(Back to TOC)](#table-of-contents)
 
 ### 201808
 
@@ -724,3 +743,5 @@ The response wasn't particularly helpful, but at least it was good for me to art
 > Happy learning,
 >
 > Ryan
+
+[(Back to TOC)](#table-of-contents)
