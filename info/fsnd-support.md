@@ -20,11 +20,11 @@ br3ndonland
   - [201711](#201711)
   - [201710](#201710)
   - [201709](#201709)
-  - [201808](#201808)
+  - [201807](#201807)
 
 ## Description
 
-This file contains correspondence from my Udacity mentors. We messaged from the Udacity in-classroom chat app. There are also a few emails from Udacity support.
+This file contains correspondence from my Udacity mentors. We messaged through the Udacity in-classroom chat app. There are also a few emails from Udacity support.
 
 ## 2018
 
@@ -597,7 +597,7 @@ Messaging:
 
 [(Back to TOC)](#table-of-contents)
 
-### 201808
+### 201807
 
 25 Friday: Udacity mentor check-in with Shivang Bhandari
 
