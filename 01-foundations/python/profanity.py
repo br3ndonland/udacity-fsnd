@@ -1,4 +1,7 @@
-from urllib.request import urlopen
+# Profanity checker mini-project
+# Code rewritten for Requests
+
+import requests
 
 
 def read_text():
@@ -12,10 +15,15 @@ def read_text():
 
 def check_profanity(text_to_check):
     """Check the text file for profanity."""
-    connection = urlopen('http://www.wdylike.appspot.com/?q=' + text_to_check)
-    output = connection.read()
-    print(output)
-    connection.close()
+    # web query
+    r = requests.get('http://www.wdylike.appspot.com/?q=' + text_to_check)
+    # output
+    if 'true' in r.text:
+        print('Profanity Alert!')
+    elif 'false' in r.text:
+        print('This document has no curse words!')
+    else:
+        print('Could not scan the document properly.')
 
 
 read_text()
