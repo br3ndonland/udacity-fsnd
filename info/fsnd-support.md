@@ -24,7 +24,7 @@ br3ndonland
 
 ## Description
 
-This file contains correspondence from my Udacity mentors. We messaged through the Udacity in-classroom chat app. There are also a few emails from Udacity support.
+This file contains correspondence from my Udacity mentors, in reverse chronological order. We messaged through the Udacity in-classroom chat app. There are also a few emails from Udacity support.
 
 ## 2018
 
@@ -37,6 +37,7 @@ Hey Luiz. I got the pages and JSON of the Flask item catalog app debugged, but I
 The code we used in the OAuth lessons was outdated and poorly formatted (as you saw from all the open pull requests). The `oauth2client` library used in the lessons [has been deprecated](https://google-auth.readthedocs.io/en/latest/oauth2client-deprecation.html), so even if it runs in the virtual machine, I would like to use something better. Google has created [google-auth](https://google-auth.readthedocs.io/en/latest/index.html#) as a replacement. I'm working on implementing google-auth, it's just taking some time.
 
 Do you have any other suggestions?
+
 2:42 am
 
 >Geez, those deprecated features are a pain :(
@@ -44,6 +45,7 @@ Do you have any other suggestions?
 >I'd suggest you google-auth or oauthlib
 >
 >But I THINK google-auth would be easier to manage
+
 11:48 am
 
 I agree. I'll keep working on it!
@@ -53,9 +55,11 @@ I agree. I'll keep working on it!
 April 01, 2018
 
 CHECKIN TIME! :D Hey hey hey, Brendon! I hope you had a good weekend! Can you tell me how was the week? Did you accomplish anything? Did you have any problems in the nanodegree?
+
 7:07 pm
 
 Hey Luiz. Things went pretty well this week. I have the item catalog app built now. I need to debug it, and I'm hoping to submit the project in the next few days.
+
 7:31 pm
 April 02, 2018
 
@@ -80,6 +84,7 @@ I have set up the database and item catalog. I'm now coding the app routes in th
 > Aweeesome, Brendon! Are you stuck on something?
 >
 > Count with me if you need some help, ok?
+>
 > 11:55 pm
 
 March 23, 2018
@@ -87,6 +92,7 @@ March 23, 2018
 I'm working on adding OAuth right now
 
 Not stuck yet, but I'll let you know if I need help
+
 2:39 pm
 
 > AWESOME! Good luck with the lesson :)
@@ -121,21 +127,21 @@ I'm looking forward to finishing the rest of the program with your help!
 > And nice to meet you, Brendon! :D i hope u're enjoying the nanodegree and I hope I can help you through the lessons :D
 >
 > Let me know if you get stuck on something or if you have any doubt, ok?
+
 9:38 am
 
 That sounds great. Thank you, Luiz!
+
 9:42 am
 
 > Np!
 
-#### Mentor change
+#### Mentor change email
 
 New mentor, Luiz Felipe F.
 
-from: Udacity <support@udacity.com>
-reply-to: mentorship-support@udacity.com
-to: Brendon Smith <brendon.w.smith@gmail.com>
 date: Thu, Mar 8, 2018 at 12:46 PM
+
 subject: Hi Brendon, meet your mentor!
 
 Full Stack Web Developer Nanodegree Program
@@ -155,8 +161,6 @@ Your mentor, Luiz, will be your guide through the Full Stack Web Developer Nanod
 
 So what are you waiting for? Luiz is waiting in the classroom!
 
-[INTRODUCE YOURSELF](http://bsft.io/x/svsrtp?uid=65a9bc2a-e50b-42b5-899e-f133edbade59&mid=bf5bf7b9-ef19-4023-8a34-b87d955a4bbc&txnid=6db6f220-292e-4634-b4f6-81dd1cc48f84)
-
 Best,
 The Mentorship Team
 
@@ -164,10 +168,8 @@ The Mentorship Team
 
 ##### Email
 
-from: Udacity <support@udacity.com>
-reply-to: fullstack-support@udacity.com
-to: Brendon Smith <brendon.w.smith@gmail.com>
 date: Fri, Feb 23, 2018 at 7:11 PM
+
 subject: Changes to your Full Stack Web Developer Nanodegree Program
 
 Full Stack Web Developer Nanodegree Program
