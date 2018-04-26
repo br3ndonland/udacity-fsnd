@@ -269,7 +269,7 @@ Simple four step process:
     query = session.query(ClassName).filter_by(name='Old Item Name')
     ```
 
-2. Overwrite the information in the object with the new information to add to the database
+2. Overwrite object with new info for database
 
     ```python
     query.name = 'New Item Name'
@@ -302,7 +302,7 @@ For the restaurant example in this lesson:
     >>> print UrbanVeggieBurger.price
     ```
 
-2. Overwrite the information in the object with the new information to add to the database
+2. Overwrite object with new info for database
 
     ```python
     >>> UrbanVeggieBurger.price = '$2.99'
@@ -413,7 +413,7 @@ for item in items:
 In order to update and existing entry in our database, we must execute the following commands:
 
 1. Query database with SQLAlchemy and store query as an object
-2. Overwrite the information in the object with the new information to add to the database
+2. Overwrite object with new info for database
 3. Add to SQLAlchemy database session with `session.add()`.
 4. Commit to SQLAlchemy database session with `session.commit()`.
 
