@@ -1,39 +1,43 @@
 # Git
 
-Udacity Full Stack Web Developer Nanodegree program
+<a href="https://www.udacity.com/">
+  <img src="https://s3-us-west-1.amazonaws.com/udacity-content/rebrand/svg/logo.min.svg" width="300" alt="Udacity logo">
+</a>
 
-[GitHub & Collaboration](https://www.udacity.com/course/github-collaboration--ud456)
+Udacity Full Stack Web Developer Nanodegree program
 
 Brendon Smith
 
 br3ndonland
 
+[Version control with Git](https://www.udacity.com/course/version-control-with-git--ud123)
+
 ## Table of Contents
 
 - [Table of Contents](#table-of-contents)
-- [Lesson 02. Version control intro](#lesson-02-version-control-intro)
-  - [2.01-2.03](#201-203)
-  - [2.04. Mac/Linux setup](#204-maclinux-setup)
-- [Lesson 03. Create a Git repo](#lesson-03-create-a-git-repo)
-- [Lesson 04. Review a repo's history](#lesson-04-review-a-repos-history)
-- [Lesson 05. Add commits to a repo](#lesson-05-add-commits-to-a-repo)
+- [Lesson 1. Version control intro](#lesson-1-version-control-intro)
+  - [Lesson 1 parts 1-3](#lesson-1-parts-1-3)
+  - [Lesson 1 part 4. Mac/Linux setup](#lesson-1-part-4-maclinux-setup)
+- [Lesson 2. Create a Git repo](#lesson-2-create-a-git-repo)
+- [Lesson 3. Review a repo's history](#lesson-3-review-a-repos-history)
+- [Lesson 4. Add commits to a repo](#lesson-4-add-commits-to-a-repo)
   - [Bypass The Editor With The -m Flag](#bypass-the-editor-with-the--m-flag)
   - [What To Include In A Commit](#what-to-include-in-a-commit)
   - [Good Commit Messages](#good-commit-messages)
   - [Globbing Crash Course](#globbing-crash-course)
-- [Lesson 06. Tagging, branching and merging](#lesson-06-tagging-branching-and-merging)
+- [Lesson 5. Tagging, branching and merging](#lesson-5-tagging-branching-and-merging)
   - [Tagging](#tagging)
   - [Branching and merging](#branching-and-merging)
-  - [Feedback on lesson 6](#feedback-on-lesson-6)
-- [Lesson 07. Undoing changes](#lesson-07-undoing-changes)
+  - [Feedback on lesson 5](#feedback-on-lesson-5)
+- [Lesson 6. Undoing changes](#lesson-6-undoing-changes)
   - [Reset vs Revert](#reset-vs-revert)
   - [Relative Commit References](#relative-commit-references)
   - [The git reset Command](#the-git-reset-command)
   - [Reset Recap](#reset-recap)
 
-## Lesson 02. Version control intro
+## Lesson 1. Version control intro
 
-### 2.01-2.03
+### Lesson 1 parts 1-3
 
 - The instructor Richard Kalehoff introduced version control with an analogy. If playing a board game, snapping a picture during play is like making a save point.
 - Most popular VCS: Git, Subversion, Mercurial
@@ -52,9 +56,9 @@ br3ndonland
   > The version control tool, Git, can do all of those things - and more!!! (bet you didn't see that coming!) So have I sold you yet on the awesomeness that is Git? I hope so, cause we're about to dive into it in the next section.
 - Terms: see ud123-git-keyterms.pdf
 
-### 2.04. Mac/Linux setup
+### Lesson 1 part 4. Mac/Linux setup
 
-- I installed the bash configuration.
+- I installed the bash prompt configuration.
 - It took me a few tries to set Sublime Text 3 as the Git editor. Got it to work with `$ git config --global core.editor "'/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl' -n -w"`
 
 #### Instructor notes
@@ -161,7 +165,7 @@ br3ndonland
 
 ---
 
-## Lesson 03. Create a Git repo
+## Lesson 2. Create a Git repo
 
 - Flew through this lesson.
 - `git init`
@@ -176,7 +180,7 @@ br3ndonland
 
 ---
 
-## Lesson 04. Review a repo's history
+## Lesson 3. Review a repo's history
 
 - This lesson was helpful. I hadn't worked with `git log` or `git show` much before this.
 - `git log`
@@ -195,7 +199,7 @@ br3ndonland
 
 ---
 
-## Lesson 05. Add commits to a repo
+## Lesson 4. Add commits to a repo
 
 ### Bypass The Editor With The -m Flag
 
@@ -277,7 +281,7 @@ br3ndonland
 
 ---
 
-## Lesson 06. Tagging, branching and merging
+## Lesson 5. Tagging, branching and merging
 
 This was another helpful lesson.
 
@@ -326,13 +330,13 @@ This was another helpful lesson.
   - 63afe9d Initial commit
   ```
 
-### Feedback on lesson 6
+### Feedback on lesson 5
 
 I was able to see the tag simply with `git log --oneline`, even though the tutorial said I shouldn't be able to. There was an addendum in the lesson: `--decorate` Flag Changes in Git 2.13. The lesson should just be updated instead.
 
 ---
 
-## Lesson 07. Undoing changes
+## Lesson 6. Undoing changes
 
 Major commands used:
 
@@ -475,8 +479,8 @@ Major commands used:
 >
 > Typically, ancestry references are used to indicate previous commits. The ancestry references are:
 >
-> -  `^` – indicates the parent commit
-> -  `~` – indicates the first parent commit
+> - `^` – indicates the parent commit
+> - `~` – indicates the first parent commit
 >
 > Further Research
 >

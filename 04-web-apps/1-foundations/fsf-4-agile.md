@@ -1,18 +1,18 @@
 # Agile iterative development
 
-**Udacity Full Stack Web Developer Nanodegree program**
+<a href="https://www.udacity.com/">
+  <img src="https://s3-us-west-1.amazonaws.com/udacity-content/rebrand/svg/logo.min.svg" width="300" alt="Udacity logo svg">
+</a>
 
-Part 03. Backend
+Udacity Full Stack Web Developer Nanodegree program
 
-Lesson 09. Agile iterative development (from free course [Full Stack Foundations](https://www.udacity.com/course/full-stack-foundations--ud088))
+[Full Stack Foundations course](https://www.udacity.com/course/full-stack-foundations--ud088)
+
+Lesson 4. Agile iterative development
 
 Brendon Smith
 
 br3ndonland
-
-<!-- START doctoc generated TOC please keep comment here to allow auto update -->
-<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
 - [The agile iterative development process](#the-agile-iterative-development-process)
   - [9.01. Lesson 4 Introduction](#901-lesson-4-introduction)
@@ -27,8 +27,6 @@ br3ndonland
   - [9.10. Wrap-Up](#910-wrap-up)
 - [Feedback on Lesson 09](#feedback-on-lesson-09)
 
-<!-- END doctoc generated TOC please keep comment here to allow auto update -->
-
 ## The agile iterative development process
 
 ### 9.01. Lesson 4 Introduction
@@ -36,11 +34,11 @@ br3ndonland
 ### 9.02. Iterative Development
 
 > Some people write code by just binging as much code as possible before falling asleep, or writing code in pieces and having it be all over the place.
-> 
-> A more effective strategy is to start simple and layer on complexity as you go, not adding a new feature until the current feature is finished. When each feature is finished, we stop, test, debug and share to make sure we always have a working application. This way, clients, project managers, and team members always know what the project status is and what's to follow. 
-> 
+>
+> A more effective strategy is to start simple and layer on complexity as you go, not adding a new feature until the current feature is finished. When each feature is finished, we stop, test, debug and share to make sure we always have a working application. This way, clients, project managers, and team members always know what the project status is and what's to follow.
+>
 > This is called **iterative development.**
-> 
+>
 > **Agile** refers to the ability to easily change an application. Because there is always a working prototype, if someone asks for changes, it is easily done.
 
 
@@ -51,17 +49,17 @@ Break the project down into steps, and outline deliverables that will be present
 Lorenzo used the restaurant menu app as an example.
 
 * Mockups
-	- Deliverables: Mock-ups and URLs for each page in the menu app.
+  - Deliverables: Mock-ups and URLs for each page in the menu app.
 * Routing
-	- Deliverables: At the end of this iteration, you should have a running Flask application, and be able to navigate to all of the URLs, even if the pages are not yet created.
+  - Deliverables: At the end of this iteration, you should have a running Flask application, and be able to navigate to all of the URLs, even if the pages are not yet created.
 * Templates and forms
-	- Deliverables: Functional templates and forms
+  - Deliverables: Functional templates and forms
 * CRUD functionality
-	- Deliverables: Ability to Create, Read, Update, and Delete.
+  - Deliverables: Ability to Create, Read, Update, and Delete.
 * API endpoints
-	- Deliverables: Ability to send API data in JSON.
+  - Deliverables: Ability to send API data in JSON.
 * Styling and message flashing
-	- Deliverables: Nicely styled app pages and messages when database is changed.
+  - Deliverables: Nicely styled app pages and messages when database is changed.
 
 
 Quiz: pros and cons of "top-down" approach focusing on front-end first vs "bottom-up."
@@ -113,12 +111,12 @@ Use `jsonify` and `serialize` to return JSON when HTTP request is made to:
 
 * Static: CSS, JS, images
 * Message flashing:
-	- New restaurant created
-	- Restaurant successfully edited
-	- Restaurant successfully deleted
-	- New menu item created
-	- Menu item successfully edited
-	- Menu item successfully deleted
+  - New restaurant created
+  - Restaurant successfully edited
+  - Restaurant successfully deleted
+  - New menu item created
+  - Menu item successfully edited
+  - Menu item successfully deleted
 
 
 ### 9.10. Wrap-Up
@@ -127,7 +125,7 @@ Use `jsonify` and `serialize` to return JSON when HTTP request is made to:
 Instructor notes
 
 > You can view [this article](http://flask.pocoo.org/docs/0.10/deploying/) on deploying Flask applications, but I highly recommend adding some [security](https://pythonhosted.org/Flask-Security/) to your application before publishing it on the internet.
-> 
+>
 > A basic version of the final project can be found [here](https://github.com/lobrown/Full-Stack-Foundations/tree/master/Lesson-4/Final-Project).
 
 ## Feedback on Lesson 09

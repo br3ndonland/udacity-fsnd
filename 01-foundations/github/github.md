@@ -1,32 +1,36 @@
 # GitHub
 
-Udacity Full Stack Web Developer Nanodegree program
+<a href="https://www.udacity.com/">
+  <img src="https://s3-us-west-1.amazonaws.com/udacity-content/rebrand/svg/logo.min.svg" width="300" alt="Udacity logo">
+</a>
 
-[GitHub & Collaboration](https://www.udacity.com/course/github-collaboration--ud456)
+Udacity Full Stack Web Developer Nanodegree program
 
 Brendon Smith
 
 br3ndonland
 
+[GitHub & Collaboration](https://www.udacity.com/course/github-collaboration--ud456)
+
 ## Table of Contents
 
 - [Table of Contents](#table-of-contents)
-- [Lesson 08. Intro to GitHub Remotes](#lesson-08-intro-to-github-remotes)
-- [Lesson 09. Forking](#lesson-09-forking)
+- [Lesson 1. Intro to GitHub Remotes](#lesson-1-intro-to-github-remotes)
+- [Lesson 2. Forking](#lesson-2-forking)
   - [Summary](#summary)
   - [What To Work On](#what-to-work-on)
   - [CONTRIBUTING.md File](#contributingmd-file)
   - [Topic Branches](#topic-branches)
   - [Best Practices](#best-practices)
   - [Recap](#recap)
-- [Lesson 10. Staying in sync with remote repositories by pulling and rebasing](#lesson-10-staying-in-sync-with-remote-repositories-by-pulling-and-rebasing)
+- [Lesson 3. Staying in sync with remote repositories by pulling and rebasing](#lesson-3-staying-in-sync-with-remote-repositories-by-pulling-and-rebasing)
   - [Intro](#intro)
   - [Staying in sync with the source project](#staying-in-sync-with-the-source-project)
   - [Manage an active PR](#manage-an-active-pr)
   - [Squash commits with rebase](#squash-commits-with-rebase)
   - [Course wrap-up](#course-wrap-up)
 
-## Lesson 08. Intro to GitHub Remotes
+## Lesson 1. Intro to GitHub Remotes
 
 - Made a test repo `github-sample-repo` and created the three intro files in one step with `$ touch README.md index.html app.css`.
 - Configured repo to push with ssh: `$ git remote set-url origin git@github.com:br3ndonland/udacity-travel-plans.git`
@@ -37,7 +41,7 @@ br3ndonland
 
 ---
 
-## Lesson 09. Forking
+## Lesson 2. Forking
 
 ### Summary
 
@@ -132,7 +136,7 @@ br3ndonland
 
 ---
 
-## Lesson 10. Staying in sync with remote repositories by pulling and rebasing
+## Lesson 3. Staying in sync with remote repositories by pulling and rebasing
 
 ### Intro
 
@@ -248,4 +252,4 @@ Watching enables notification of changes to a repo.
 > - ["first timers only" blog post](https://medium.com/@kentcdodds/first-timers-only-78281ea47455)
 > - try tackling some Git and GitHub challenges with the [Git-it app](https://github.com/jlord/git-it-electron)
 >
-> Wanna see what a developer's very first pull request is? Check out at http://firstpr.me/
+> Wanna see what a developer's very first pull request is? Check out at [http://firstpr.me/](http://firstpr.me/)

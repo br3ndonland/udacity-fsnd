@@ -1,26 +1,16 @@
 # APIs repo pull requests
 
-**Udacity Full Stack Web Developer Nanodegree program**
+<a href="https://www.udacity.com/">
+  <img src="https://s3-us-west-1.amazonaws.com/udacity-content/rebrand/svg/logo.min.svg" width="300" alt="Udacity logo">
+</a>
 
-Part 03. Backend
-
-Lessons 14-18. APIs (from free course [Designing RESTful APIs](https://www.udacity.com/course/designing-restful-apis--ud388))
+Udacity Full Stack Web Developer Nanodegree program
 
 Brendon Smith
 
 br3ndonland
 
-<!-- START doctoc generated TOC please keep comment here to allow auto update -->
-<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
-
-- [Branch: docs](#branch-docs)
-  - [Format and update README.md #42](#format-and-update-readmemd-42)
-- [Branch: python3-pep-8-requests](#branch-python3-pep-8-requests)
-  - [Update Lesson 2 for Python 3, PEP 8, & Requests](#update-lesson-2-for-python-3-pep-8--requests)
-
-<!-- END doctoc generated TOC please keep comment here to allow auto update -->
-
+[Designing RESTful APIs](https://www.udacity.com/course/designing-restful-apis--ud388)
 
 ## Branch: docs
 
@@ -33,7 +23,6 @@ Format README.md for Markdown
 * Header spacing
 * Code block
 
-
 Update course info
 
 * Link to course
@@ -41,16 +30,13 @@ Update course info
 * Add list of lessons
 * Add links to recommended prior courses
 
-
 Rearrange Python package list alphabetically
 
 * Rearrange Python package list alphabetically
 * Rename "libraries" to "modules"
 * Provide instructions for accessing local package list
 
-
 Remove redis installation instructions
-
 
 Add optional virtual machine configuration
 
@@ -59,25 +45,22 @@ Add optional virtual machine configuration
 * Provide installation instructions
 * Provide operation instructions
 
-
 Add Table of Contents
 
 * Create Table of Contents with DocToc
 * Add back to top link at bottom of file
-
 
 Add hyperlinked Udacity logo
 
 * Insert Udacity logo from AWS with HTML img tag
 * Hyperlink image by wrapping in HTML link tag
 
-
 #### Pull request
 
 **This was my first open source pull request!**
 
 > base fork: udacity/APIs base:master head fork: br3ndonland/APIs compare: docs
-> Able to merge. These branches can be automatically merged. 
+> Able to merge. These branches can be automatically merged.
 
 Greetings Udacious Humans!
 
@@ -97,12 +80,11 @@ This merge would supersede the following open pull requests:
 * update README's format #31
 * small update. #35
 
-
 ## Branch: python3-pep-8-requests
 
 ### Update Lesson 2 for Python 3, PEP 8, & Requests
 
-#### Commits
+#### Commit
 
 Update Lesson 2 for Python 3, PEP 8, & Requests
 
