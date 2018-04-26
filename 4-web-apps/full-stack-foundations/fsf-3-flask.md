@@ -45,7 +45,7 @@ Lesson 3. Flask
   - [18. Responding With JSON](#18-responding-with-json)
   - [19. Quiz: JSON Quiz](#19-quiz-json-quiz)
   - [20. Lesson 3 Wrap-Up](#20-lesson-3-wrap-up)
-- [Feedback on lesson](#feedback-on-lesson)
+- [Feedback on Lesson 3](#feedback-on-lesson-3)
 
 ## Lesson overview
 
@@ -267,7 +267,7 @@ APIs frequently use **JSON*- (JavaScript Object Notation), which uses `{"key": "
 
 ### 20. Lesson 3 Wrap-Up
 
-## Feedback on lesson
+## Feedback on Lesson 3
 
 Lorenzo did a great job with this lesson. All of his instructor materials were well-crafted, and it is very useful to learn the Flask framework.
 
