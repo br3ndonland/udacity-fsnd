@@ -113,14 +113,14 @@ Suggestions for standardized Markdown formatting have been provided by [markdown
 - I use headers to create a **Table of Contents (TOC)** at the beginning of the file.
   - **I add `## Table of Contents` before the TOC for navigation.**
   - **I include [(Back to TOC)](#table-of-contents) links after each section for easy navigation back to the table of contents.** Simply write `[(Back to TOC)](#table-of-contents)`.
-  - I add and auto-update TOCs in vscode with the [Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one) extension.
+  - I add and auto-update TOCs in vscode with the [Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one) extension. See [below](#software) for more on vscode.
   - [Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one), JupyterLab and RStudio provide inline TOC displays ([see below](#jupyterlab)).
   - Prior to vscode, I was adding and updating TOCs with [DocToc](https://github.com/thlorenz/doctoc) from the command line.
 
 ##### Lists
 
 - I use dashes exclusively for lists.
-- When adding an unordered list to an ordered list, I indent with four spaces.
+- When adding an unordered list to an ordered list (or vice versa), I indent with four spaces.
 
 ##### File extensions
 
@@ -133,22 +133,17 @@ Python code is formatted for Python 3 and [PEP 8](http://pep8.org/). Line length
 
 ### Software
 
-For the foundational Python programming work (part 1, lessons 00-11), I took notes and ran my code in Jupyter notebook files. Jupyter notebook was a nice way to bundle Markdown-formatted notes with Python code, but it lacked the speed and autocompletion features of other text editors.
-
-As I continued, I kept separate files for code and Markdown notes. I was originally writing in Sublime Text, but switched to [vscode](https://code.visualstudio.com/). I configure [Visual Studio Code (vscode)](https://code.visualstudio.com/) using [Settings Sync](https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync) with [this gist](https://gist.github.com/br3ndonland/d6ad1f6eae5ee149ac2530774d13899e).
-
-For my terminal application, I switched from iTerm2 to [Hyper](https://hyper.is/).
-
-I used Google Chrome and Firefox Quantum as web browsers.
-
-Some of the work was done in a Vagrant Linux virtual machine with the following components:
-
-- Oracle [VirtualBox](https://www.virtualbox.org/wiki/Downloads) Version 5.2.6 r120293 (Qt5.6.3)
-  - Software that runs special containers called virtual machines, like Vagrant.
-- [Vagrant](https://www.vagrantup.com/) 2.0.1 with Ubuntu 16.04.3 LTS (GNU/Linux 4.4.0-75-generic i686)
-  - Software that provides the Linux operating system in a defined configuration, allowing it to run identically across many personal computers. Linux can then be run as a virtual machine with VirtualBox.
-- [Udacity Virtual Machine configuration](https://github.com/udacity/fullstack-nanodegree-vm)
-  - Repository from Udacity that configures Vagrant.
-  - My personal fork of the configuration is also available on [GitHub](https://github.com/br3ndonland/fullstack-nanodegree-vm) if needed.
+- For the foundational Python programming work (part 1, lessons 00-11), I took notes and ran my code in Jupyter notebook files. Jupyter notebook was a nice way to bundle Markdown-formatted notes with Python code, but it lacked the speed and autocompletion features of other text editors.
+- As I continued, I kept separate files for code and Markdown notes. I was originally writing in Sublime Text, but switched to [Visual Studio Code (vscode)](https://code.visualstudio.com/). I configure [vscode](https://code.visualstudio.com/) using [Settings Sync](https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync) with [this gist](https://gist.github.com/br3ndonland/d6ad1f6eae5ee149ac2530774d13899e).
+- For my terminal application, I switched from iTerm2 to [Hyper](https://hyper.is/).
+- I used Google Chrome and Firefox Quantum as web browsers.
+- Some of the work was done in a Vagrant Linux virtual machine with the following components:
+  - Oracle [VirtualBox](https://www.virtualbox.org/wiki/Downloads) Version 5.2.6 r120293 (Qt5.6.3)
+    - Software that runs special containers called virtual machines, like Vagrant.
+  - [Vagrant](https://www.vagrantup.com/) 2.0.1 with Ubuntu 16.04.3 LTS (GNU/Linux 4.4.0-75-generic i686)
+    - Software that provides the Linux operating system in a defined configuration, allowing it to run identically across many personal computers. Linux can then be run as a virtual machine with VirtualBox.
+  - [Udacity Virtual Machine configuration](https://github.com/udacity/fullstack-nanodegree-vm)
+    - Repository from Udacity that configures Vagrant.
+    - My personal fork of the configuration is also available on [GitHub](https://github.com/br3ndonland/fullstack-nanodegree-vm) if needed.
 
 [(Back to TOC)](#table-of-contents)
