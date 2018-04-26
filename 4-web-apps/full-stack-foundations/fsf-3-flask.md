@@ -10,7 +10,7 @@ Brendon Smith
 
 br3ndonland
 
-[Full Stack Foundations](https://www.udacity.com/course/full-stack-foundations--ud088))
+[Full Stack Foundations](https://www.udacity.com/course/full-stack-foundations--ud088)
 
 Lesson 3. Flask
 

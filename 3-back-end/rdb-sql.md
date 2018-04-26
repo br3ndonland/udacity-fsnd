@@ -10,7 +10,7 @@ Brendon Smith
 
 br3ndonland
 
-[Intro to Relational Databases](https://www.udacity.com/course/intro-to-relational-databases--ud197))
+[Intro to Relational Databases](https://www.udacity.com/course/intro-to-relational-databases--ud197)
 
 ## Table of Contents
 

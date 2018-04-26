@@ -10,7 +10,7 @@ Brendon Smith
 
 br3ndonland
 
-[Authentication & Authorization: OAuth](https://www.udacity.com/course/authentication-authorization-oauth--ud330))
+[Authentication & Authorization: OAuth](https://www.udacity.com/course/authentication-authorization-oauth--ud330)
 
 ## Table of Contents
 

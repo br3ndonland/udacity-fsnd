@@ -4,7 +4,7 @@
   <img src="https://s3-us-west-1.amazonaws.com/udacity-content/rebrand/svg/logo.min.svg" width="300" alt="Udacity logo">
 </a>
 
-Common code for the Relational Databases and Full Stack Fundamentals courses
+Virtual machine for the [Relational Databases](https://www.udacity.com/course/intro-to-relational-databases--ud197) and [Full Stack Foundations](https://www.udacity.com/course/full-stack-foundations--ud088) courses in the [Full Stack Web Developer Nanodegree program](https://www.udacity.com/course/full-stack-web-developer-nanodegree--nd004)
 
 ## Table of Contents
 

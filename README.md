@@ -48,9 +48,9 @@ Udacity provides lessons prior to each project. The lesson curriculum could bene
 
 ### Strategies
 
-- **Limit lesson time**: Speed up videos to 1.5x or 2x, and set a timer when working through the lessons. I used the [Pomodoro technique](https://lifehacker.com/productivity-101-a-primer-to-the-pomodoro-technique-1598992730), and limited myself to 25 minutes max per lesson section. I would often complete 2-3 lesson sections per 25 minute interval.
-- **Limit quiz attempts**: When I was getting started, I aimed to complete 100% of the lesson material, and I took the quizzes too seriously. I pushed myself to get answer quiz questions correctly without checking solutions. This caused me to hit sticking points, and I would sometimes take 1-2 days just to complete a quiz. As I went on, I set a limit of three quiz attempts. If I didn't get it in three attempts, I would check the solution and move on.
-- **Focus on the projects**: The Nanodegree is awarded for projects, not lessons and quizzes. As you advance, you may want to just skip directly to the projects, and go back through the lessons as needed.
+- **Limit lesson time.** Speed up videos to 1.5x or 2x, and set a timer when working through the lessons. I used the [Pomodoro technique](https://lifehacker.com/productivity-101-a-primer-to-the-pomodoro-technique-1598992730), and limited myself to 25 minutes max per lesson section. I would often complete 2-3 lesson sections per 25 minute interval.
+- **Limit quiz attempts.** When I was getting started, I aimed to complete 100% of the lesson material, and I took the quizzes too seriously. I pushed myself to answer quiz questions correctly without checking solutions. This caused me to hit sticking points, and I would sometimes take 1-2 days just to complete a quiz. As I went on, I set a limit of three quiz attempts. If I didn't get it in three attempts, I would check the solution and move on.
+- **Focus on the projects.** The Nanodegree is awarded for projects, not lessons and quizzes. As you advance, you may want to just skip directly to the projects, and go back through the lessons as needed.
 
 See my [program feedback](info/fsnd-feedback.md) for more comments.
 

@@ -10,7 +10,7 @@ Brendon Smith
 
 br3ndonland
 
-[Full Stack Foundations](https://www.udacity.com/course/full-stack-foundations--ud088))
+[Full Stack Foundations](https://www.udacity.com/course/full-stack-foundations--ud088)
 
 Lesson 1. Working with CRUD
 
@@ -59,9 +59,7 @@ Lesson 1. Working with CRUD
 
 ### 01. Course Intro
 
-Lorenzo will be the instructor for this course.
-
-*I think the next four lessons are the Full Stack Foundations course.*
+Lorenzo Brown will be the instructor for this course.
 
 We will be making **data-driven web applications.**
 
@@ -206,7 +204,7 @@ I followed along and filled out the code in *database_setup.py*.
 ### 21. CRUD Create
 
 - We walked through database creation in the Python shell. I followed along in vagrant.
-- I copied *database_setup.py- into *vagrant/crud*.
+- I copied *database_setup.py* into *vagrant/crud*.
 - SQLAlchemy uses "sessions" to connect to the database. We can store the commands we plan to use, but not send them to the database until we run a commit.
 - Setup:
 
@@ -265,20 +263,25 @@ for employee in employees:
 
 Simple four step process:
 
-1. Find entry with `filter_by()`
+1. Query database with SQLAlchemy and store query as an object
 
     ```python
-    session.query(ClassName).filter_by()
+    query = session.query(ClassName).filter_by(name='Old Item Name')
     ```
 
-2. Reset values
-3. Add to session
+2. Overwrite the information in the object with the new information to add to the database
 
     ```python
-    session.add()
+    query.name = 'New Item Name'
     ```
 
-4. Commit to database
+3. Add to SQLAlchemy database session with `session.add()`.
+
+    ```python
+    session.add(query)
+    ```
+
+4. Commit to SQLAlchemy database session with `session.commit()`.
 
     ```python
     session.commit()
@@ -286,32 +289,32 @@ Simple four step process:
 
 For the restaurant example in this lesson:
 
-1. Find entry with `filter_by()`
+1. Query database with SQLAlchemy and store query as an object
 
     ```python
-    >>> veggieBurgers = session.query(MenuItem).filter_by(name = 'Veggie Burger')
+    >>> veggieBurgers = session.query(MenuItem).filter_by(name='Veggie Burger')
     >>> for veggieBurger in veggieBurgers:
     ...     print veggieBurger.id
     ...     print veggieBurger.price
     ...     print veggieBurger.restaurant.name
     ...     print "\n"
-    >>> UrbanVeggieBurger = session.query(MenuItem).filter_by(id = 8).one()
+    >>> UrbanVeggieBurger = session.query(MenuItem).filter_by(id=8).one()
     >>> print UrbanVeggieBurger.price
     ```
 
-2. Reset values
+2. Overwrite the information in the object with the new information to add to the database
 
     ```python
     >>> UrbanVeggieBurger.price = '$2.99'
     ```
 
-3. Add to session
+3. Add to SQLAlchemy database session with `session.add()`.
 
     ```python
     >>> session.add(UrbanVeggieBurger)
     ```
 
-4. Commit to database
+4. Commit to SQLAlchemy database session with `session.commit()`.
 
     ```python
     >>> session.commit()
@@ -333,15 +336,15 @@ For the restaurant example in this lesson:
   ...     print "\n"
   ```
 
-I followed along. The code wasn't working for me in either Python 2 or 3. I may not have entered the setup steps correctly. I just moved on in the interest of time. I'm now trying to move through the lessons faster.
-
 The instructor notes explain:
 
-> Note: The id numbers and restaurants for the Veggie Burgers will be a bit different on your machine than the ones in this lesson. lotsofmenus.py was updated to have a few more restaurant options and menu items.
+>Note: The id numbers and restaurants for the Veggie Burgers will be a bit different on your machine than the ones in this lesson. lotsofmenus.py was updated to have a few more restaurant options and menu items.
 
 ### 2 Quiz: CRUD Update Quiz
 
 Rocked it. Just needed `session.add(RebeccasAddress)`
+
+![CRUD update quiz solution](img/fsnd03_06_26-crud-update.png)
 
 ### 27. CRUD Delete
 
@@ -409,10 +412,10 @@ for item in items:
 
 In order to update and existing entry in our database, we must execute the following commands:
 
-1. Find Entry
-2. Reset value(s)
-3. Add to session
-4. Execute `session.commit()`
+1. Query database with SQLAlchemy and store query as an object
+2. Overwrite the information in the object with the new information to add to the database
+3. Add to SQLAlchemy database session with `session.add()`.
+4. Commit to SQLAlchemy database session with `session.commit()`.
 
 We found the veggie burger that belonged to the Urban Burger restaurant by executing the following query:
 
