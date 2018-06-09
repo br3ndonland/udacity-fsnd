@@ -575,7 +575,7 @@ Docs on Python:
 - [Foursquare](https://developer.foursquare.com/docs/api/getting-started#6-make-your-first-api-call)
 - [Google](https://github.com/googlemaps/google-maps-services-python)
 
-Lorenzo's code in *geocode.py- is of course, outdated and poorly formatted (not PEP 8).
+Lorenzo's code in *geocode.py* is of course, outdated and poorly formatted (not PEP 8).
 
 **Why did he just introduce Foursquare if we weren't going to use it in this exercise?**
 
@@ -633,7 +633,7 @@ I re-wrote the code for Python 3, Requests, [Kenneth Reitz's Code Style](https:/
 
 ##### Printing output
 
-- The first draft of *find-a-restaurant.py- runs without errors, but didn't print output.
+- The first draft of *find-a-restaurant.py* runs without errors, but didn't print output.
 - I started by debugging *geocode.py*, which is called by *find-a-restaurant.py*. I added in some output at the end of the file for debugging:
 
     ```python

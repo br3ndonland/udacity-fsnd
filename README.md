@@ -50,13 +50,13 @@ Udacity provides lessons prior to each project. The lesson curriculum could bene
 
 - **Limit lesson time.** Speed up videos to 1.5x or 2x, and set a timer when working through the lessons. I used the [Pomodoro technique](https://lifehacker.com/productivity-101-a-primer-to-the-pomodoro-technique-1598992730), and limited myself to 25 minutes max per lesson section. I would often complete 2-3 lesson sections per 25 minute interval.
 - **Limit quiz attempts.** When I was getting started, I aimed to complete 100% of the lesson material, and I took the quizzes too seriously. I pushed myself to answer quiz questions correctly without checking solutions. This caused me to hit sticking points, and I would sometimes take 1-2 days just to complete a quiz. As I went on, I set a limit of three quiz attempts. If I didn't get it in three attempts, I would check the solution and move on.
-- **Focus on the projects.** The Nanodegree is awarded for projects, not lessons and quizzes. As you advance, you may want to just skip directly to the projects, and go back through the lessons as needed.
+- **Focus on projects.** The Nanodegree is awarded for projects, not lessons and quizzes. As you advance, you may want to just skip directly to the projects, and go back through the lessons as needed. Other students, such as [Kristin Dragos](https://medium.com/@MrsDragos/my-approach-to-udacitys-projects-db8db224f6f5), have succeeded with this project-focused approach.
 
 See my [program feedback](info/fsnd-feedback.md) for more comments.
 
 ### Course progression
 
-Here is how I would suggest progressing through the FSND program:
+The lessons are mostly material from free courses. Here is how I would suggest progressing through the FSND program:
 
 1. **Programming foundations**
     - [Shell Workshop](https://www.udacity.com/course/shell-workshop--ud206)
@@ -75,12 +75,11 @@ Here is how I would suggest progressing through the FSND program:
 4. **Web applications**
     - [Full Stack Foundations](https://www.udacity.com/course/full-stack-foundations--ud088): CRUD, web servers, Flask, agile
     - [Authentication & Authorization: OAuth](https://www.udacity.com/course/authentication-authorization-oauth--ud330)
-    - Project 04: Flask item catalog app
-    - JavaScript
-    - jQuery
-    - [Intro to AJAX](https://www.udacity.com/course/intro-to-ajax--ud110)
-    - APIs
     - [Designing RESTful APIs](https://www.udacity.com/course/designing-restful-apis--ud388)
+    - Project 04: Flask item catalog app
+    - [Intro to AJAX](https://www.udacity.com/course/intro-to-ajax--ud110)
+    - [JavaScript Design Patterns](https://www.udacity.com/course/javascript-design-patterns--ud989)
+    - [Google Maps APIs](https://www.udacity.com/course/google-maps-apis--ud864)
     - Project 05: Neighborhood map
 5. **Servers**
     - Linux server deployment

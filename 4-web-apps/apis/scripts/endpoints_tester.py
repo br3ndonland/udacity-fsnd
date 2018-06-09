@@ -9,12 +9,11 @@ if address == '':
 # Making a GET Request
 print('Making a GET Request for /puppies...')
 try:
-    url = address + '/puppies'
+    url = '{}/puppies'.format(address)
     r = requests.get(url=url)
     if r.status_code != 200:
         raise Exception(
-            'Received an unsuccessful status code of %s'
-            % r.status_code)
+            'Received a status code of {}'.format(r.status_code))
 except Exception as err:
     print('Test 1 FAILED: Could not make GET Request to web server')
     print(err.args)
@@ -27,17 +26,16 @@ print('Making GET requests to /puppies/id')
 try:
     id = 1
     while id <= 10:
-        url = address + "/puppies/%s" % id
+        url = '{}/puppies/{}'.format(address, id)
         r = requests.get(url=url)
         if r.status_code != 200:
             raise Exception(
-                'Received an unsuccessful status code of %s'
-                % r.status_code)
+                'Received a status code of {}'.format(r.status_code))
         id = id + 1
 except Exception as err:
-    print('Test 2 FAILED: Could not make GET Request to /puppies/id')
+    print('Test 2 FAILED: Could not GET /puppies/{}'.format(id)')
     print(err.args)
     sys.exit()
 else:
-    print('Test 2 PASS: Succesfully Made GET Request to /puppies/id')
+    print('Test 2 PASS: Succesful GET request to /puppies/{}'.format(id))
     print('ALL TESTS PASSED!!')

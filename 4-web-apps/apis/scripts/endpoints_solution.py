@@ -16,7 +16,7 @@ def puppies_function():
 @app.route('/puppies/<int:id>')
 def puppies_function_id(id):
     """App route function for the URI '/puppies/' with id integer."""
-    return "This method will act on the puppy with id %s" % id
+    return 'This method will act on the puppy with id {}'.format(id)
 
 
 if __name__ == '__main__':

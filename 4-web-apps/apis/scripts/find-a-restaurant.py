@@ -13,8 +13,8 @@ from geocode import get_geocode_location
 # sys.stderr = codecs.getwriter('utf8')(sys.stderr)
 
 # Store Foursquare credentials
-foursquare_client_id = 'PASTE_YOUR_KEY_HERE'
-foursquare_client_secret = 'PASTE_YOUR_KEY_HERE'
+foursquare_client_id = 'foursquare_client_id'
+foursquare_client_secret = 'foursquare_client_secret'
 
 
 def find_a_restaurant(mealType, location):
@@ -43,7 +43,7 @@ def find_a_restaurant(mealType, location):
             address += i + ' '
         restaurant_address = address
         # 4. Find images of restaurant with Foursquare API using venue_id
-        url = 'https://api.foursquare.com/v2/venues/%s/photos' % venue_id
+        url = 'https://api.foursquare.com/v2/venues/{}/photos'.format(venue_id)
         params = dict(
             client_id=foursquare_client_id,
             client_secret=foursquare_client_secret,

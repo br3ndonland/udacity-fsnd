@@ -30,6 +30,43 @@ This file contains correspondence from my Udacity mentors, in reverse chronologi
 
 ### 201804
 
+#### 20180506
+
+May 05, 2018
+
+Hey, Brendon! How is the nanodegree going? :) Did you accomplish anything in the last days? Did u get stuck on anything? Remember to tell me if you need some help so I can try to help yooou! :D
+3:22 pm
+
+Hey Luiz. Things are going well. I'm learning JavaScript and the Google Maps API.
+6:40 pm
+May 06, 2018
+
+Awesome :)
+
+Lemme know if u get stuck on anything
+
+#### 20180427-29
+
+April 28, 2018
+
+Finally got my Flask catalog project submitted! Time to move on to lots of JavaScript!
+1:31 am
+
+Awesooome, Brendooon! :D Congratz!
+
+I hope u enjoy JS :)
+
+I got the Udacity reviews back already on my Flask app. I passed with no corrections needed! The reviewer said, "I really commend you for this project."
+
+YES!
+
+9:27 pm
+April 29, 2018
+
+Awesoooome! Congraaaatz, Brendon! :D
+
+Noooooow.. frontend, right? :D
+
 #### 20180407
 
 Hey Luiz. I got the pages and JSON of the Flask item catalog app debugged, but I'm still struggling to implement authentication.

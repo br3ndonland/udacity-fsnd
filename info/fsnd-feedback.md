@@ -206,4 +206,8 @@ It's a little easier to connect with classmates, because the chat is right there
 
 Markdown formatting is nice, but should be noted like it is on GitHub (Underneath the comments box, it reads "[Styling with Markdown is supported](https://guides.github.com/features/mastering-markdown/)"). It needs to be more organized (@mentions, threads, notifications, and more clear date stamping in addition to time), and needs search, so that students can find previous answers like they can in the forums. There is also only a small field of view, so it's really difficult to read more than a few messages. Basically, I'm not sure what this adds beyond Slack.
 
+### Knowledge
+
+There is a new Stack Overflow-like [knowledge base](https://knowledge.udacity.com) feature, as of 20180526. I posted an [answer](https://knowledge.udacity.com/questions/507). This may be a new version of the discussion forum.
+
 [(Back to TOC)](#table-of-contents)
