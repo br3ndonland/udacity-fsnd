@@ -155,26 +155,35 @@ Here is how I would suggest progressing through the program:
 4. **Web applications**
     - [Full Stack Foundations](https://www.udacity.com/course/full-stack-foundations--ud088): CRUD, web servers, Flask, agile
     - [Authentication & Authorization: OAuth](https://www.udacity.com/course/authentication-authorization-oauth--ud330)
-    - Project 04: Flask item catalog app
-    - JavaScript
-    - jQuery
-    - [Intro to AJAX](https://www.udacity.com/course/intro-to-ajax--ud110)
-    - APIs
     - [Designing RESTful APIs](https://www.udacity.com/course/designing-restful-apis--ud388)
-    - Project 05: Neighborhood map
+    - Project 4: Flask item catalog app
+    - [Intro to AJAX](https://www.udacity.com/course/intro-to-ajax--ud110)
+    - [Google Maps APIs](https://www.udacity.com/course/google-maps-apis--ud864)
+    - [JavaScript Design Patterns](https://www.udacity.com/course/javascript-design-patterns--ud989)
+    - **I highly recommend additional introductory JavaScript coursework.**
+      - [cs50](https://cs50.harvard.edu/) JavaScript lecture
+      - [cs50 CSCI E-33a](https://cs50.github.io/web/lectures) JavaScript lecture
+      - [Wes Bos JavaScript30](https://javascript30.com/)
+      - [Syntax podcast](https://syntax.fm)
+      - [Udacity ES6 - JavaScript Improved course](https://www.udacity.com/course/es6-javascript-improved--ud356)
+      - [Udacity Asynchronous JavaScript Requests course](https://www.udacity.com/course/asynchronous-javascript-requests--ud109)
+      - Mozilla Developer Network ([MDN](https://developer.mozilla.org))
+        - [MDN JavaScript learning pathway](https://developer.mozilla.org/en-US/docs/Learn/JavaScript)
+        - [Grammar and types](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types)
+          - [Variable scope](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#Variable_scope)
+          - [Prototypal inheritance](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain)
+    - Project 5: JavaScript neighborhood map
 5. **Servers**
-    - Linux server deployment
-    - Project 06: Linux server
+    - [Configuring Linux Web Servers](https://classroom.udacity.com/courses/ud299)
+    - Project 6: Linux server configuration and app deployment
 
 [(Back to top)](#top)
 
 ### Time
 
-The lessons took much longer than the time estimations show. For the first two parts, each lesson took me 6-12 hours over 1-2 days. I'm not sure if the number of hours is a useful metric. Maybe showing the number of lesson parts would be more useful.
-
-I took careful notes to effectively retain the material, which takes some extra time.
-
-I realized the **quizzes were frequently sticking points for me**, especially in Karl's lessons on Python HTTP and SQL. I pushed myself to get the quizzes correct without checking the solutions, because I wanted to make sure I was learning and thinking correctly. During the quizzes, I often felt like I wasn't getting it, or didn't have the information I needed to answer the questions. These sticking points sometimes took me a day or more to break through, and reduced my energy and motivation. With help from my mentor, I decided to speed up the lessons by limiting my quiz answer attempts, and pushing myself to complete the lessons in the time suggested by Udacity.
+- The lessons took much longer than the time estimations show. For the first two parts, each lesson took me 6-12 hours over 1-2 days. I'm not sure if the number of hours is a useful metric. Maybe showing the number of lesson parts would be more useful.
+- I took careful notes to effectively retain the material, which takes some extra time.
+- I realized the **quizzes were frequently sticking points for me**, especially in Karl's lessons on Python HTTP and SQL. I pushed myself to get the quizzes correct without checking the solutions, because I wanted to make sure I was learning and thinking correctly. During the quizzes, I often felt like I wasn't getting it, or didn't have the information I needed to answer the questions. These sticking points sometimes took me a day or more to break through, and reduced my energy and motivation. With help from my mentor, I decided to speed up the lessons by limiting my quiz answer attempts, and pushing myself to complete the lessons in the time suggested by Udacity.
 
 [(Back to top)](#top)
 
@@ -191,29 +200,28 @@ I realized the **quizzes were frequently sticking points for me**, especially in
 
 ### Forums
 
-Forums are the best way to troubleshoot code, because it's most easily organized and searchable like Stack Overflow. However, the responses will be slower, which is why slack is helpful.
+- Forums are a helpful way to troubleshoot code, because they are organized and searchable like Stack Overflow.
+- However, the responses will be slower, which is why chat is helpful.
 
 ### Slack
 
-When I started, the Slack workspace was just a jumble of information from people at all stages of the program. Slack was reorganized by @alex-udacity in October 2017 to have more channels, which was helpful.
-
-How do the changes to the forums and new in-classroom chat affect Slack?
-
-Someone from the forums also started up the [Udaciouspeople Slack workspace](https://discussions.udacity.com/t/udaciouspeople-ultimate-slack-for-all-with-auto-invites/38103) for students from all Nanodegree programs. Why do we need this when the FSND already has a channel?
+- When I started, the Slack workspace was just a jumble of information from people at all stages of the program. Slack was reorganized by @alex-udacity in October 2017 to have more channels, which was helpful.
+- It's unclear how the changes to the forums and new in-classroom chat affect Slack.
+- Someone from the forums also started up the [Udaciouspeople Slack workspace](https://discussions.udacity.com/t/udaciouspeople-ultimate-slack-for-all-with-auto-invites/38103) for students from all Nanodegree programs. Why do we need this when the FSND already has a channel?
 
 ### In-classroom chat
 
-New in-classroom chat feature:
-
-It appears that Udacity expanded the previous mentor chat feature. In general, I liked this feature for communicating with my mentor. It was strange that Markdown entered in the web app showed up as plain text in the Android app.
-
-It's a little easier to connect with classmates, because the chat is right there, instead of in a separate tab or app.
-
-Markdown formatting is nice, but should be noted like it is on GitHub (Underneath the comments box, it reads "[Styling with Markdown is supported](https://guides.github.com/features/mastering-markdown/)"). It needs to be more organized (@mentions, threads, notifications, and more clear date stamping in addition to time), and needs search, so that students can find previous answers like they can in the forums. There is also only a small field of view, so it's really difficult to read more than a few messages. Basically, I'm not sure what this adds beyond Slack.
+- It appears that Udacity expanded the previous mentor chat feature. In general, I liked this feature for communicating with my mentor. It was strange that Markdown entered in the web app showed up as plain text in the Android app.
+- It's a little easier to connect with classmates, because the chat is right there, instead of in a separate tab or app.
+- Markdown formatting is nice, but should be noted like it is on GitHub (Underneath the comments box, it reads "[Styling with Markdown is supported](https://guides.github.com/features/mastering-markdown/)").
+- It needs to be more organized (@mentions, threads, notifications, and more clear date stamping in addition to time), and needs search, so that students can find previous answers like they can in the forums.
+- There is also only a small field of view, so it's really difficult to read more than a few messages.
+- Basically, I'm not sure what this adds beyond Slack.
 
 ### Knowledge
 
-There is a new Stack Overflow-like [knowledge base](https://knowledge.udacity.com) feature, as of 20180526. I posted an [answer](https://knowledge.udacity.com/questions/507). This may be a new version of the discussion forum.
+- There is a new Stack Overflow-like [knowledge base](https://knowledge.udacity.com) feature, as of 20180526. I posted an [answer](https://knowledge.udacity.com/questions/507). This may be a new version of the discussion forum.
+- This should be useful in the future, because knowledge is retained, and useful answers will rise to the top.
 
 ## Exit survey
 
