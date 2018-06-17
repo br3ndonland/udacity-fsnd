@@ -11,6 +11,8 @@ br3ndonland
 - [Table of Contents](#table-of-contents)
 - [Description](#description)
 - [2018](#2018)
+  - [201806](#201806)
+  - [201805](#201805)
   - [201804](#201804)
   - [201803](#201803)
   - [201802](#201802)
@@ -28,7 +30,113 @@ This file contains correspondence from my Udacity mentors, in reverse chronologi
 
 ## 2018
 
-### 201804
+### 201806
+
+#### 20180616 Linux server config
+
+June 13, 2018
+
+I'm stuck on the Linux server configuration and need help
+
+I got everything done, except I can't get Apache to serve the app
+
+My repo is here https://github.com/br3ndonland/udacity-fsnd-p6-server
+
+How can I get more help with the server configuration?
+4:50 pm
+June 14, 2018
+
+> Hey, Brendon!
+>
+> Hold on, let me see your repo
+>
+> Geez, what a weird error
+>
+> Have u trying checking the logs?
+>
+> Try:
+>
+> `ls /var/log/apache2`
+>
+> and see if there's an error.log file
+>
+> If so, open it with nano like nano /var/log/apache2/error.log and u may find more informations
+>
+> And paste it here so I can see ass well 😁
+5:20 am
+
+Yep, I've been checking the error logs
+
+That's good advice
+
+So far, it looks like a problem with the WSGI file catalog.wsgi, or the Apache configuration file catalog.conf
+
+Here's the error log. I also like to view it with `tail`.
+
+```shell
+grader@udacity6:~$ sudo tail /var/log/apache2/error.log
+[Thu Jun 14 23:02:41.631345 2018] [wsgi:warn] [pid 8194:tid 139834844821376] mod_wsgi: Compiled for Python/3.5.1+.
+[Thu Jun 14 23:02:41.631401 2018] [wsgi:warn] [pid 8194:tid 139834844821376] mod_wsgi: Runtime using Python/3.5.2.
+[Thu Jun 14 23:02:41.632303 2018] [mpm_event:notice] [pid 8194:tid 139834844821376] AH00489: Apache/2.4.18 (Ubuntu) mod_wsgi/4.3.0 Python/3.5.2 configured -- resuming normal operations
+[Thu Jun 14 23:02:41.632335 2018] [core:notice] [pid 8194:tid 139834844821376] AH00094: Command line: '/usr/sbin/apache2'
+[Thu Jun 14 23:03:11.876286 2018] [wsgi:error] [pid 8197:tid 139834738947840] [remote 24.13.227.94:8662] mod_wsgi (pid=8197): Target WSGI script '/var/www/catalog/catalog.wsgi' cannot be loaded as Python module.
+[Thu Jun 14 23:03:11.876397 2018] [wsgi:error] [pid 8197:tid 139834738947840] [remote 24.13.227.94:8662] mod_wsgi (pid=8197): Exception occurred processing WSGI script '/var/www/catalog/catalog.wsgi'.
+[Thu Jun 14 23:03:11.883608 2018] [wsgi:error] [pid 8197:tid 139834738947840] [remote 24.13.227.94:8662] Traceback (most recent call last):
+[Thu Jun 14 23:03:11.883666 2018] [wsgi:error] [pid 8197:tid 139834738947840] [remote 24.13.227.94:8662]   File "/var/www/catalog/catalog.wsgi", line 10, in <module>
+[Thu Jun 14 23:03:11.883674 2018] [wsgi:error] [pid 8197:tid 139834738947840] [remote 24.13.227.94:8662]     from application import app as application
+[Thu Jun 14 23:03:11.883696 2018] [wsgi:error] [pid 8197:tid 139834738947840] [remote 24.13.227.94:8662] ImportError: No module named 'application'
+```
+
+6:05 pm
+June 15, 2018
+
+> That's awesome!
+>
+> Now looks like it can't find the application module...
+>
+> Do u have an application.py file in the same directory?
+5:54 am
+
+Yep, application.py is the main app file. That's what I'm confused about.
+
+I'll keep trying!
+12:19 pm
+June 16, 2018
+
+> That's weird!
+>
+> If u feel comfortable with that, I can try to access it via SSH and check if I can find the problemm
+>
+> but for that, I would need your key file :/
+6:28 pm
+
+I got it working today! I did some work on the WSGI file, but I realized that WSGI wasn't serving up the app from my virtual environment. I just installed the Python modules outside of the virtual environment, and it worked!
+
+[http://catalog.br3ndonland.com/](http://catalog.br3ndonland.com/)
+10:48 pm
+
+#### 20180608
+
+June 06, 2018
+
+> Hey, Brendon! I've been a bit away in the past days (I'm so soorrrryyy! Had some health problems...), but here i am again! :) How about a check-in? Can u tell me what u've done in the last days? Did u accomplish anything? Did u have any problems?
+5:10 pm
+
+June 08, 2018
+
+Nice to hear from you Luiz. I hope you're feeling better.
+
+I just completed and submitted the neighborhood map project! Almost done with the program!
+10:00 pm
+
+June 09, 2018
+
+> Awesooooome! Glad to hear you're almost there! :D
+>
+> Keep up with the hardwork!
+10:39 am
+
+### 201805
 
 #### 20180506
 
@@ -44,6 +152,8 @@ May 06, 2018
 Awesome :)
 
 Lemme know if u get stuck on anything
+
+### 201804
 
 #### 20180427-29
 

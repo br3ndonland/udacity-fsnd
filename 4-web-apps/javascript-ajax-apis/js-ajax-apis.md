@@ -8,7 +8,7 @@ Udacity Full Stack Web Developer Nanodegree program
 
 Brendon Smith
 
-br3ndonland
+[br3ndonland](https://github.com/br3ndonland)
 
 ## Table of Contents
 

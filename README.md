@@ -8,15 +8,12 @@ Udacity Full Stack Web Developer Nanodegree program
 
 Brendon Smith
 
-br3ndonland
+[br3ndonland](https://github.com/br3ndonland)
 
-[![license](https://img.shields.io/badge/license-MIT-blue.svg)](https://choosealicense.com/)
+[![license](https://img.shields.io/badge/license-MIT-blue.svg?longCache=true&style=for-the-badge)](https://choosealicense.com/)
 
-[![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/br3ndonland/udacity-fsnd/master?urlpath=lab)
+## Table of Contents <!-- omit in toc -->
 
-## Table of Contents
-
-- [Table of Contents](#table-of-contents)
 - [Description](#description)
 - [Projects](#projects)
 - [Lessons](#lessons)
@@ -25,6 +22,8 @@ br3ndonland
 - [Code](#code)
   - [Markdown](#markdown)
   - [Python](#python)
+  - [JavaScript](#javascript)
+  - [HTML and CSS](#html-and-css)
   - [Software](#software)
 
 ## Description
@@ -39,7 +38,7 @@ The Full Stack Web Developer Nanodegree program is focused on projects, in which
 2. [Portfolio website](https://br3ndonland.github.io/udacity/)
 3. [SQL database logs analysis](https://github.com/br3ndonland/udacity-fsnd-p3-sql)
 4. [Python Flask catalog app](https://github.com/br3ndonland/udacity-fsnd-p4-flask-catalog)
-5. [Neighborhood map app](https://br3ndonland.github.io/udacity-map/)
+5. [Neighborhood map](https://github.com/br3ndonland/udacity-fsnd-p5-map)
 6. [Linux server deployment](https://github.com/br3ndonland/udacity-fsnd-p6-server)
 
 ## Lessons
@@ -48,9 +47,9 @@ Udacity provides lessons prior to each project. The lesson curriculum could bene
 
 ### Strategies
 
+- **Focus on projects.** The Nanodegree is awarded for projects, not lessons and quizzes. As you advance, you may want to just skip directly to the projects, and go back through the lessons as needed. [Other students](https://medium.com/@MrsDragos/my-approach-to-udacitys-projects-db8db224f6f5) have succeeded with this project-focused approach.
 - **Limit lesson time.** Speed up videos to 1.5x or 2x, and set a timer when working through the lessons. I used the [Pomodoro technique](https://lifehacker.com/productivity-101-a-primer-to-the-pomodoro-technique-1598992730), and limited myself to 25 minutes max per lesson section. I would often complete 2-3 lesson sections per 25 minute interval.
 - **Limit quiz attempts.** When I was getting started, I aimed to complete 100% of the lesson material, and I took the quizzes too seriously. I pushed myself to answer quiz questions correctly without checking solutions. This caused me to hit sticking points, and I would sometimes take 1-2 days just to complete a quiz. As I went on, I set a limit of three quiz attempts. If I didn't get it in three attempts, I would check the solution and move on.
-- **Focus on projects.** The Nanodegree is awarded for projects, not lessons and quizzes. As you advance, you may want to just skip directly to the projects, and go back through the lessons as needed. Other students, such as [Kristin Dragos](https://medium.com/@MrsDragos/my-approach-to-udacitys-projects-db8db224f6f5), have succeeded with this project-focused approach.
 
 See my [program feedback](info/fsnd-feedback.md) for more comments.
 
@@ -76,16 +75,28 @@ The lessons are mostly material from free courses. Here is how I would suggest p
     - [Full Stack Foundations](https://www.udacity.com/course/full-stack-foundations--ud088): CRUD, web servers, Flask, agile
     - [Authentication & Authorization: OAuth](https://www.udacity.com/course/authentication-authorization-oauth--ud330)
     - [Designing RESTful APIs](https://www.udacity.com/course/designing-restful-apis--ud388)
-    - Project 04: Flask item catalog app
+    - Project 4: Flask item catalog app
     - [Intro to AJAX](https://www.udacity.com/course/intro-to-ajax--ud110)
-    - [JavaScript Design Patterns](https://www.udacity.com/course/javascript-design-patterns--ud989)
     - [Google Maps APIs](https://www.udacity.com/course/google-maps-apis--ud864)
-    - Project 05: Neighborhood map
+    - [JavaScript Design Patterns](https://www.udacity.com/course/javascript-design-patterns--ud989)
+    - **I highly recommend additional introductory JavaScript coursework.**
+      - [cs50](https://cs50.harvard.edu/) JavaScript lecture
+      - [cs50 CSCI E-33a](https://cs50.github.io/web/lectures) JavaScript lecture
+      - [Wes Bos JavaScript30](https://javascript30.com/)
+      - [Syntax podcast](https://syntax.fm)
+      - [Udacity ES6 - JavaScript Improved course](https://www.udacity.com/course/es6-javascript-improved--ud356)
+      - [Udacity Asynchronous JavaScript Requests course](https://www.udacity.com/course/asynchronous-javascript-requests--ud109)
+      - Mozilla Developer Network ([MDN](https://developer.mozilla.org))
+        - [MDN JavaScript learning pathway](https://developer.mozilla.org/en-US/docs/Learn/JavaScript)
+        - [Grammar and types](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types)
+          - [Variable scope](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#Variable_scope)
+          - [Prototypal inheritance](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain)
+    - Project 5: JavaScript neighborhood map
 5. **Servers**
-    - Linux server deployment
-    - Project 06: Linux server
+    - [Configuring Linux Web Servers](https://classroom.udacity.com/courses/ud299)
+    - Project 6: Linux server configuration and app deployment
 
-[(Back to TOC)](#table-of-contents)
+[(Back to top)](#top)
 
 ## Code
 
@@ -111,7 +122,7 @@ Suggestions for standardized Markdown formatting have been provided by [markdown
 - **For organization, I reserve H1 (`#`) for the title of the file at the top. Major headers begin with H2 (`##`).**
 - I use headers to create a **Table of Contents (TOC)** at the beginning of the file.
   - **I add `## Table of Contents` before the TOC for navigation.**
-  - **I include [(Back to TOC)](#table-of-contents) links after each section for easy navigation back to the table of contents.** Simply write `[(Back to TOC)](#table-of-contents)`.
+  - **I include [(Back to top)](#top) links after each section for easy navigation back to the table of contents.** Simply write `[(Back to top)](#top)`.
   - I add and auto-update TOCs in vscode with the [Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one) extension. See [below](#software) for more on vscode.
   - [Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one), JupyterLab and RStudio provide inline TOC displays ([see below](#jupyterlab)).
   - Prior to vscode, I was adding and updating TOCs with [DocToc](https://github.com/thlorenz/doctoc) from the command line.
@@ -128,14 +139,26 @@ Suggestions for standardized Markdown formatting have been provided by [markdown
 
 ### Python
 
-Python code is formatted for Python 3 and [PEP 8](http://pep8.org/). Line length is relaxed to 100 characters when permitted.
+- Python code is formatted for Python 3 and [PEP 8](http://pep8.org/). Line length is relaxed to 100 characters when permitted.
+- A Binder is available to run the Jupyter Notebook files. [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/br3ndonland/udacity-fsnd/master?urlpath=lab)
+
+### JavaScript
+
+- [JavaScript Standard Style](https://standardjs.com/)
+- Two-space indentations, no semicolons.
+- Semicolons are syntactic clutter. Much like multivitamins, semicolons provide peace of mind while being of minimal utility. Omitting semicolons, and using ES6 features like template literals (similar to Python 3 string formatting), also allows me to easily switch between JavaScript and Python.
+- There is a StandardJS [vscode extension](https://marketplace.visualstudio.com/items?itemName=chenxsan.vscode-standardjs) available for linting and autoformatting.
+
+### HTML and CSS
+
+- Two-space indentations.
 
 ### Software
 
 - For the foundational Python programming work (part 1, lessons 00-11), I took notes and ran my code in Jupyter notebook files. Jupyter notebook was a nice way to bundle Markdown-formatted notes with Python code, but it lacked the speed and autocompletion features of other text editors.
-- As I continued, I kept separate files for code and Markdown notes. I was originally writing in Sublime Text, but switched to [Visual Studio Code (vscode)](https://code.visualstudio.com/). I configure [vscode](https://code.visualstudio.com/) using [Settings Sync](https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync) with [this gist](https://gist.github.com/br3ndonland/d6ad1f6eae5ee149ac2530774d13899e).
-- For my terminal application, I switched from iTerm2 to [Hyper](https://hyper.is/).
-- I used Google Chrome and Firefox Quantum as web browsers.
+- As I continued, I kept separate files for code and Markdown notes. I was originally writing in Sublime Text, but switched to [Visual Studio Code (vscode)](https://code.visualstudio.com/). I configure [vscode](https://code.visualstudio.com/) using [Settings Sync](https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync) with [this gist](https://gist.github.com/br3ndonland/01b625629ef98ec7a919a7b927d0ddaf).
+- For my terminal application, I used [iTerm2](https://iterm2.com) and [Hyper](https://hyper.is/).
+- I used Firefox Quantum Developer Edition as my web browser.
 - Some of the work was done in a Vagrant Linux virtual machine with the following components:
   - Oracle [VirtualBox](https://www.virtualbox.org/wiki/Downloads) Version 5.2.6 r120293 (Qt5.6.3)
     - Software that runs special containers called virtual machines, like Vagrant.
@@ -145,4 +168,4 @@ Python code is formatted for Python 3 and [PEP 8](http://pep8.org/). Line length
     - Repository from Udacity that configures Vagrant.
     - My personal fork of the configuration is also available on [GitHub](https://github.com/br3ndonland/fullstack-nanodegree-vm) if needed.
 
-[(Back to TOC)](#table-of-contents)
+[(Back to top)](#top)

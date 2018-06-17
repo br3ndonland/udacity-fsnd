@@ -8,11 +8,10 @@ Udacity Full Stack Web Developer Nanodegree program
 
 Brendon Smith
 
-br3ndonland
+[br3ndonland](https://github.com/br3ndonland)
 
-## Table of Contents
+## Table of Contents <!-- omit in toc -->
 
-- [Table of Contents](#table-of-contents)
 - [Highlights](#highlights)
 - [Lessons](#lessons)
   - [Code and tech](#code-and-tech)
@@ -23,21 +22,22 @@ br3ndonland
   - [Forums](#forums)
   - [Slack](#slack)
   - [In-classroom chat](#in-classroom-chat)
+  - [Knowledge](#knowledge)
+- [Exit survey](#exit-survey)
 
 ## Highlights
 
-The website and Android app were generally responsive and powerful.
+- **Code review was wonderful.** I was really impressed with how thoughtful and thorough the reviews were. I learned a great deal from the suggestions in the reviews. The turnaround time was very fast, sometimes only a few hours.
+- The website and Android app were generally responsive and powerful.
 
-**Code review was wonderful.** I was really impressed with how thoughtful and thorough the reviews were. I learned a great deal from the suggestions in the reviews. The turnaround time was very fast, sometimes only a few hours.
-
-[(Back to TOC)](#table-of-contents)
+[(Back to top)](#top)
 
 ## Lessons
 
 ### Code and tech
 
-- It was good that we used **Python instead of Ruby.** Python is more flexible. For example, I also have training in data science, so I can use my Python skills for data analysis, which I couldn't really do with Ruby.
-- I appreciated how we used **frameworks like Flask.**
+- It was good that we used Python instead of Ruby. Python is more flexible. For example, I also have training in data science, so I can use my Python skills for data analysis, which I couldn't really do with Ruby.
+- Some frameworks, like Flask, were current, others, like Knockout, were outdated.
 - The Vagrant virtual machine was helpful, but a little bit complicated. Udacity could **consider containerizing the code** for further control over the environment, and easier setup by students.
 - **The code in the lessons is of inconsistent quality. We are learning, and we need to see well-structured, consistent, and current code.** Udacity is focused on releasing new Nanodegree programs, without maintaining the programs they already have. We need to learn based on current best practices, which requires frequent updates. Compare Udacity's lack of updates with someone like [Wes Bos](http://wesbos.com/), for example, who has already re-recorded his React course three times. And that's just one guy. Udacity has an entire company full of people, and they can't even maintain their lessons and code.
   - Let's look at an example, Lessons 14-18 on APIs (from free course [Designing RESTful APIs](https://www.udacity.com/course/designing-restful-apis--ud388))
@@ -48,12 +48,13 @@ The website and Android app were generally responsive and powerful.
     - Code mixes spaces and tabs.
     - JavaScript camelCase used instead of underscores for function names.
     - Doesn't even have a proper Markdown-formatted README
-    - Code exists, confusingly, in two repos: [OAuth2.0](https://github.com/udacity/OAuth2.0) and [ud330](https://github.com/udacity/ud330/blob/master/Lesson2/step2/project.py). The code in ud330 is formatted a little better than the OAuth repo.
-- **GitHub repos are not maintained. Pull requests are ignored or not merged.** The GitHub repos are an opportunity to enrich the student experience by teaching good open source practices, but Udacity is not doing this.
+    - No license. How can you distribute this material to students without a license?
+    - Code exists, confusingly, in two repos: [OAuth2.0](https://github.com/udacity/OAuth2.0) and [ud330](https://github.com/udacity/ud330). The code in ud330 is formatted a little better than the OAuth repo.
+- **Udacity's GitHub repos are not maintained. Pull requests are ignored or not merged.** The GitHub repos are an opportunity to enrich the student experience by teaching good open source practices, but Udacity is not doing this.
 - Many of the repos are not licensed.
 - In addition to videos, the lessons should have Markdown-formatted **written lesson outlines**.
 
-[(Back to TOC)](#table-of-contents)
+[(Back to top)](#top)
 
 ### Organization
 
@@ -73,11 +74,18 @@ The website and Android app were generally responsive and powerful.
 
 #### Part 3
 
-Why did we go through APIs in part 3 (from course [Designing RESTful APIs](https://www.udacity.com/course/designing-restful-apis--ud388)), when we weren't going to use them until the neighborhood map project in part 4? We also have more API lessons in part 4. The lessons could be consolidated.
+- Why did we go through APIs in part 3 (from course [Designing RESTful APIs](https://www.udacity.com/course/designing-restful-apis--ud388)), when we weren't going to use them until the neighborhood map project in part 4?
+- We also have more API lessons in part 4. The lessons could be consolidated.
 
 #### Part 4
 
-Why is part 4 called "The Frontend" when we have already been working on front-end (HTML, CSS, portfolio website)? It should be called "Web applications."
+- Why is part 4 called "The Frontend" when we have already been working on front-end (HTML, CSS, portfolio website)? It should be called "Web applications."
+- Part 4 should include the [ES6 - JavaScript Improved course](https://www.udacity.com/course/es6-javascript-improved--ud356) and the [Asynchronous JavaScript Requests course](https://www.udacity.com/course/es6-javascript-improved--ud356).
+
+#### Part 5
+
+- Part 5 should provide more assistance for setting up a server in the cloud, not just in a Vagrant virtual machine.
+- Container technologies should be presented as an alternative method.
 
 #### Incorporating free courses into the Nanodegree program
 
@@ -158,7 +166,7 @@ Here is how I would suggest progressing through the program:
     - Linux server deployment
     - Project 06: Linux server
 
-[(Back to TOC)](#table-of-contents)
+[(Back to top)](#top)
 
 ### Time
 
@@ -168,19 +176,16 @@ I took careful notes to effectively retain the material, which takes some extra 
 
 I realized the **quizzes were frequently sticking points for me**, especially in Karl's lessons on Python HTTP and SQL. I pushed myself to get the quizzes correct without checking the solutions, because I wanted to make sure I was learning and thinking correctly. During the quizzes, I often felt like I wasn't getting it, or didn't have the information I needed to answer the questions. These sticking points sometimes took me a day or more to break through, and reduced my energy and motivation. With help from my mentor, I decided to speed up the lessons by limiting my quiz answer attempts, and pushing myself to complete the lessons in the time suggested by Udacity.
 
-[(Back to TOC)](#table-of-contents)
+[(Back to top)](#top)
 
 ## Mentor
 
-My mentors were generally supportive and encouraging.
+- My mentors were generally supportive and encouraging.
+- I think the feedback could be more substantive and specific. I didn't find mentors helpful for specific coding challenges. The response wasn't fast enough, and the mentor usually didn't provide specific assistance with code.
+- It would also help if the mentor relationship was more clearly defined. What are the boundaries? What can and can't they do for us?
+- **Independence is important for success in this program.** The mentors are not involved enough to provide formative guidance, and the lesson materials don't provide enough instruction. Students that are less motivated or independent could benefit from an in-person code school instead.
 
-I think the feedback could be more substantive and specific.
-
-I didn't find mentors helpful for specific coding challenges. The response wasn't fast enough, and the mentor usually didn't provide specific assistance with code.
-
-It would also help if the mentor relationship was more clearly defined. What are the boundaries? What can and can't they do for us?
-
-[(Back to TOC)](#table-of-contents)
+[(Back to top)](#top)
 
 ## Networking
 
@@ -210,4 +215,38 @@ Markdown formatting is nice, but should be noted like it is on GitHub (Underneat
 
 There is a new Stack Overflow-like [knowledge base](https://knowledge.udacity.com) feature, as of 20180526. I posted an [answer](https://knowledge.udacity.com/questions/507). This may be a new version of the discussion forum.
 
-[(Back to TOC)](#table-of-contents)
+## Exit survey
+
+> Which parts of the Nanodegree program, if any, were most valuable in helping you feel prepared to begin a job search or seek a promotion in this field?
+
+Code review and resume review.
+
+> What, if anything, would help you feel more prepared to begin a job search or seek a promotion in this field?
+
+The code needs to be updated for Python 3, JavaScript ES6, React, Docker, and other current technologies.
+
+> Do you believe that the Nanodegree program was worth your time?
+
+4/5
+
+> How likely is it that you would recommend a Udacity Nanodegree program to a friend or colleague?
+
+6/10
+
+> Why would you recommend or not recommend this program?
+
+- Code and lessons
+  - It was good that we used Python instead of Ruby. Python is more broadly useful.
+  - Some frameworks, like Flask, were current, others, like Knockout, were outdated.
+  - **The code in the lessons is of inconsistent quality. We are learning, and we need to see well-structured, consistent, and current code.**
+  - **Udacity's GitHub repos are not maintained. Pull requests are ignored or not merged.**
+  - The lesson content could be more thorough and informative. Videos could be longer and could go more in-depth into the content.
+  - The lessons are poorly organized.
+- Mentors
+  - **Independence is important for success in this program.** The mentors are not involved enough to provide formative guidance, and the lesson materials don't provide enough instruction. Students that are less motivated or independent could benefit from an in-person code school instead.
+- Networking
+  - New Knowledge feature is useful.
+  - In-classroom chat is not useful.
+  - Slack is too cluttered.
+
+[(Back to top)](#top)
