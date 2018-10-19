@@ -14,7 +14,6 @@ br3ndonland
 
 ## Table of Contents
 
-- [Table of Contents](#table-of-contents)
 - [Lesson 1. Relational Concepts: Data and Tables](#lesson-1-relational-concepts-data-and-tables)
   - [1.01. Welcome to RDB](#101-welcome-to-rdb)
   - [1.02. What's a database](#102-whats-a-database)
@@ -503,7 +502,7 @@ select name from animals, diet
 #### `where` vs. `having`
 
 - `where` is a restriction on the source tables.
-- `having` is a restriction on the result *after- aggregation.
+- `having` is a restriction on the result *after* aggregation.
 
 #### Quiz: Aggregating
 
@@ -735,7 +734,7 @@ More usefully, we can select one or more columns from a table. With no restricti
 select name, species from animals ;
 ```
 
-Columns are separated by commas; use - to select all columns from the tables:
+Columns are separated by commas. Use `*` to select all columns from the tables:
 
 ```sql
 select * from animals;
@@ -788,7 +787,7 @@ select name, count(*) as num from sales having num > 5;
 
 You can have a select statement that uses only where, or only group by, or group by and having, or where and group by, or all three of them! But it doesn't usually make sense to use having without group by.
 
-If you use both **where** and **having**, the **where** condition will filter the rows that are going *into- the aggregation, and the **having** condition will filter the rows that come *out of- it.
+If you use both **where** and **having**, the **where** condition will filter the rows that are going *into* the aggregation, and the **having** condition will filter the rows that come *out of* it.
 
 You can read more about **having** here: [http://www.postgresql.org/docs/9.4/static/sql-select.html#SQL-HAVING](http://www.postgresql.org/docs/9.4/static/sql-select.html#SQL-HAVING)
 
@@ -869,8 +868,8 @@ I found *Lesson 01. Relational Concepts: Data and Tables* to be clear and intuit
 
 I got stuck on two quizzes in *Lesson 02. Elements of SQL*:
 
-1. *2.13. Find the Fish Eaters:- I was able to quickly narrow the query result down to the proper `name` column and join the tables, but couldn't figure out where to select just the fish diet. The instructional video makes it look like you only need three lines of SQL code for the query, but you actually need a fourth line to specify the restriction. There should have been an extra step where he explained how to incorporate restrictions into joins.
-2. *2.15. More Join Practice:- I struggled with this problem for ~5 hours, and I put in the time because I really wanted to learn the syntax. I broke the problem down, repeatedly iterated my code, got as close as I could, and finally checked the solution. I was only off from the "simple syntax" solution by one word: I had `taxonomy.species` instead of `taxonomy.name`. I want to understand why I didn't have it right, but the instructor notes don't explain it, and the solution video is complete fluff. Walk us through the solution, don't just talk about the animals!
+1. *2.13. Find the Fish Eaters:* I was able to quickly narrow the query result down to the proper `name` column and join the tables, but couldn't figure out where to select just the fish diet. The instructional video makes it look like you only need three lines of SQL code for the query, but you actually need a fourth line to specify the restriction. There should have been an extra step where he explained how to incorporate restrictions into joins.
+2. *2.15. More Join Practice:* I struggled with this problem for ~5 hours, and I put in the time because I really wanted to learn the syntax. I broke the problem down, repeatedly iterated my code, got as close as I could, and finally checked the solution. I was only off from the "simple syntax" solution by one word: I had `taxonomy.species` instead of `taxonomy.name`. I want to understand why I didn't have it right, but the instructor notes don't explain it, and the solution video is complete fluff. Walk us through the solution, don't just talk about the animals!
 
 #### Concise version to fit into the 512 character limit of the feedback box
 
@@ -1040,14 +1039,14 @@ We tried an SQL Injection attack (SQLi) by entering `'); delete from posts; --` 
 
 ### 3.10. Curing Bobby Tables
 
-We had to revise the *forumdb.py- code here to prevent SQLi, loosely following the paradigm from 3.3-3.5.
+We had to revise the *forumdb.py* code here to prevent SQLi, loosely following the paradigm from 3.3-3.5.
 
 As the [psycopg docs](http://initd.org/psycopg/docs/usage.html#the-problem-with-the-query-parameters) warn:
 > Warning: Never, never, NEVER use Python string concatenation (+) or string parameters interpolation (%) to pass variables to a SQL query string. Not even at gunpoint.
 
 There is also a [Bobby Tables website](http://bobby-tables.com/) with instructions on how to prevent SQLi in various programming languages.
 
-**It was preferable to follow along in the solution files here.** Karl jumped from `sqlite3` to `psycopg2` and made several other changes to the code. I didn't feel like I had enough information to arrive at the solution independently. I found the code in a separate *solution/- directory and just followed along from there.
+**It was preferable to follow along in the solution files here.** Karl jumped from `sqlite3` to `psycopg2` and made several other changes to the code. I didn't feel like I had enough information to arrive at the solution independently. I found the code in a separate *solution/* directory and just followed along from there.
 
 ### 3.11. Spammy Tables
 
@@ -1085,9 +1084,9 @@ We considered both **input sanitization** and **output sanitization.**
 >
 > The syntax of the **update** statement:
 >
-> **update** *table- **set** *column- **=** *value- **where** *restriction- **;**
+> **update** *table* **set** *column* **=** *value* **where** *restriction* **;**
 >
-> The *restriction- works the same as in **select** and supports the same set of operators on column values.
+> The *restriction* works the same as in **select** and supports the same set of operators on column values.
 >
 > The **like** operator supports a simple form of text pattern-matching. Whatever is on the left side of the operator (usually the name of a text column) will be matched against the pattern on the right. The pattern is an SQL text string (so it's in **'single quotes'**) and can use the **%** sign to match any sub-string, including the empty string.
 >
@@ -1125,7 +1124,7 @@ DELETE FROM table WHERE restriction;
 If we want to delete the spam from the forum, we would run
 
 ```sql
-DELETE - FROM posts WHERE content = 'cheese';
+DELETE * FROM posts WHERE content = 'cheese';
 ```
 
 ### 3.15. Conclusion
@@ -1141,7 +1140,7 @@ For a full reference to the Python DB-API, see [the specification](https://www.p
 **module.connect(...)**
 Connect to a database. The arguments to **connect** differ from module to module; see the documentation for details. **connect** returns a **Connection** object or raises an exception.
 
-For the methods below, note that you *don't- literally call (for instance) `Connection.cursor()` in your code. You make a `Connection` object, save it in a variable (maybe called `db`) and then call `db.cursor()`.
+For the methods below, note that you *don't* literally call (for instance) `Connection.cursor()` in your code. You make a `Connection` object, save it in a variable (maybe called `db`) and then call `db.cursor()`.
 
 **Connection.cursor()**
 Makes a **Cursor** object from a connection. Cursors are used to send SQL statements to the database and fetch results.
@@ -1197,10 +1196,10 @@ Read the documentation for Bleach here: [http://bleach.readthedocs.org/en/latest
 
 The syntax of the **update** and **delete** statements:
 
-**update** *table- **set** *column- **=** *value- **where** *restriction- **;**
-**delete from** *table- **where** *restriction- **;**
+**update** *table* **set** *column* **=** *value* **where** *restriction* **;**
+**delete from** *table* **where** *restriction* **;**
 
-The **where** restriction in both statements works the same as in **select** and supports the same set of operators on column values. In both cases, if you leave off the **where** restriction, the update or deletion will apply to *all rows- in the table, which is usually not what you want.
+The **where** restriction in both statements works the same as in **select** and supports the same set of operators on column values. In both cases, if you leave off the **where** restriction, the update or deletion will apply to *all rows* in the table, which is usually not what you want.
 
 #### like operator
 
@@ -1260,7 +1259,7 @@ I thought the material in this lesson was important and helpful, but I didn't re
 
 ### 4.05. Create Table and Types
 
-> User-facing code doesn't *usually- create new tables.
+> User-facing code doesn't *usually* create new tables.
 
 Normally when creating an application, the database is created up front.
 
@@ -1282,7 +1281,7 @@ Normally when creating an application, the database is created up front.
 >
 > Here's an example **insert** statement you might try. Replace *sometable- with the name of the table you created:
 >
-> **insert into *sometable- values ('This is text!');**
+> **insert into *sometable* values ('This is text!');**
 >
 > For more detail on the **serial** type, take a look at the last section of this page in the PostgreSQL manual: [http://www.postgresql.org/docs/9.4/static/datatype-numeric.html](http://www.postgresql.org/docs/9.4/static/datatype-numeric.html)
 
@@ -1308,7 +1307,7 @@ A serial is a sequence, an internal data structure.
 
 ### 4.07. Quiz: Declaring Primary Keys
 
-*Single column primary keys:- enter "primary key" when creating the column, before the comma:
+*Single column primary keys:* enter "primary key" when creating the column, before the comma:
 
 ```sql
 CREATE TABLE students (
@@ -1318,7 +1317,7 @@ CREATE TABLE students (
 );
 ```
 
-*Multi-column primary keys:- enter *after- creating the columns in the table, and specify the columns to use as key:
+*Multi-column primary keys:* enter *after* creating the columns in the table, and specify the columns to use as key:
 
 ```sql
 CREATE TABLE postal_places (
@@ -1583,7 +1582,7 @@ def lightweights(cursor):
 
 #### Intro
 
-When code gets too complex, developers look for ways to *refactor- it into smaller functions.
+When code gets too complex, developers look for ways to *refactor* it into smaller functions.
 
 **Views** are `SELECT` queries stored in the database for use like tables. Rows can be updated or deleted from some views but not others.
 
@@ -1629,16 +1628,13 @@ There are a lot of restrictions that can be put on a column or a row. **primary 
 In a normalized database, the relationships among the tables match the relationships that are really there among the data. Examples [here](https://www.udacity.com/course/viewer#!/c-ud197/l-3490418600/m-3514018646) refer to tables in Lessons 2 and 4.
 
 1. Every row has the same number of columns.
-    - In practice, the database system won't let us _literally_ have different numbers of columns in different rows. But if we have columns that are sometimes empty (null) and sometimes not, or if we stuff multiple values into a single field, we're bending this rule.
+    - In practice, the database system won't let us *literally* have different numbers of columns in different rows. But if we have columns that are sometimes empty (null) and sometimes not, or if we stuff multiple values into a single field, we're bending this rule.
     - The example to keep in mind here is the **diet** table from the zoo database. Instead of trying to stuff multiple foods for a species into a single row about that species, we separate them out. This makes it much easier to do aggregations and comparisons.
-
-2. There is a unique _key_ and everything in a row says something about the key.
+2. There is a unique *key* and everything in a row says something about the key.
     - The key may be one column or more than one. It may even be the whole row, as in the **diet** table. But we don't have duplicate rows in a table.
     - More importantly, if we are storing non-unique facts — such as people's names — we distinguish them using a unique identifier such as a serial number. This makes sure that we don't combine two people's grades or parking tickets just because they have the same name.
-
 3. Facts that don't relate to the key belong in different tables.
     - The example here was the **items** table, which had items, their locations, and the location's street addresses in it. The address isn't a fact about the item; it's a fact about the location. Moving it to a separate table saves space and reduces ambiguity, and we can always reconstitute the original table using a **join**.
-
 4. Tables shouldn't imply relationships that don't exist.
     - The example here was the **job_skills** table, where a single row listed one of a person's technology skills (like 'Linux') and one of their language skills (like 'French'). This made it look like their Linux knowledge was specific to French, or vice versa ... when that isn't the case in the real world. Normalizing this involved splitting the tech skills and job skills into separate tables.
 
