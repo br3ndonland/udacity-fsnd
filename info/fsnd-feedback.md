@@ -24,6 +24,7 @@ Brendon Smith
   - [In-classroom chat](#in-classroom-chat)
   - [Knowledge](#knowledge)
 - [Exit survey](#exit-survey)
+- [Program developments](#program-developments)
 
 ## Highlights
 
@@ -64,7 +65,6 @@ Brendon Smith
 
 - I didn't find the first project, the Python movie trailer web server (after the Python programming foundations), to be very effective. I completed the project before learning about front-end and HTTP, so I didn't really know what I was doing. The project would make more sense after part 2 instead of after part 1.
 - This also wasn't a really effective way to implement a web server. The server would be more effectively implemented as a Flask app, as we did for the item catalog in part 3.
-- The CSS lessons should also teach Sass.
 
 #### Part 2
 
@@ -222,6 +222,8 @@ Here is how I would suggest progressing through the program:
 
 - There is a new Stack Overflow-like [knowledge base](https://knowledge.udacity.com) feature, as of 20180526. I posted an [answer](https://knowledge.udacity.com/questions/507). This may be a new version of the discussion forum.
 - This should be useful in the future, because knowledge is retained, and useful answers will rise to the top.
+- Frustratingly, the knowledge forum doesn't use Markdown. I have to re-format everything in HTML rich text.
+- Can't sort by votes.
 
 ## Exit survey
 
@@ -256,5 +258,12 @@ The code needs to be updated for Python 3, JavaScript ES6, React, Docker, and ot
   - New Knowledge feature is useful.
   - In-classroom chat is not useful.
   - Slack is too cluttered.
+
+## Program developments
+
+- They frequently change the Nanodegree programs and platform, but don't have a clear changelog.
+- Around June 2018, Udacity abbreviated the FSND. There are now three projects,  it costs $999, and you only have four months. They probably though there was too much overlap with the Front-End Nanodegree program (FEND). The FSND basically had most of the FEND. It was also a long program, so they probably wanted to shorten it to increase completion rates.
+- They are also trying to maintain separation between FEND and the React Nanodegree program.
+- They moved the career platform outside the Nanodegrees.
 
 [(Back to top)](#top)
