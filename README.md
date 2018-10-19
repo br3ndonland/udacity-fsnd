@@ -30,6 +30,14 @@ Brendon Smith
 
 This is a repository for [Udacity Full Stack Web Developer Nanodegree program](https://www.udacity.com/course/full-stack-web-developer-nanodegree--nd004) (FSND) course notes and materials.
 
+Full stack web developers work on all aspects of websites and apps, from front end (features that users see) to back end (servers and databases). In this program, I built skills including:
+
+- Developing webpages based on mockup images from designers
+- Querying and manipulating large databases with SQL
+- Creating functional multi-page web apps with databases and sign-ins
+- Fetching data from Application Programming Interfaces (APIs)
+- Deploying apps to Linux servers
+
 ## Projects
 
 The Full Stack Web Developer Nanodegree program is focused on projects, in which students can independently implement what they have learned in the lessons. I stored each project in its own repository.
