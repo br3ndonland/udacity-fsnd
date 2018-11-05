@@ -148,14 +148,32 @@ Suggestions for standardized Markdown formatting have been provided by [markdown
 ### Python
 
 - Python code is formatted for Python 3 and [PEP 8](http://pep8.org/). Line length is relaxed to 100 characters when permitted.
-- A Binder is available to run the Jupyter Notebook files. [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/br3ndonland/udacity-fsnd/master?urlpath=lab)
+- [JupyterLab](http://jupyterlab.readthedocs.io/en/stable/) can be used to run Jupyter Notebook files locally. I would suggest using JupyterLab within a Pipenv virtual environment.
+- I install Python and the [Pipenv](https://pipenv.readthedocs.io/en/latest/) virtual environment tool on macOS via [Homebrew](https://brew.sh). I [install JupyterLab](https://jupyterlab.readthedocs.io/en/stable/getting_started/installation.html) with Pipenv. Once installation is complete, navigate to your project's directory, install dependencies, and run JupyterLab.
+- Here are the necessary command line arguments:
+
+  ```sh
+  brew install python3
+  brew install pipenv
+  brew install jupyter
+  cd path/where/you/want/jupyterlab
+  # On first install: pipenv install jupyterlab requests numpy statistics twilio
+  # After Pipfile is generated
+  pipenv install
+  pipenv shell
+  # Install any JupyterLab extensions at this point
+  (pipenv) $ jupyter labextension install @jupyterlab/toc
+  (pipenv) $ jupyter lab
+  ```
+
+- I previously used [Anaconda](https://www.anaconda.com/) to manage my Python and R distributions, and now use Homebrew. I switched because Anaconda is a very large installation, not as flexible or general as Homebrew, and not as important for virtual environments now that we have Pipenv.
+- A Binder is available to run the Jupyter Notebook files in the cloud. [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/br3ndonland/udacity-fsnd/master?urlpath=lab)
 
 ### JavaScript
 
-- [JavaScript Standard Style](https://standardjs.com/)
-- Two-space indentations, no semicolons.
-- Semicolons are syntactic clutter. Much like multivitamins, semicolons provide peace of mind while being of minimal utility. Omitting semicolons, and using ES6 features like template literals (similar to Python 3 string formatting), also allows me to easily switch between JavaScript and Python.
+- [JavaScript Standard Style](https://standardjs.com/) (two-space indentations, no semicolons)
 - There is a StandardJS [vscode extension](https://marketplace.visualstudio.com/items?itemName=chenxsan.vscode-standardjs) available for linting and autoformatting.
+- Semicolons are syntactic clutter. Much like multivitamins, semicolons provide peace of mind while being unnecessary. Omitting semicolons, and using ES6 features like template literals (similar to Python 3 string formatting), also allows me to easily switch between JavaScript and Python.
 
 ### HTML and CSS
 
