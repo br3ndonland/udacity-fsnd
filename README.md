@@ -285,7 +285,10 @@ Here are some suggestions for your computing environment. I use macOS, but these
     2. Allowing pre-releases into the lock file: `pipenv lock --pre`
   - If you prefer the less-decisive PEP 8 format, I recommend [autopep8](https://pypi.org/project/autopep8/) for autoformatting. VSCode also has built-in [Python formatting](https://code.visualstudio.com/docs/python/editing#_formatting) support for autopep8.
 - Jupyter
-  - I [install JupyterLab](https://jupyterlab.readthedocs.io/en/stable/getting_started/installation.html) with Pipenv. Once installation is complete, navigate to your project's directory, install dependencies, and run JupyterLab.
+  - I [install JupyterLab](https://jupyterlab.readthedocs.io/en/stable/getting_started/installation.html) with Pipenv.
+  - Install Homebrew from the command line as described on the [Homebrew website](https://brew.sh).
+  - After installing Homebrew, install the necessary Homebrew packages from the command line.
+  - Once installation is complete, navigate to your project's directory, install dependencies, and run JupyterLab.
   - Here are the necessary command line arguments:
 
     ```sh
