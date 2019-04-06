@@ -4,10 +4,11 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-requests = "*"
 jupyterlab = "*"
-statistics = "*"
+notebook = ">=5.7.8"
+requests = "*"
 numpy = "*"
+statistics = "*"
 twilio = "*"
 
 [dev-packages]
