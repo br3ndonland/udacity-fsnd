@@ -4,6 +4,7 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
+Jinja2 = ">=2.10.1"
 jupyterlab = "*"
 notebook = ">=5.7.8"
 requests = "*"
