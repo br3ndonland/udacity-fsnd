@@ -61,7 +61,7 @@ The FSND program was recently reorganized. When I went through the program, it w
 
 ## Computing environment
 
-Here are some suggestions for your computing environment. I use macOS, but these suggestions are easy to adapt for Linux or Windows. For full details on my personal setup, see my _[setup.md](https://github.com/br3ndonland/general/blob/master/setup.md)_ file on GitHub.
+Here are some suggestions for your computing environment. I use macOS, but these suggestions are easy to adapt for Linux or Windows. For full details on my personal setup, see my _[dotfiles](https://github.com/br3ndonland/dotfiles)_ repo on GitHub.
 
 ### Keymapping
 
