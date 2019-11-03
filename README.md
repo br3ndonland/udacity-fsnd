@@ -61,7 +61,7 @@ The FSND program was recently reorganized. When I went through the program, it w
 
 ## Computing environment
 
-Here are some suggestions for your computing environment. I use macOS, but these suggestions are easy to adapt for Linux or Windows. For full details on my personal setup, see my *[setup.md](https://github.com/br3ndonland/general/blob/master/setup.md)* file on GitHub.
+Here are some suggestions for your computing environment. I use macOS, but these suggestions are easy to adapt for Linux or Windows. For full details on my personal setup, see my _[setup.md](https://github.com/br3ndonland/general/blob/master/setup.md)_ file on GitHub.
 
 ### Keymapping
 
@@ -103,6 +103,7 @@ Here are some suggestions for your computing environment. I use macOS, but these
 ### Shell
 
 - Zsh
+
   - Like Bash with more features. See the Wes Bos [Command Line Power User course](https://commandlinepoweruser.com/) for a tutorial. There is a version included with macOS, but it may be out of date.
   - Install via Homebrew:
 
@@ -111,21 +112,24 @@ Here are some suggestions for your computing environment. I use macOS, but these
     ```
 
 - [oh-my-zsh](https://ohmyz.sh/)
+
   - Install via `curl`:
 
     ```sh
     sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
     ```
 
-  - Configure in *~/.zshrc*.
+  - Configure in _~/.zshrc_.
+
 - [Pure prompt](https://github.com/sindresorhus/pure)
+
   - Install from npm:
 
     ```sh
     npm install --global pure-prompt
     ```
 
-  - Add the prompt to *~/.zshrc*:
+  - Add the prompt to _~/.zshrc_:
 
     ```zsh
     # .zshrc continues above
@@ -150,14 +154,16 @@ Here are some suggestions for your computing environment. I use macOS, but these
     ```
 
 - [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)
-  - Clone the repo into *~/.oh-my-zsh/plugins*:
+
+  - Clone the repo into _~/.oh-my-zsh/plugins_:
 
     ```sh
     git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
     ```
 
-  - Activate the plugin in *~/.zshrc*:
-    - Open *~/.zshrc* from the command line with `code ~/.zshrc`.
+  - Activate the plugin in _~/.zshrc_:
+
+    - Open _~/.zshrc_ from the command line with `code ~/.zshrc`.
     - Add the plugin:
 
       ```zsh
@@ -176,6 +182,7 @@ Here are some suggestions for your computing environment. I use macOS, but these
       ```
 
 - [trash-cli](https://github.com/sindresorhus/trash-cli): Moves files to the trash instead of permanently deleting with `rm`.
+
   - Try it out:
 
     ```zsh
@@ -192,23 +199,23 @@ Here are some suggestions for your computing environment. I use macOS, but these
 
 - [Git](https://www.git-scm.com/) is recommended for version control.
 - I use the following general Git commit practices.
-    1. Separate subject from body with a blank line
-    2. Limit the subject line to 50 characters
-    3. Capitalize the subject line
-    4. Do not end the subject line with a period
-    5. Use the imperative mood in the subject line
-        > A properly formed Git commit subject line should always be able to complete the following sentence: If applied, this commit will *[your subject line here]*
-    6. Wrap the body at 72 characters
-    7. Use the body to explain what and why vs. how
+  1. Separate subject from body with a blank line
+  2. Limit the subject line to 50 characters
+  3. Capitalize the subject line
+  4. Do not end the subject line with a period
+  5. Use the imperative mood in the subject line
+     > A properly formed Git commit subject line should always be able to complete the following sentence: If applied, this commit will _[your subject line here]_
+  6. Wrap the body at 72 characters
+  7. Use the body to explain what and why vs. how
 - Here's how the commit message might look:
 
-    ```text
-    Imperative commit title limited to 50 characters
-    # Blank line
-    - More detailed commit message body
-    - List of key points and updates that the commit provides
-    - Lines need to be manually wrapped at 72 characters
-    ```
+  ```text
+  Imperative commit title limited to 50 characters
+  # Blank line
+  - More detailed commit message body
+  - List of key points and updates that the commit provides
+  - Lines need to be manually wrapped at 72 characters
+  ```
 
 - See [how to make a Git commit message](https://chris.beams.io/posts/git-commit/) and the [Udacity Git Commit Message Style Guide](https://udacity.github.io/git-styleguide/). Udacity recommends specifying the type of commit, like `feat: commit title`.
 - Branching may not be needed in these projects, but in more complicated projects:
@@ -223,7 +230,7 @@ Here are some suggestions for your computing environment. I use macOS, but these
 
 ### Text editor
 
-- I use [Microsoft Visual Studio Code](https://code.visualstudio.com/) (VSCode). I have provided some suggested settings in [*.vscode/settings.json*](.vscode/settings.json). My full VSCode config is available in [this public GitHub Gist](https://gist.github.com/br3ndonland/01b625629ef98ec7a919a7b927d0ddaf), and can be pulled into VSCode with the [Settings Sync extension](https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync).
+- I use [Microsoft Visual Studio Code](https://code.visualstudio.com/) (VSCode). I have provided some suggested settings in [_.vscode/settings.json_](.vscode/settings.json). My full VSCode config is available in [this public GitHub Gist](https://gist.github.com/br3ndonland/01b625629ef98ec7a919a7b927d0ddaf), and can be pulled into VSCode with the [Settings Sync extension](https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync).
 - Theme: [Material Theme](https://marketplace.visualstudio.com/items?itemName=Equinusocio.vsc-material-theme) Palenight
 - Font: [Dank Mono](https://dank.sh/) is my favorite. I particularly like the ligatures. I also like [IBM Plex Mono](https://github.com/IBM/plex) and [Ubuntu Mono](https://design.ubuntu.com/font/).
 - See the [VSCode docs](https://code.visualstudio.com/docs) to get started.
@@ -253,7 +260,7 @@ Here are some suggestions for your computing environment. I use macOS, but these
 
 ## Code syntax
 
-**Decisive autoformatters save time and prevent [bikeshedding](https://www.freebsd.org/doc/en/books/faq/misc.html#idp50244984).** Try changing the formatting of [*fizzbuzz.js*](/info/fizzbuzz.js) or [*fizzbuzz.py*](/info/fizzbuzz.py), then formatting with Standard (for JavaScript) or Black (for Python) as described below, to see what I mean.
+**Decisive autoformatters save time and prevent [bikeshedding](https://www.freebsd.org/doc/en/books/faq/misc.html#idp50244984).** Try changing the formatting of [_fizzbuzz.js_](/info/fizzbuzz.js) or [_fizzbuzz.py_](/info/fizzbuzz.py), then formatting with Standard (for JavaScript) or Black (for Python) as described below, to see what I mean.
 
 ### JavaScript
 
@@ -266,7 +273,7 @@ Here are some suggestions for your computing environment. I use macOS, but these
 - [Prettier](https://prettier.io/):
   - Another useful autoformatter.
   - Prettier supports more languages than Standard Style, including TypeScript, Markdown, HTML, and CSS (and maybe even Python, eventually).
-  - [Configuration options](https://prettier.io/docs/en/options.html) are specified in a *.prettierrc* file. There is minimal configuration needed. I add `"semi": false`. Some users may also want to add `"trailingComma": "es5"`, or extend the default 80 character line length to 100.
+  - [Configuration options](https://prettier.io/docs/en/options.html) are specified in a _.prettierrc_ file. There is minimal configuration needed. I add `"semi": false`. Some users may also want to add `"trailingComma": "es5"`, or extend the default 80 character line length to 100.
   - There is a [Prettier VSCode extension](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode).
 
 ### Python
@@ -285,6 +292,7 @@ Here are some suggestions for your computing environment. I use macOS, but these
     2. Allowing pre-releases into the lock file: `pipenv lock --pre`
   - If you prefer the less-decisive PEP 8 format, I recommend [autopep8](https://pypi.org/project/autopep8/) for autoformatting. VSCode also has built-in [Python formatting](https://code.visualstudio.com/docs/python/editing#_formatting) support for autopep8.
 - Jupyter
+
   - I [install JupyterLab](https://jupyterlab.readthedocs.io/en/stable/getting_started/installation.html) with Pipenv.
   - Install Homebrew from the command line as described on the [Homebrew website](https://brew.sh).
   - After installing Homebrew, install the necessary Homebrew packages from the command line.
@@ -318,7 +326,7 @@ Here are some suggestions for your computing environment. I use macOS, but these
 - **Master Markdown.**
   - Markdown is a simplified HTML syntax that is very useful for notes and documentation.
   - Practicing Markdown will enable you to become fluent in a simple syntax.
-  - Check out my Markdown guide at [*docs/markdown-guide.md*](docs/markdown-guide.md).
+  - Check out my Markdown guide at [_docs/markdown-guide.md_](docs/markdown-guide.md).
   - Helpful VSCode resources:
     - [Markdown and Visual Studio Code](https://code.visualstudio.com/Docs/languages/markdown)
 - **Keep computational narratives.**
@@ -342,7 +350,8 @@ Here are some suggestions for your computing environment. I use macOS, but these
 
 - **Limit lesson time.** Speed up videos to 1.5x or 2x, and set a timer when working through the lessons. I used the [Pomodoro technique](https://lifehacker.com/productivity-101-a-primer-to-the-pomodoro-technique-1598992730), and limited myself to 25 minutes max per lesson section. I would often complete 2-3 lesson sections per 25 minute interval.
 - **Limit quiz attempts.** When I was getting started, I aimed to complete 100% of the lesson material, and I took the quizzes too seriously. I pushed myself to answer quiz questions correctly without checking solutions. This led me to hit sticking points, and I would sometimes take 1-2 days just to complete a quiz. As I went on, I set a limit of three quiz attempts. If I didn't get it in three attempts, I would check the solution and move on.
-- **Take notes on the lessons.** See [*info/markdown-methods.md*](info/markdown-methods.md) for more information on Markdown, and [*info/udacity-lesson-notes-sample.md*](info/markdown-lesson-notes-sample.md) for an example.
+- **Take notes on the lessons.** See [_info/markdown-methods.md_](info/markdown-methods.md) for more information on Markdown, and [_info/udacity-lesson-notes-sample.md_](info/markdown-lesson-notes-sample.md) for an example.
+
   - When beginning a Udacity lesson, create a new Markdown file in your text editor.
   - Reserve `H1` for the title at the top, like `# Lesson 1. Shell workshop`.
   - Reserve `H2` (`##`) for breaking the lesson into different sections. If the lesson just has one section, I would recommend calling it `## Concepts`, like Udacity does.
