@@ -168,6 +168,9 @@ Here's how to set up Sublime Text for Markdown:
 
 **In my opinion, vscode is currently the best editor for working with Markdown.** Here's why:
 
+- [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+  - Autoformatter for Markdown files
+  - In addition to formatting Markdown itself, it actually formats source code inside fenced code blocks. Awesome feature.
 - [Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one)
   - TOC auto-generation and update
   - Live TOC in explorer panel
