@@ -253,6 +253,8 @@ Also see [Notable's comparison table](https://raw.githubusercontent.com/fabiospa
 - Supports internal relative links
 - Evernote migration and import (though not perfect-see cons below)
 - Writing tools, like word counts and read time
+- Note encryption (see [blog post announcing Bear 1.7](https://blog.bear.app/2019/09/bear-1-7-is-here-with-note-encryption-bear-lock-live-note-links-and-more/))
+- Password and FaceID lock
 - Reasonably-priced subscription plan
 
 ##### Bear cons
