@@ -260,11 +260,10 @@ Also see [Notable's comparison table](https://raw.githubusercontent.com/fabiospa
 ##### Bear cons
 
 - Apple only (macOS, iOS, iCloud), with [no plans to support Android](https://bear.app/faq/What%20about%20Bear%20for%20web,%20Android,%20or%20Windows/).
-- Not encrypted
 - Collaboration features could be better. No shared notebooks.
 - Sidebar should be more condensed.
 - Web clipper needs some work. Doesn't properly capture text on all sites.
-- Evernote import doesn't convert Evernote internal note links to Bear note links. Joplin also has this same issue, and it's a major barrier for switching from Evernote.
+- Evernote import doesn't convert Evernote internal note links to Bear note links. Joplin also has this same issue, and it's a major barrier for switching from Evernote. If you would like to switch from Evernote to Bear, you can try running my [el2bl](https://github.com/br3ndonland/el2bl) script on your Evernote exports.
 
 #### [Day One](https://dayoneapp.com/)
 
