@@ -45,7 +45,7 @@ Suggestions for standardized Markdown formatting have been provided by [markdown
 #### Text
 
 - **Bold text:** use **double star at beginning and end of text to bold**
-- **Italics:** *Single star with no space before and after.* Note that _underscores also work._
+- **Italics:** _Single star with no space before and after._ Note that _underscores also work._
 - **I prefer to indent Markdown text with two spaces.** Four spaces can be read by some systems as code blocks.
 
 #### Lists
@@ -57,8 +57,8 @@ Suggestions for standardized Markdown formatting have been provided by [markdown
 
 1. Ordered lists
 2. Like this
-    - And you can add in unordered lists within ordered lists like this.
-    - Adding an unordered list within an ordered list requires two levels of indentation.
+   - And you can add in unordered lists within ordered lists like this.
+   - Adding an unordered list within an ordered list requires two levels of indentation.
 
 #### Code
 
@@ -74,7 +74,8 @@ Fenced code blocks inside triple backticks
   like this
   ```
 
-- In GitHub-Flavored Markdown, you can specify the language next to the first set of triple backticks for syntax highlighting. Each language has a full name (like `python`), and an abbreviation (like `py`). The full list of supported languages can be found in [GitHub's Linguist repo](https://github.com/github/linguist), which is used to detect languages on GitHub. The *[languages.yml](https://github.com/github/linguist/blob/master/lib/linguist/languages.yml)* contains a list of the available abbreviations (called "extensions" in the YAML) for each language.
+- In GitHub-Flavored Markdown, you can specify the language next to the first set of triple backticks for syntax highlighting. Each language has a full name (like `python`), and an abbreviation (like `py`). The full list of supported languages can be found in [GitHub's Linguist repo](https://github.com/github/linguist), which is used to detect languages on GitHub. The _[languages.yml](https://github.com/github/linguist/blob/master/lib/linguist/languages.yml)_ contains a list of the available abbreviations (called "extensions" in the YAML) for each language.
+
   - Shell: `shell` or `sh`
 
     ```sh
@@ -82,20 +83,20 @@ Fenced code blocks inside triple backticks
     git commit
     ```
 
-  - JavaScript ([*fizzbuzz.js*](/info/fizzbuzz.js), ES6, formatted with [Standard](https://standardjs.com/)): `javascript` or `js`
+  - JavaScript ([_fizzbuzz.js_](/info/fizzbuzz.js), ES6, formatted with [Standard](https://standardjs.com/)): `javascript` or `js`
 
     ```js
     const fizzBuzz = () => {
       for (let i = 1; i <= 100; i++) {
-        let out = ''
-        if (i % 3 === 0) out += 'Fizz'
-        if (i % 5 === 0) out += 'Buzz'
+        let out = ""
+        if (i % 3 === 0) out += "Fizz"
+        if (i % 5 === 0) out += "Buzz"
         console.log(out || i)
       }
     }
     ```
 
-  - Python ([*fizzbuzz.py*](/info/fizzbuzz.py), Python 3, formatted with [Black](https://black.readthedocs.io/en/stable/)): `python` or `py`
+  - Python ([_fizzbuzz.py_](/info/fizzbuzz.py), Python 3, formatted with [Black](https://black.readthedocs.io/en/stable/)): `python` or `py`
 
     ```py
     def fizzbuzz():
@@ -337,7 +338,7 @@ iA = information Architects
 
 - Evernote to Joplin migration not ideal (see below).
 - Documentation on the website is okay, but [contributing guidelines](https://github.com/laurent22/joplin/blob/master/CONTRIBUTING.md) are not well delineated. The code and stack should be clearly explained so people can easily contribute. I should know roughly where I need to go in the codebase to add a feature.
-- Laurent Cozic only makes $60/month on Patreon. Not sustainable.
+- Laurent Cozic only makes \$60/month on Patreon. Not sustainable.
 
 ##### Evernote to Joplin migration
 
@@ -462,7 +463,7 @@ From WordPress
   - Import is not intuitive. Importing anything goes through import backup, but most imports are not backups.
   - **Doesn't do a good job of Evernote HTML to Markdown conversion.** Loses file attachments and lists, doesn't recognize headers. The options are either retain HTML, or strip all formatting.
   - My response to email survey:
-    > *Have you ever tried Standard Notes Extended?*
+    > _Have you ever tried Standard Notes Extended?_
     > No. If I became a regular user, I would happily pay for Extended. I'm not regularly using Standard Notes because I'm heavily invested in Evernote. I've been using it for six years, and have a 4 GB database with ~4400 tagged notes. I would love to migrate from Evernote to another service, converting from rich text to Markdown and encrypting my data, while keeping my multimedia attachments. Bear is one example of this type of migration, but I don't use Bear because it's Apple-only.
 
 #### [Trilium Notes](https://github.com/zadam/trilium)
