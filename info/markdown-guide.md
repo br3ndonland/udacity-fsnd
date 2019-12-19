@@ -16,7 +16,7 @@ Brendon Smith ([br3ndonland](https://github.com/br3ndonland))
 
 **Markdown is a simplified HTML syntax.** It has most of the functionality of HTML while being much easier to read, and is very widely used (for example, READMEs on GitHub).
 
-Here's a comparison of the same code written in Markdown and HTML:
+Here's a comparison of the same code written in Markdown and HTML (using Sublime Text):
 
 <img src="img/markdown-html-comparison.png" alt="Markdown and HTML comparison" width="75%">
 
@@ -44,15 +44,15 @@ Suggestions for standardized Markdown formatting have been provided by [markdown
 
 #### Text
 
-- **Bold text:** use **double star at beginning and end of text to bold**
-- **Italics:** _Single star with no space before and after._ Note that _underscores also work._
+- **Bold text:** use **double star at beginning and end of text to bold.**
+- _Italics:_ use _underscores or single stars with no space before and after._
 - **I prefer to indent Markdown text with two spaces.** Four spaces can be read by some systems as code blocks.
 
 #### Lists
 
 - **Lists should be preceded by a blank line.**
 - Single `*`, `-`, or `+` at beginning of line, followed by tab or space.
-  - Indent with tab for next outline level
+  - Indent for next outline level
     - Like this
 
 1. Ordered lists
@@ -83,7 +83,7 @@ Fenced code blocks inside triple backticks
     git commit
     ```
 
-  - JavaScript ([_fizzbuzz.js_](/info/fizzbuzz.js), ES6, formatted with [Standard](https://standardjs.com/)): `javascript` or `js`
+  - JavaScript ([_fizzbuzz.js_](/info/fizzbuzz.js), ES6, formatted with [Prettier](https://prettier.io/)): `javascript` or `js`
 
     ```js
     const fizzBuzz = () => {
@@ -178,9 +178,8 @@ Here's how to set up Sublime Text for Markdown:
 - [markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint)
   - Lints Markdown files based on style recommendations for standardizing code.
 - Built in live preview
-  - The [Markdown preview can be extended](https://code.visualstudio.com/Docs/languages/markdown#_extending-the-markdown-preview) with custom CSS. The CSS must be placed within the current workspace folder. There isn't yet support for absolute file paths to the CSS, but this feature has been [requested](https://github.com/Microsoft/vscode/issues/65837). I have also tried using an HTTPS link to a GitHub Gist, but haven't had success with that yet.
 
-Full vscode configuration is available via [Settings Sync](https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync) with [this public GitHub gist](https://gist.github.com/br3ndonland/01b625629ef98ec7a919a7b927d0ddaf).
+Full vscode configuration is available via [Settings Sync](https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync) with [this public GitHub gist](https://gist.github.com/br3ndonland/23b59819e3db207dde7af9c19fb33eaf).
 
 See [Markdown and Visual Studio Code](https://code.visualstudio.com/Docs/languages/markdown) for more info.
 
@@ -238,7 +237,7 @@ For examples of how to use Jupyter Notebook/JupyterLab, you can check out my [Ud
 
 ### Note apps
 
-Also see [Notable's comparison table](https://raw.githubusercontent.com/fabiospampinato/notable/master/resources/comparison/table.png).
+Also see [Notable's comparison table](https://notable.md/static/images/comparison.png).
 
 #### [Bear](https://bear.app/)
 
@@ -405,13 +404,13 @@ iOS-only note app with Markdown, tagging, and Dropbox sync.
 - No Markdown TOC
 - Development coming along slowly
 
-#### [Notable](https://github.com/fabiospampinato/notable)
+#### [Notable](https://notable.md/)
 
 Heard about Notable via the [Changelog weekly email #238](https://email.changelog.com/t/t-614770D9C810C3FD2540EF23F30FEDED).
 
 ##### Notable pros
 
-From the [README](https://github.com/fabiospampinato/notable/blob/master/README.md):
+From the [README](https://github.com/notable/notable/blob/master/README.md):
 
 > The markdown-based note-taking app that doesn't suck.
 >
@@ -419,7 +418,7 @@ From the [README](https://github.com/fabiospampinato/notable/blob/master/README.
 >
 > So I built my own.
 
-The developer has made extensive comparisons with other note apps. See [Notable's comparison table](https://raw.githubusercontent.com/fabiospampinato/notable/master/resources/comparison/table.png).
+The developer has made extensive comparisons with other note apps. See [Notable's comparison table](https://notable.md/static/images/comparison.png).
 
 ##### Notable cons
 
