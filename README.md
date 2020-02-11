@@ -21,6 +21,9 @@ Code in this repository is provided under the terms of the [MIT license](https:/
 ## Table of Contents <!-- omit in toc -->
 
 - [Description](#description)
+- [Strategies](#strategies)
+  - [Projects](#projects)
+  - [Lessons](#lessons)
 - [Computing environment](#computing-environment)
   - [Keymapping](#keymapping)
   - [Package management](#package-management)
@@ -31,9 +34,6 @@ Code in this repository is provided under the terms of the [MIT license](https:/
 - [Code syntax](#code-syntax)
   - [JavaScript](#javascript)
   - [Python](#python)
-- [Strategies](#strategies)
-  - [Projects](#projects)
-  - [Lessons](#lessons)
 
 ## Description
 
@@ -58,6 +58,54 @@ The FSND program was recently reorganized. When I went through the program, it w
 1. [Python web server movie trailer site](https://github.com/br3ndonland/udacity-fsnd-p1-python-movie-site)
 2. [Portfolio website](https://br3ndonland.github.io/udacity/)
 3. [Neighborhood map](https://github.com/br3ndonland/udacity-fsnd-p5-map)
+
+## Strategies
+
+### Projects
+
+- **Focus on projects.** The Nanodegree is awarded for projects, not lessons and quizzes. As you advance past the fundamentals into the project topics, you may want to just skip directly to the projects, and go back through the lessons as needed. [Other students](https://medium.com/@MrsDragos/my-approach-to-udacitys-projects-db8db224f6f5) have succeeded with this project-focused approach.
+- **Master Markdown.**
+  - Markdown is a simplified HTML syntax that is very useful for notes and documentation.
+  - Practicing Markdown will enable you to become fluent in a simple syntax.
+  - Check out my Markdown guide at [_docs/markdown-guide.md_](docs/markdown-guide.md).
+  - Helpful VSCode resources:
+    - [Markdown and Visual Studio Code](https://code.visualstudio.com/Docs/languages/markdown)
+- **Keep computational narratives.**
+  - When coding projects, I keep computational narratives describing what I do at each step, like journals or lab notebooks. I learned how to keep computational narratives from scientific computing in Jupyter Notebook/JupyterLab and RMarkdown.
+  - Computational narratives capture my train of thought, so I can retrace my steps, retain what I have learned, easily generate documentation, and teach others.
+  - Here are some examples of my computational narratives:
+    - [SQL logs analysis project narrative](https://github.com/br3ndonland/udacity-fsnd-sql-logs/blob/master/info/logs-methods.md)
+    - [Flask catalog app narrative](https://github.com/br3ndonland/udacity-fsnd-flask-catalog/blob/master/info/flask-catalog-methods.md)
+    - [Flask catalog app server deployment narrative](https://github.com/br3ndonland/udacity-fsnd-flask-catalog-server/blob/master/info/server-methods.md)
+- **Break projects down into actionable steps.**
+  - This is a key skill. As a developer, you will be given large tasks, like the projects in this Nanodegree program, without a clear step-by-step plan. You will need to plan out the project and make progress on each step.
+  - I break the project down into steps, and make the steps headers in my computational narratives. I generate a Table of Contents from the headers, using the "Create Table of Contents" feature of the Markdown All In One VSCode extension.
+  - As I work, I include code in Markdown fenced code blocks.
+  - If you get stuck or blocked:
+    - **Take a break.** Go do something else you enjoy. It's normal to get confused and frustrated. Don't let it get to you. When you are learning, expect to experience more [stretch](http://calnewport.com/blog/2012/11/21/knowledge-workers-are-bad-at-working-and-heres-what-to-do-about-it/) than [flow](https://www.wired.com/1996/09/czik/).
+    - **Talk it out.** This is called "rubber duck debugging," because some people put a rubber duck on their desk and pretend they are talking to the duck. See the [rubber duck debugging website](https://rubberduckdebugging.com/) and [CS50 2018 - Lecture 4 - Data Structures: ddb50](https://youtu.be/ed2lnJNf7HU?t=1188).
+    - **Write it down.** In addition to verbal rubber duck debugging, write the situation down in your computational narrative. Explain what you're stuck on.
+    - **Break it down.** Break the problem down into smaller steps, and continue working through each step. Make sure you document the steps you take to solve the problem.
+
+### Lessons
+
+- **Limit lesson time.** Speed up videos to 1.5x or 2x, and set a timer when working through the lessons. I used the [Pomodoro technique](https://lifehacker.com/productivity-101-a-primer-to-the-pomodoro-technique-1598992730), and limited myself to 25 minutes max per lesson section. I would often complete 2-3 lesson sections per 25 minute interval.
+- **Limit quiz attempts.** When I was getting started, I aimed to complete 100% of the lesson material, and I took the quizzes too seriously. I pushed myself to answer quiz questions correctly without checking solutions. This led me to hit sticking points, and I would sometimes take 1-2 days just to complete a quiz. As I went on, I set a limit of three quiz attempts. If I didn't get it in three attempts, I would check the solution and move on.
+- **Take notes on the lessons.** See [_info/markdown-guide.md_](info/markdown-guide.md) for more information on Markdown, and [_info/udacity-lesson-notes-sample.md_](info/markdown-lesson-notes-sample.md) for an example.
+
+  - When beginning a Udacity lesson, create a new Markdown file in your text editor.
+  - Reserve `H1` for the title at the top, like `# Lesson 1. Shell workshop`.
+  - Reserve `H2` (`##`) for breaking the lesson into different sections. If the lesson just has one section, I would recommend calling it `## Concepts`, like Udacity does.
+  - Paste in the sections of the lesson from the Udacity interface, and set each one to `H3` (`###`).
+
+    ![Image: copying the lesson outline from Udacity](info/img/udacity-lesson-outline.png)
+
+  - As with projects, use the lesson notes file as a computational narrative while you work through each part of the lesson.
+  - At the end of the lesson, I generate a Table of Contents from the headers, using the "Create Table of Contents" feature of the Markdown All In One VSCode extension.
+
+See my [program feedback](info/fsnd-feedback.md) for more comments.
+
+[(Back to top)](#top)
 
 ## Computing environment
 
@@ -263,53 +311,5 @@ Here are some suggestions for your computing environment. I use macOS, but these
 
   - I previously used [Anaconda](https://www.anaconda.com/) to manage my Python and R distributions, and now use Homebrew. I switched because Anaconda is a very large installation, not as flexible or general as Homebrew, and not as important for virtual environments now that we have Pipenv.
   - There are two options for running the Jupyter Notebooks in the cloud: [Google Colaboratory](https://colab.research.google.com/github/br3ndonland/udacity-fsnd) and [Binder](https://mybinder.org/v2/gh/br3ndonland/udacity-fsnd/master?urlpath=lab).
-
-[(Back to top)](#top)
-
-## Strategies
-
-### Projects
-
-- **Focus on projects.** The Nanodegree is awarded for projects, not lessons and quizzes. As you advance past the fundamentals into the project topics, you may want to just skip directly to the projects, and go back through the lessons as needed. [Other students](https://medium.com/@MrsDragos/my-approach-to-udacitys-projects-db8db224f6f5) have succeeded with this project-focused approach.
-- **Master Markdown.**
-  - Markdown is a simplified HTML syntax that is very useful for notes and documentation.
-  - Practicing Markdown will enable you to become fluent in a simple syntax.
-  - Check out my Markdown guide at [_docs/markdown-guide.md_](docs/markdown-guide.md).
-  - Helpful VSCode resources:
-    - [Markdown and Visual Studio Code](https://code.visualstudio.com/Docs/languages/markdown)
-- **Keep computational narratives.**
-  - When coding projects, I keep computational narratives describing what I do at each step, like journals or lab notebooks. I learned how to keep computational narratives from scientific computing in Jupyter Notebook/JupyterLab and RMarkdown.
-  - Computational narratives capture my train of thought, so I can retrace my steps, retain what I have learned, easily generate documentation, and teach others.
-  - Here are some examples of my computational narratives:
-    - [SQL logs analysis project narrative](https://github.com/br3ndonland/udacity-fsnd-sql-logs/blob/master/info/logs-methods.md)
-    - [Flask catalog app narrative](https://github.com/br3ndonland/udacity-fsnd-flask-catalog/blob/master/info/flask-catalog-methods.md)
-    - [Flask catalog app server deployment narrative](https://github.com/br3ndonland/udacity-fsnd-flask-catalog-server/blob/master/info/server-methods.md)
-- **Break projects down into actionable steps.**
-  - This is a key skill. As a developer, you will be given large tasks, like the projects in this Nanodegree program, without a clear step-by-step plan. You will need to plan out the project and make progress on each step.
-  - I break the project down into steps, and make the steps headers in my computational narratives. I generate a Table of Contents from the headers, using the "Create Table of Contents" feature of the Markdown All In One VSCode extension.
-  - As I work, I include code in Markdown fenced code blocks.
-  - If you get stuck or blocked:
-    - **Take a break.** Go do something else you enjoy. It's normal to get confused and frustrated. Don't let it get to you. When you are learning, expect to experience more [stretch](http://calnewport.com/blog/2012/11/21/knowledge-workers-are-bad-at-working-and-heres-what-to-do-about-it/) than [flow](https://www.wired.com/1996/09/czik/).
-    - **Talk it out.** This is called "rubber duck debugging," because some people put a rubber duck on their desk and pretend they are talking to the duck. See the [rubber duck debugging website](https://rubberduckdebugging.com/) and [CS50 2018 - Lecture 4 - Data Structures: ddb50](https://youtu.be/ed2lnJNf7HU?t=1188).
-    - **Write it down.** In addition to verbal rubber duck debugging, write the situation down in your computational narrative. Explain what you're stuck on.
-    - **Break it down.** Break the problem down into smaller steps, and continue working through each step. Make sure you document the steps you take to solve the problem.
-
-### Lessons
-
-- **Limit lesson time.** Speed up videos to 1.5x or 2x, and set a timer when working through the lessons. I used the [Pomodoro technique](https://lifehacker.com/productivity-101-a-primer-to-the-pomodoro-technique-1598992730), and limited myself to 25 minutes max per lesson section. I would often complete 2-3 lesson sections per 25 minute interval.
-- **Limit quiz attempts.** When I was getting started, I aimed to complete 100% of the lesson material, and I took the quizzes too seriously. I pushed myself to answer quiz questions correctly without checking solutions. This led me to hit sticking points, and I would sometimes take 1-2 days just to complete a quiz. As I went on, I set a limit of three quiz attempts. If I didn't get it in three attempts, I would check the solution and move on.
-- **Take notes on the lessons.** See [_info/markdown-methods.md_](info/markdown-methods.md) for more information on Markdown, and [_info/udacity-lesson-notes-sample.md_](info/markdown-lesson-notes-sample.md) for an example.
-
-  - When beginning a Udacity lesson, create a new Markdown file in your text editor.
-  - Reserve `H1` for the title at the top, like `# Lesson 1. Shell workshop`.
-  - Reserve `H2` (`##`) for breaking the lesson into different sections. If the lesson just has one section, I would recommend calling it `## Concepts`, like Udacity does.
-  - Paste in the sections of the lesson from the Udacity interface, and set each one to `H3` (`###`).
-
-    ![Image: copying the lesson outline from Udacity](info/img/udacity-lesson-outline.png)
-
-  - As with projects, use the lesson notes file as a computational narrative while you work through each part of the lesson.
-  - At the end of the lesson, I generate a Table of Contents from the headers, using the "Create Table of Contents" feature of the Markdown All In One VSCode extension.
-
-See my [program feedback](info/fsnd-feedback.md) for more comments.
 
 [(Back to top)](#top)
