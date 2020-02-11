@@ -102,13 +102,15 @@ Here are some suggestions for your computing environment. I use macOS, but these
 
 ### Shell
 
-- Zsh
-
-  - Like Bash with more features. See the Wes Bos [Command Line Power User course](https://commandlinepoweruser.com/) for a tutorial. There is a version included with macOS, but it may be out of date.
-  - Install via Homebrew.
-  - Configure in _~/.zshrc_.
-
-- [Pure prompt](https://github.com/sindresorhus/pure)
+- A shell is a command-line interface that connects a user with the operating system.
+- In order to see your shell, you need to use a terminal program, also sometimes called a terminal emulator. Popular terminal emulators include:
+  - [Hyper](https://hyper.is/)
+  - [iTerm2](https://iterm2.com)
+  - [kitty](https://sw.kovidgoyal.net/kitty/)
+  - [Terminal](https://support.apple.com/guide/terminal/welcome/mac) for macOS
+- There are many different shells with unique features.
+- I use Zsh, which is like Bash but with more features. See the [Wes Bos Command Line Power User course](https://commandlinepoweruser.com/) for a tutorial. There is a version included with macOS, but it may be out of date. Install with Homebrew (`brew install zsh`), and configure in _~/.zshrc_.
+- The prompt is what shows up just before your cursor. I use the [Pure prompt](https://github.com/sindresorhus/pure).
 
   - Install from npm:
 
@@ -120,15 +122,9 @@ Here are some suggestions for your computing environment. I use macOS, but these
 
     ```zsh
     # .zshrc continues above
-    plugins=(
-      git node npm
-    )
-
-    source $ZSH/oh-my-zsh.sh
-
-    # User configuration
     # Pure prompt: https://github.com/sindresorhus/pure
-    autoload -U promptinit; promptinit
+    autoload -U promptinit
+    promptinit
     prompt pure
     # .zshrc continues below
     ```
@@ -140,34 +136,6 @@ Here are some suggestions for your computing environment. I use macOS, but these
     echo 'stay udacious'
     ```
 
-- [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)
-
-  - Clone the repo into _~/.oh-my-zsh/plugins_:
-
-    ```sh
-    git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
-    ```
-
-  - Activate the plugin in _~/.zshrc_:
-
-    - Open _~/.zshrc_ from the command line with `code ~/.zshrc`.
-    - Add the plugin:
-
-      ```zsh
-      # .zshrc continues above
-      plugins=(
-        git node npm zsh-syntax-highlighting
-      )
-
-      source $ZSH/oh-my-zsh.sh
-
-      # User configuration
-      # Pure prompt: https://github.com/sindresorhus/pure
-      autoload -U promptinit; promptinit
-      prompt pure
-      # .zshrc continues below
-      ```
-
 - [trash-cli](https://github.com/sindresorhus/trash-cli): Moves files to the trash instead of permanently deleting with `rm`.
 
   - Try it out:
@@ -176,11 +144,6 @@ Here are some suggestions for your computing environment. I use macOS, but these
     touch file.txt
     trash file.txt
     ```
-
-- For my terminal applications, I use:
-  - [iTerm2](https://iterm2.com) and the [iterm2-snazzy](https://github.com/sindresorhus/iterm2-snazzy) theme
-  - [Hyper](https://hyper.is/) and the [hyper-snazzy](https://github.com/sindresorhus/hyper-snazzy) theme
-  - [VSCode integrated terminal](https://code.visualstudio.com/docs/editor/integrated-terminal)
 
 ### Version control
 
