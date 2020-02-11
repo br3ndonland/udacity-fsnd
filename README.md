@@ -180,9 +180,9 @@ Here are some suggestions for your computing environment. I use macOS, but these
 
 ### Text editor
 
-- I use [Microsoft Visual Studio Code](https://code.visualstudio.com/) (VSCode). I have provided some suggested settings in [_.vscode/settings.json_](.vscode/settings.json). My full VSCode config is available in [this public GitHub Gist](https://gist.github.com/br3ndonland/01b625629ef98ec7a919a7b927d0ddaf), and can be pulled into VSCode with the [Settings Sync extension](https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync).
+- I use [Microsoft Visual Studio Code](https://code.visualstudio.com/) (VSCode). My complete settings are available in my _[dotfiles](https://github.com/br3ndonland/dotfiles)_ repo on GitHub.
 - Theme: [Material Theme](https://marketplace.visualstudio.com/items?itemName=Equinusocio.vsc-material-theme) Palenight
-- Font: [Dank Mono](https://dank.sh/) is my favorite. I particularly like the ligatures. I also like [IBM Plex Mono](https://github.com/IBM/plex) and [Ubuntu Mono](https://design.ubuntu.com/font/).
+- Font: [Dank Mono](https://dank.sh/) is my favorite. I particularly like the ligatures.
 - See the [VSCode docs](https://code.visualstudio.com/docs) to get started.
 - Key features:
   - [Command palette](https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_command-palette): Cmd+shift+P opens a menu with available commands, based on your current context.
@@ -191,12 +191,9 @@ Here are some suggestions for your computing environment. I use macOS, but these
 - Useful extensions:
   - [GitLens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)
   - [Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one)
-  - [markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint)
   - [Material Theme](https://marketplace.visualstudio.com/items?itemName=Equinusocio.vsc-material-theme)
   - [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
   - [Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
-  - [Settings Sync](https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync)
-  - [StandardJS](https://marketplace.visualstudio.com/items?itemName=chenxsan.vscode-standardjs)
 
 ### Browsers
 
