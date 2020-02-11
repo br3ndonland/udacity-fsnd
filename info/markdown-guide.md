@@ -208,13 +208,13 @@ I would suggest using [JupyterLab](https://jupyterlab.readthedocs.io/en/stable/)
 
   ```sh
   cd path/to/a/directory
-  git clone
+  git clone repository
   ```
 
 - Finally, install the virtual environment with Pipenv, which includes [JupyterLab](https://jupyterlab.readthedocs.io/en/stable/getting_started/installation.html) and the other necessary packages, and launch JupyterLab to run the Jupyter Notebook.
 
   ```sh
-  cd tdi-proposal
+  cd repository
   pipenv install
   pipenv shell
   # Install any JupyterLab extensions at this point
