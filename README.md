@@ -88,10 +88,10 @@ Here are some suggestions for your computing environment. I use macOS, but these
 
   ```sh
   # Homebrew packages
-  brew install git node python3 pipenv zsh zsh-completions
+  brew install git node python3 pipenv zsh zsh-completions zsh-syntax-highlighting
 
   # Homebrew casks
-  brew cask install 1password backblaze docker figma firefox-developer-edition google-chrome iterm2 keybase protonvpn visual-studio-code
+  brew cask install visual-studio-code
   ```
 
 - Update with `brew update` and `brew upgrade`.
@@ -105,20 +105,7 @@ Here are some suggestions for your computing environment. I use macOS, but these
 - Zsh
 
   - Like Bash with more features. See the Wes Bos [Command Line Power User course](https://commandlinepoweruser.com/) for a tutorial. There is a version included with macOS, but it may be out of date.
-  - Install via Homebrew:
-
-    ```sh
-    brew install zsh zsh-completions
-    ```
-
-- [oh-my-zsh](https://ohmyz.sh/)
-
-  - Install via `curl`:
-
-    ```sh
-    sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-    ```
-
+  - Install via Homebrew.
   - Configure in _~/.zshrc_.
 
 - [Pure prompt](https://github.com/sindresorhus/pure)
