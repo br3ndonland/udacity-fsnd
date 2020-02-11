@@ -199,9 +199,10 @@ Here are some suggestions for your computing environment. I use macOS, but these
 
 - [Firefox Quantum Developer Edition](https://www.mozilla.org/en-US/firefox/developer/)
   - Helpful dev tools, especially for CSS Grid
-- [Google Chrome](https://www.google.com/chrome/)
-  - Progressive Web Apps (PWAs) dev tools
-  - Developer edition and canary may not be stable enough for regular use
+- [Brave](https://brave.com/)
+  - Built on Chromium, the same engine as Google Chrome.
+  - Has many of the features of Chrome, including dev tools.
+  - Much better than Chrome for privacy. Blocks trackers by default, and loads websites up to 6x faster than Chrome.
 
 [(Back to top)](#top)
 
