@@ -423,6 +423,7 @@ The developer has made extensive comparisons with other note apps. See [Notable'
 ##### Notable cons
 
 - No mobile app yet
+- [No longer open-source](https://github.com/notable/notable/blob/master/SOURCE_CODE.md).
 
 #### [Simplenote](https://simplenote.com/)
 
