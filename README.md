@@ -67,7 +67,7 @@ The FSND program was recently reorganized. When I went through the program, it w
 - **Master Markdown.**
   - Markdown is a simplified HTML syntax that is very useful for notes and documentation.
   - Practicing Markdown will enable you to become fluent in a simple syntax.
-  - Check out my Markdown guide at [info/markdown-guide.md\_](./info/markdown-guide.md).
+  - Check out my Markdown guide at _[info/markdown-guide.md](./info/markdown-guide.md)_.
   - Helpful VSCode resources:
     - [Markdown and Visual Studio Code](https://code.visualstudio.com/Docs/languages/markdown)
 - **Keep computational narratives.**
