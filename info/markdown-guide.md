@@ -249,7 +249,7 @@ Also see [Notable's comparison table](https://notable.md/static/images/compariso
 - Untagged notes easily identified
 - Themes
 - Syntax highlighting
-- Supports internal relative links
+- Supports internal relative links, like `[[Note title]]`
 - Evernote migration and import (though not perfect-see cons below)
 - Writing tools, like word counts and read time
 - Note encryption (see [blog post announcing Bear 1.7](https://blog.bear.app/2019/09/bear-1-7-is-here-with-note-encryption-bear-lock-live-note-links-and-more/))
@@ -260,8 +260,11 @@ Also see [Notable's comparison table](https://notable.md/static/images/compariso
 
 - Apple only (macOS, iOS, iCloud), with [no plans to support Android](https://bear.app/faq/What%20about%20Bear%20for%20web,%20Android,%20or%20Windows/).
 - Collaboration features could be better. No shared notebooks.
-- Sidebar should be more condensed.
-- Web clipper needs some work. Doesn't properly capture text on all sites.
+- Bear's "Markdown compatibility mode" is actually not standard or fully compatible with common tools like [Prettier](https://prettier.io/). The use of tabs for indentation and asterisks for bullets leads Prettier to mis-format Markdown documents exported from Bear.
+- Global search is painfully slow, and fires instantly, so it runs a search for each character you type.
+- Web clipper needs some work. Doesn't properly capture text on all sites. Search should have a delay, or require the user to hit enter, so it doesn’t immediately try to search while you’re typing.
+- Sync disrupts glide typing on iOS. This seems to be particularly problematic in notes containing large numbers of note links. It is very frustrating to constantly be interrupted in the middle of glide typing a word. Sync should wait until the keyboard is closed.
+- Can't search within notes on iOS. This is a major limitation that the Bear team has repeatedly overlooked.
 - Evernote import doesn't convert Evernote internal note links to Bear note links. Joplin also has this same issue, and it's a major barrier for switching from Evernote. If you would like to switch from Evernote to Bear, you can try running my [el2bl](https://github.com/br3ndonland/el2bl) script on your Evernote exports.
 
 #### [Day One](https://dayoneapp.com/)
