@@ -436,9 +436,11 @@ The developer has made extensive comparisons with other note apps. See [Notable'
 - No mobile app yet
 - [No longer open-source](https://github.com/notable/notable/blob/master/SOURCE_CODE.md).
 - No Bear import. The closest thread I could find was [this](https://www.reddit.com/r/Notable/comments/bsg1dn/just_moved_from_bear_nice_surprise/), but there's no migration script.
+- Metadata in YAML frontmatter: will require the `#tag/subtag` nested tags from Bear to be moved into an array in the frontmatter.
 - No searching within notes yet. Major shortcoming.
 - No tag autocompletion
 - Not sure if it automatically update note links when note titles change, like Bear does
+- Pipes are a problem. For example, I frequently title clipped articles like `[[Periodical | Date: Article title]]`. When I try to use this format in Notable, it treats the text to the left of the pipe as the link title, and the text to the right of the pipe as the note title.
 - Doesn't autocomplete lists like Markdown All in One in VSCode
 - [According to the developer](https://www.reddit.com/r/Notable/comments/g0vy8v/privacy_policy_why_notable_phones_home_who_else/), Notable collects analytics via [Amplitude](https://amplitude.com/).
 
