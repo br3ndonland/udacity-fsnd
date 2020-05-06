@@ -303,16 +303,20 @@ iA = information Architects
 
 ##### iA Writer pros
 
-- Cross-platform
+- Cross-platform (macOS, iOS, Windows)
 - Light/dark themes
+- Syntax highlighting: the grammatical syntax highlighting is interesting
+- Uses the same `#tag/subtag` nested tagging syntax from Bear
 - Currently just a one-time payment model, though that will probably change.
 
 ##### iA Writer cons
 
-- Lacks some of the features of Bear
-- No syntax highlighting
+- Lacks many of the features of Bear
+- No import from other apps. When manually importing notes exported from Bear as Markdown, it doesn't recognize the tags. Tags have to be manually typed out for iA Writer to recognize them.
+- Note links?
+- Tags are only recognized when they are typed in. If a tag is pasted in, or already present (for example, in a Markdown file that has been exported from Bear), the tags are not recognized.
 - Multimedia?
-- Evernote import?
+- No Linux support
 
 #### [Inkdrop](https://www.inkdrop.info/)
 
