@@ -415,8 +415,6 @@ iOS-only note app with Markdown, tagging, and Dropbox sync.
 
 Heard about Notable via the [Changelog weekly email #238](https://email.changelog.com/t/t-614770D9C810C3FD2540EF23F30FEDED).
 
-##### Notable pros
-
 From the [README](https://github.com/notable/notable/blob/master/README.md):
 
 > The markdown-based note-taking app that doesn't suck.
@@ -427,13 +425,21 @@ From the [README](https://github.com/notable/notable/blob/master/README.md):
 
 The developer has made extensive comparisons with other note apps. See [Notable's comparison table](https://notable.md/static/images/comparison.png).
 
+##### Notable pros
+
 - Uses same Markdown editor as VSCode
+- Has an "open in default editor" button for easy transfer to a text editor
 - Handles nested code blocks (Bear doesn't)
 
 ##### Notable cons
 
 - No mobile app yet
 - [No longer open-source](https://github.com/notable/notable/blob/master/SOURCE_CODE.md).
+- No Bear import. The closest thread I could find was [this](https://www.reddit.com/r/Notable/comments/bsg1dn/just_moved_from_bear_nice_surprise/), but there's no migration script.
+- No searching within notes yet. Major shortcoming.
+- No tag autocompletion
+- Not sure if it automatically update note links when note titles change, like Bear does
+- Doesn't autocomplete lists like Markdown All in One in VSCode
 - [According to the developer](https://www.reddit.com/r/Notable/comments/g0vy8v/privacy_policy_why_notable_phones_home_who_else/), Notable collects analytics via [Amplitude](https://amplitude.com/).
 
 #### [Simplenote](https://simplenote.com/)
