@@ -423,10 +423,14 @@ From the [README](https://github.com/notable/notable/blob/master/README.md):
 
 The developer has made extensive comparisons with other note apps. See [Notable's comparison table](https://notable.md/static/images/comparison.png).
 
+- Uses same Markdown editor as VSCode
+- Handles nested code blocks (Bear doesn't)
+
 ##### Notable cons
 
 - No mobile app yet
 - [No longer open-source](https://github.com/notable/notable/blob/master/SOURCE_CODE.md).
+- [According to the developer](https://www.reddit.com/r/Notable/comments/g0vy8v/privacy_policy_why_notable_phones_home_who_else/), Notable collects analytics via [Amplitude](https://amplitude.com/).
 
 #### [Simplenote](https://simplenote.com/)
 
