@@ -56,7 +56,7 @@ The Full Stack Web Developer Nanodegree program is focused on projects, in which
 The FSND program was recently reorganized. When I went through the program, it was longer, and I did three additional projects that are no longer included:
 
 1. [Python web server movie trailer site](https://github.com/br3ndonland/udacity-fsnd-p1-python-movie-site)
-2. [Portfolio website](https://br3ndonland.github.io/udacity/)
+2. [Portfolio website](https://github.com/br3ndonland/udacity-portfolio)
 3. [Neighborhood map](https://github.com/br3ndonland/udacity-fsnd-p5-map)
 
 ## Strategies
