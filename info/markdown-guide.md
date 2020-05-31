@@ -179,7 +179,7 @@ Here's how to set up Sublime Text for Markdown:
   - Lints Markdown files based on style recommendations for standardizing code.
 - Built in live preview
 
-Full vscode configuration is available via [Settings Sync](https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync) with [this public GitHub gist](https://gist.github.com/br3ndonland/23b59819e3db207dde7af9c19fb33eaf).
+My full vscode configuration is available in [my dotfiles repo](https://github.com/br3ndonland/dotfiles).
 
 See [Markdown and Visual Studio Code](https://code.visualstudio.com/Docs/languages/markdown) for more info.
 
@@ -554,7 +554,7 @@ Heard about Trilium via the [Changelog weekly email #237](https://email.changelo
 - Apple only (macOS/iOS)
 - Encryption?
 - Moved to subscription model
-- Maintains article tags as "keywords," a fatal flaw shared by other apps like [Papers](https://www.readcube.com/papers/). See my notes on citation managers in [this public GitHub Gist](https://gist.github.com/br3ndonland/8d4a9853922b475918faf1687163e7fc)
+- Maintains article tags as "keywords," a fatal flaw shared by other apps like [Papers](https://www.readcube.com/papers/). See my notes on citation managers in [my cite repo](https://github.com/br3ndonland/cite).
 
 ### In-browser editors
 
