@@ -17,7 +17,6 @@ def get_geocode_location(input_string):
     latitude = result['results'][0]['geometry']['location']['lat']
     longitude = result['results'][0]['geometry']['location']['lng']
     return latitude, longitude
-    pass
 
 
 # If this file is called as a standalone program:

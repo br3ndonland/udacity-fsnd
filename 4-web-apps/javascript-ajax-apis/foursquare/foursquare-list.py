@@ -24,7 +24,6 @@ def foursquare_list():
         print('{}, {}, {}'.format(item['venue']['name'],
                                   item['venue']['location']['address'],
                                   item['venue']['location']['city']))
-    pass
 
 
 # If this file is called as a standalone program:

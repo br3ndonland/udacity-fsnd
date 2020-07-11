@@ -72,7 +72,6 @@ def find_a_restaurant(mealType, location):
     else:
         print('No restaurants found for {}. \n'.format(location))
         return 'No restaurants found'
-    pass
 
 
 # If this file is called as a standalone program:
